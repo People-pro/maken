@@ -7,23 +7,25 @@ import vuescroll from "vuescroll/dist/vuescroll-native";
 import "vuescroll/dist/vuescroll.css";
 import "./scss/main.scss";
 import Antd from "ant-design-vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
-	Select,
-	Progress,
-	Alert,
-	Input,
-	Icon,
-	DatePicker,
-	Button,
-	Tabs,
-	Empty,
-	Spin,
-	TimePicker,
-	Checkbox,
-	Rate,
-	Popconfirm,
-	Tooltip,
-	Slider,
+  Select,
+  Progress,
+  Alert,
+  Input,
+  Icon,
+  DatePicker,
+  Button,
+  Tabs,
+  Empty,
+  Spin,
+  TimePicker,
+  Checkbox,
+  Rate,
+  Popconfirm,
+  Tooltip,
+  Slider,
 } from "ant-design-vue";
 import "./scss/ant.scss";
 require("vue2-animate/dist/vue2-animate.min.css");
@@ -53,11 +55,11 @@ import VueYoutube from "vue-youtube";
 import VUpload from "./components/VUpload.vue";
 import VEditor from "./components/VEditor.vue";
 import {
-	Hooper,
-	Slide,
-	Progress as HooperProgress,
-	Pagination as HooperPagination,
-	Navigation as HooperNavigation,
+  Hooper,
+  Slide,
+  Progress as HooperProgress,
+  Pagination as HooperPagination,
+  Navigation as HooperNavigation,
 } from "hooper";
 import "hooper/dist/hooper.css";
 
@@ -69,6 +71,7 @@ import clientFooter from "./views/site/pages/Footer.vue";
 Vue.component("clientHeader", clientHeader);
 Vue.component("clientFooter", clientFooter);
 Vue.use(Antd);
+AOS.init();
 
 // mine
 
@@ -119,71 +122,71 @@ Vue.use(VueAxios, axios);
 Vue.use(VueClipboard);
 Vue.mixin(AppMix);
 Vue.use(VueGoogleMaps, {
-	load: {
-		key: store.state.GOOGLE_MAP_KEY,
-		libraries: "places",
-	},
+  load: {
+    key: store.state.GOOGLE_MAP_KEY,
+    libraries: "places",
+  },
 });
 Vue.use(vuescroll, {
-	ops: {
-		bar: {
-			showDelay: 200,
-			onlyShowBarOnScroll: true,
-			keepShow: true,
-			background: "#8dc73f",
-			opacity: 1,
-			specifyBorderRadius: false,
-			minSize: 0,
-			size: "10px",
-			disable: false,
-		},
-	},
+  ops: {
+    bar: {
+      showDelay: 200,
+      onlyShowBarOnScroll: true,
+      keepShow: true,
+      background: "#8dc73f",
+      opacity: 1,
+      specifyBorderRadius: false,
+      minSize: 0,
+      size: "10px",
+      disable: false,
+    },
+  },
 });
 Vue.use(EasySlider);
 Vue.config.productionTip = false;
 
 // Setting for sidebar on load app
 if (window.innerWidth > 900) {
-	if (Vue.localStorage.get("is_sidebar")) {
-		store.state.sidebar =
-			Vue.localStorage.get("is_sidebar") === "true" ? true : false;
-	} else {
-		store.state.sidebar = true;
-	}
+  if (Vue.localStorage.get("is_sidebar")) {
+    store.state.sidebar =
+      Vue.localStorage.get("is_sidebar") === "true" ? true : false;
+  } else {
+    store.state.sidebar = true;
+  }
 } else {
-	store.state.sidebar = false;
+  store.state.sidebar = false;
 }
 
 // Validate every axios request
 axios.interceptors.response.use(
-	function(response) {
-		return response;
-	},
-	function(error) {
-		try {
-			if (error.response.status === 401) {
-				store.commit("SET_TOKEN", null);
-				Vue.localStorage.remove("user_data");
-			}
-		} catch (e) {}
-		return Promise.reject(error);
-	}
+  function (response) {
+    return response;
+  },
+  function (error) {
+    try {
+      if (error.response.status === 401) {
+        store.commit("SET_TOKEN", null);
+        Vue.localStorage.remove("user_data");
+      }
+    } catch (e) {}
+    return Promise.reject(error);
+  }
 );
 
 if ("serviceWorker" in navigator) {
-	window.addEventListener("load", () => {
-		navigator.serviceWorker.register("/sw.js");
-	});
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js");
+  });
 }
 
 const el = document.querySelector("#app");
 if (el) {
-	new Vue({
-		router,
-		store,
-		render: (h) => h(App),
-	}).$mount("#app");
-	if (process.env.ENV !== "production") {
-		console.log("Vue app is running in development mode");
-	}
+  new Vue({
+    router,
+    store,
+    render: (h) => h(App),
+  }).$mount("#app");
+  if (process.env.ENV !== "production") {
+    console.log("Vue app is running in development mode");
+  }
 }

@@ -236,8 +236,8 @@ exports.AppModule = AppModule;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\omegaxampp\htdocs\setup\leon-wecodefy\scheme\angular\polyfills.ts */"./scheme/angular/polyfills.ts");
-module.exports = __webpack_require__(/*! C:\omegaxampp\htdocs\setup\leon-wecodefy\scheme\angular\main.ts */"./scheme/angular/main.ts");
+__webpack_require__(/*! C:\omegaxampp\htdocs\setup\maken\scheme\angular\polyfills.ts */"./scheme/angular/polyfills.ts");
+module.exports = __webpack_require__(/*! C:\omegaxampp\htdocs\setup\maken\scheme\angular\main.ts */"./scheme/angular/main.ts");
 
 
 /***/ })

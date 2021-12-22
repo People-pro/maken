@@ -1,6 +1,37 @@
 <template>
   <div class="clientHeader">
-    <h1>Header</h1>
+    <div class="header-content">
+      <section>
+        <div class="left">
+          <img
+            src="/assets/images/logo.png"
+            alt="Maken Africa Safaris"
+            srcset=""
+          />
+        </div>
+        <div class="right">
+          <div class="navbar">
+            <ul class="nav-links">
+              <li class="link-item">
+                <router-link to="/" class="link-a">Home</router-link>
+                <router-link to="/services" class="link-a"
+                  >Services</router-link
+                >
+                <router-link to="/packages" class="link-a"
+                  >Packages</router-link
+                >
+                <router-link to="/gallery" class="link-a">Gallery</router-link>
+                <router-link to="/trips" class="link-a">Trips</router-link>
+                <router-link to="/aboutus" class="link-a">About Us</router-link>
+                <router-link to="/contact" class="link-a"
+                  >Contact Us</router-link
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -8,227 +39,82 @@
 export default {
   name: "clientHeader",
   data() {
-    return {
-      showDrop: false,
-      closeOnClickOutside: true,
-      transition: true,
-      showNav: false,
-      client: null,
-    };
+    return {};
   },
-  methods: {
-    collapse() {
-      let om = this;
-      om.showNav = !om.showNav;
-    },
-  },
-  mounted() {
-    window.scrollTo(0, 0);
-	if (localStorage.client) {
-		this.client = JSON.parse(localStorage.client);
-	}
-  },
+  methods: {},
+  mounted() {},
 };
 </script>
 
 <style lang="scss" scoped>
+$orange: #ef6203;
+$green: #044914;
 * {
   transition: all 0.4s ease-in;
 }
-$mainBlue: #005ea7;
-$mainDarkBlue: #072e4d;
-$mainVeryDarkBlue: #03243f;
-$mainYellow: #ffd11b;
-.client-navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: $mainBlue;
-  margin: 0 !important;
-  padding: 0 !important;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 3;
-  .logo-widget {
-    // width: 15%;
-    label {
-      padding: 20px 10px;
-      color: $mainYellow;
-      font-weight: 700;
-      font-size: 20px;
-      display: block;
-      &:hover {
-        cursor: pointer;
-      }
-      @media screen and (max-width: 600px) {
-        font-size: 16px;
-      }
-    }
-    @media screen and (max-width: 600px) {
-      // width: 10%;
-    }
-  }
-  .links-widget {
-    // width: 70%;
-    display: flex;
-    justify-content: center;
-    .nav-links {
+.clientHeader {
+  width: 100vw;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0px 1px 10px 1px #eee;
+  .header-content {
+    section {
       display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1rem 15rem;
       align-items: center;
-      margin-bottom: 0px;
-      .nav-link {
-        color: white;
-        padding: 20px 15px;
-        background: none;
-        border: none;
-        &:hover,
-        &:active,
-        &:focus {
-          background: $mainDarkBlue;
-          color: $mainYellow;
+      @media screen and (max-width: 1700px) {
+        padding: 1rem 10rem;
+      }
+      @media screen and (max-width: 1300px) {
+        padding: 1rem 5rem;
+      }
+      .left {
+        img {
+          width: 100px;
         }
       }
-      .nav-drops {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        background: $mainVeryDarkBlue;
-        border-radius: 0px 0px 2px 2px;
-        .dropdown-item {
-          padding: 10px;
-          color: white;
-          &:hover,
-          &:active,
-          &:focus {
-            background: $mainVeryDarkBlue;
-            color: $mainYellow;
+      .right {
+        .navbar {
+          .nav-links {
+            list-style: none;
+            display: flex;
+            .link-item {
+              .link-a {
+                padding: .8rem 1rem;
+                color: black;
+                font-weight: 400;
+                position: relative;
+                &:hover {
+                  color: $orange;
+                }
+                &:hover:after {
+                  color: $orange;
+                  transform: scaleX(1);
+                  transform-origin: bottom left;
+                }
+                &.router-link-exact-active {
+                  color: $orange;
+                }
+                &:after {
+                  content: "";
+                  position: absolute;
+                  width: 100%;
+                  transform: scaleX(0);
+                  height: 1px;
+                  bottom: 0;
+                  left: 0;
+                  background-color: $orange;
+                  transform-origin: bottom right;
+                  transition: transform 0.4s ease-in-out;
+                }
+              }
+            }
           }
         }
       }
-      .router-link-exact-active {
-        background: $mainDarkBlue;
-        color: $mainYellow;
-      }
-      @media screen and (max-width: 950px) {
-        display: none;
-        // width: 40%;
-      }
     }
-  }
-  .showNav {
-    display: flex;
-    @media screen and (max-width: 950px) {
-      display: flex;
-    }
-  }
-  .right-links {
-    // width: 15%;
-    display: flex;
-    align-items: center;
-    padding-right: 10px;
-    .client {
-      color: $mainYellow;
-	  font-size: 1rem;
-	  font-weight: 500;
-	  background: #000;
-	  padding: 5px 1rem;
-	  align-content: center;
-	  margin-right: 1rem;
-	  margin-top: 1rem;
-	  display: flex;
-	  align-items: center;
-	  i{
-		  color: red;
-		  font-size: .75rem;
-		  margin-left: 1rem;
-		  cursor: pointer;
-	  }
-    }
-    .nav-link {
-      background: $mainBlue;
-      padding: 10px 20px;
-      color: white;
-      font-weight: 400;
-      font-size: 16px;
-      border-radius: 5px;
-      border: 1px white solid;
-      &:hover,
-      &:active,
-      &:focus {
-        background: white;
-        color: $mainDarkBlue;
-        cursor: pointer;
-      }
-      @media screen and (max-width: 950px) {
-        font-size: 14px;
-        padding: 5px 20px;
-      }
-    }
-    @media screen and (max-width: 950px) {
-      padding: 10px 2px;
-      // width: 40%;
-    }
-  }
-  .nav-collapse-img {
-    img {
-      margin-right: 10px;
-      height: 40px;
-    }
-    @media screen and (min-width: 950px) {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 950px) {
-    padding: 10px;
-  }
-}
-.collapse-nav-links {
-  background: $mainBlue;
-  position: fixed;
-  display: block;
-  width: 100%;
-  margin-top: 0px;
-  z-index: 1;
-  transition: all 1s ease-in;
-  .nav-link {
-    display: block;
-    color: white;
-    padding: 15px;
-    background: none;
-    border: none;
-    text-align: center;
-    &:hover,
-    &:active,
-    &:focus {
-      background: $mainDarkBlue;
-      color: $mainYellow;
-    }
-  }
-  .nav-drops {
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background: $mainVeryDarkBlue;
-    border-radius: 0px 0px 2px 2px;
-    .dropdown-item {
-      padding: 10px;
-      color: white;
-      &:hover,
-      &:active,
-      &:focus {
-        background: $mainVeryDarkBlue;
-        color: $mainYellow;
-      }
-    }
-  }
-  @media screen and (min-width: 951px) {
-    display: none;
-  }
-  @media screen and (max-width: 950px) {
-    display: flex;
-    flex-direction: column;
   }
 }
 </style>

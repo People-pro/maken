@@ -276,7 +276,7 @@ function unregister() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\omegaxampp\htdocs\setup\leon-wecodefy\scheme\react\main.js */"./scheme/react/main.js");
+module.exports = __webpack_require__(/*! C:\omegaxampp\htdocs\setup\maken\scheme\react\main.js */"./scheme/react/main.js");
 
 
 /***/ })
