@@ -356,10 +356,10 @@ $green: #044914;
         border-radius: 1rem;
         box-shadow: 0px 0px 10px 3px #1d1d1d13;
         transition: all 0.4s ease-in-out;
-        &:hover,
-        &:focus {
-          // transform: scale(1.2, 1.2);
-        }
+        // &:hover,
+        // &:focus {
+        //   transform: scale(1.2, 1.2);
+        // }
         @media screen and (max-width: 1300px) {
           padding: 1rem;
         }
