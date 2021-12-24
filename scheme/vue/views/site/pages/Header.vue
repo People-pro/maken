@@ -2,13 +2,13 @@
   <div class="clientHeader">
     <div class="header-content">
       <section>
-        <div class="left">
+        <router-link to="/" class="left">
           <img
             src="/assets/images/logo.png"
             alt="Maken Africa Safaris"
             srcset=""
           />
-        </div>
+        </router-link>
         <div class="right">
           <div class="navbar">
             <ul class="nav-links">

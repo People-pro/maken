@@ -10,7 +10,11 @@
         <span class="text">Loading...</span>
       </div>
     </div>
-    <a href="https://api.whatsapp.com/send/?phone=250785848669" target="_blank" class="help">
+    <a
+      href="https://api.whatsapp.com/send/?phone=250785848669"
+      target="_blank"
+      class="help"
+    >
       <i class="fas fa-comment-alt"></i>
     </a>
   </div>
@@ -41,7 +45,7 @@ $green: #044914;
   align-items: center;
   outline: none;
   box-shadow: 0px 0px 10px 2px #0000004f;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   &:hover,
   &:focus {
     background: $green;
@@ -75,6 +79,43 @@ $green: #044914;
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 2;
+  @media screen and (max-width: 900px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    padding-bottom: 0.5rem;
+  }
+}
+.intro-header {
+  text-shadow: 0 4px 2px #0000007e;
+  color: white;
+  font-size: 4rem;
+  line-height: 1.25em;
+  font-weight: 700;
+  text-align: center;
+  @media screen and (max-width: 900px) {
+    font-size: 3rem;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    padding-bottom: 0.5rem;
+  }
+}
+.intro-desc {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-shadow: 0 4px 2px #0000007e;
+  text-align: center;
+  @media screen and (max-width: 900px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: .9rem;
+  }
 }
 .myhr {
   border: none;
@@ -95,6 +136,10 @@ $green: #044914;
     box-shadow: inset 20em 3rem 0 0 $green;
     color: white;
   }
+  @media screen and (max-width: 600px) {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
+  }
 }
 .mybtn-o {
   padding: 0.8rem 1.5rem;
@@ -109,6 +154,10 @@ $green: #044914;
   &:focus {
     box-shadow: inset 20em 3rem 0 0 $orange;
     color: white;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
   }
 }
 .txt-shad {
