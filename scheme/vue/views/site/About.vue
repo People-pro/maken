@@ -155,35 +155,6 @@ $green: #044914;
   @media screen and (max-width: 900px) {
     width: 100vw;
   }
-  .intro {
-    background: url("/assets/images/bg1.jpg");
-    background-size: cover;
-    background-position: center bottom;
-    background-attachment: fixed;
-    position: relative;
-    .intro-content {
-      padding: 3rem 0;
-      width: 100%;
-      height: 100%;
-      background: #000000a4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .intro-body {
-        width: 100%;
-        padding: 0 15rem;
-        @media screen and (max-width: 1700px) {
-          padding: 4rem 10rem;
-        }
-        @media screen and (max-width: 1300px) {
-          padding: 3rem 5rem;
-        }
-        @media screen and (max-width: 900px) {
-          padding: 2rem;
-        }
-      }
-    }
-  }
   .about-content {
     padding: 2rem 15rem;
     @media screen and (max-width: 1700px) {
@@ -199,6 +170,8 @@ $green: #044914;
   .missions-widget {
     background: url("/assets/images/pe2.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     box-shadow: inset 0 0 0 2000px #0000004d;
     padding: 2rem 15rem;
     @media screen and (max-width: 1700px) {

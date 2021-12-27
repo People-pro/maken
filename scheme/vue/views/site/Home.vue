@@ -594,16 +594,16 @@ $green: #044914;
   }
   .jumbo {
     height: calc(100vh - 100px);
-    background: url("/assets/images/bg1.jpg");
+    background: url("/assets/images/pe2.jpg");
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     background-attachment: fixed;
     position: relative;
     .jumbo-content {
       width: 100%;
       height: 100%;
       background: #000000;
-      background: linear-gradient(90deg, #000000a4 0%, #13860300 53%);
+      background: linear-gradient(90deg, #000000a4 0%, #13860300 73%);
       display: flex;
       align-items: center;
       .jumbo-body {
