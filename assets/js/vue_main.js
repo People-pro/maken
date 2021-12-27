@@ -1477,6 +1477,79 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "About",
   data: function data() {
@@ -1561,6 +1634,74 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Contact",
   data: function data() {
@@ -1568,41 +1709,54 @@ __webpack_require__.r(__webpack_exports__);
       isLoading: false,
       color: "#072e4d",
       fullPage: true,
-      partnersSettings: {
-        itemsToShow: 2,
-        centerMode: false,
-        autoPlay: true,
-        wheelControl: false,
-        trimWhiteSpace: true,
-        infiniteScroll: true,
-        playSpeed: 4000,
-        transition: 1000,
-        hoverPause: false,
-        breakpoints: {
-          400: {
-            itemsToShow: 3
-          },
-          800: {
-            itemsToShow: 4
-          },
-          1300: {
-            itemsToShow: 5
-          },
-          1600: {
-            itemsToShow: 6
-          }
-        }
+      contacts: {
+        fullname: "",
+        email: "",
+        subject: "",
+        message: ""
       }
     };
   },
   methods: {
     onCancel: function onCancel() {
       console.log();
+    },
+    contactNow: function contactNow() {
+      var vm = this;
+
+      if (vm.contacts.fullname && vm.contacts.email && vm.contacts.subject && vm.contacts.message) {
+        vm.isLoading = true;
+        vm.$store.dispatch("CONTACT_NOW", vm.contacts).then(function (response) {
+          if (response.data.status == "ok") {
+            vm.$notify({
+              group: "status",
+              title: "Important message",
+              text: response.data.message,
+              type: "success"
+            });
+            vm.contacts.fullname = null;
+            vm.contacts.email = null;
+            vm.contacts.subject = null;
+            vm.contacts.message = null;
+            vm.isLoading = false;
+          }
+        })["catch"](function (error) {
+          console.error({
+            error: error
+          });
+          vm.isLoading = false;
+        });
+      } else {
+        vm.$notify({
+          group: "status",
+          title: "Warning message",
+          text: "All fields are required",
+          type: "warn"
+        });
+      }
     }
   },
-  mounted: function mounted() {
-    var vm = this;
-  }
+  mounted: function mounted() {}
 });
 
 /***/ }),
@@ -1616,6 +1770,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1700,6 +1861,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2717,6 +2885,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Services",
   data: function data() {
@@ -2990,6 +3165,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Services",
   data: function data() {
@@ -3045,6 +3227,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3759,7 +3948,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".About {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.About {\n    width: 100vw;\n}\n}\n.About .intro {\n  background: url(\"/assets/images/bg1.jpg\");\n  background-size: cover;\n  background-position: center bottom;\n  background-attachment: fixed;\n  position: relative;\n}\n.About .intro .intro-content {\n  padding: 3rem 0;\n  width: 100%;\n  height: 100%;\n  background: #000000a4;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.About .intro .intro-content .intro-body {\n  width: 100%;\n  padding: 0 15rem;\n}\n@media screen and (max-width: 1700px) {\n.About .intro .intro-content .intro-body {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.About .intro .intro-content .intro-body {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.About .intro .intro-content .intro-body {\n    padding: 2rem;\n}\n}\n", ""]);
+exports.push([module.i, ".About {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.About {\n    width: 100vw;\n}\n}\n.About .intro {\n  background: url(\"/assets/images/bg1.jpg\");\n  background-size: cover;\n  background-position: center bottom;\n  background-attachment: fixed;\n  position: relative;\n}\n.About .intro .intro-content {\n  padding: 3rem 0;\n  width: 100%;\n  height: 100%;\n  background: #000000a4;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.About .intro .intro-content .intro-body {\n  width: 100%;\n  padding: 0 15rem;\n}\n@media screen and (max-width: 1700px) {\n.About .intro .intro-content .intro-body {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.About .intro .intro-content .intro-body {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.About .intro .intro-content .intro-body {\n    padding: 2rem;\n}\n}\n.About .about-content {\n  padding: 2rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.About .about-content {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.About .about-content {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.About .about-content {\n    padding: 2rem;\n}\n}\n.About .missions-widget {\n  background: url(\"/assets/images/pe2.jpg\");\n  background-size: cover;\n  box-shadow: inset 0 0 0 2000px #0000004d;\n  padding: 2rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.About .missions-widget {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.About .missions-widget {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.About .missions-widget {\n    padding: 2rem;\n}\n}\n.About .missions-widget .mis-body {\n  display: grid;\n  grid-template-columns: 26.6% 26.6% 26.6%;\n  grid-column-gap: 10%;\n  grid-row-gap: 2rem;\n  margin: 2rem 0;\n}\n@media screen and (max-width: 1500px) {\n.About .missions-widget .mis-body {\n    grid-template-columns: 30% 30% 30%;\n    grid-column-gap: 3%;\n    margin: 0;\n}\n}\n@media screen and (max-width: 1100px) {\n.About .missions-widget .mis-body {\n    grid-template-columns: 47.5% 47.5%;\n    grid-column-gap: 3%;\n}\n}\n@media screen and (max-width: 700px) {\n.About .missions-widget .mis-body {\n    grid-template-columns: 100%;\n    grid-column-gap: 3%;\n}\n}\n.About .missions-widget .mis-body .mission {\n  background: #ffffffd7;\n  box-shadow: 0px 0px 10px 3px #1d1d1d48;\n  border-radius: 1rem;\n  padding: 2rem;\n}\n.About .missions-widget .mis-body .vision {\n  background: #ffffffd7;\n  box-shadow: 0px 0px 10px 3px #1d1d1d48;\n  border-radius: 1rem;\n  padding: 2rem;\n  position: relative;\n  left: -1rem;\n}\n", ""]);
 
 // exports
 
@@ -3778,7 +3967,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".Contact {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.Contact {\n    width: 100vw;\n}\n}\n.Contact .intro {\n  background: url(\"/assets/images/bg1.jpg\");\n  background-size: cover;\n  background-position: center bottom;\n  background-attachment: fixed;\n  position: relative;\n}\n.Contact .intro .intro-content {\n  padding: 3rem 0;\n  width: 100%;\n  height: 100%;\n  background: #000000a4;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.Contact .intro .intro-content .intro-body {\n  width: 100%;\n  padding: 0 15rem;\n}\n@media screen and (max-width: 1700px) {\n.Contact .intro .intro-content .intro-body {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.Contact .intro .intro-content .intro-body {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.Contact .intro .intro-content .intro-body {\n    padding: 2rem;\n}\n}\n", ""]);
+exports.push([module.i, ".Contact {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.Contact {\n    width: 100vw;\n}\n}\n.Contact .intro {\n  background: url(\"/assets/images/bg1.jpg\");\n  background-size: cover;\n  background-position: center bottom;\n  background-attachment: fixed;\n  position: relative;\n}\n.Contact .intro .intro-content {\n  padding: 3rem 0;\n  width: 100%;\n  height: 100%;\n  background: #000000a4;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.Contact .intro .intro-content .intro-body {\n  width: 100%;\n  padding: 0 15rem;\n}\n@media screen and (max-width: 1700px) {\n.Contact .intro .intro-content .intro-body {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.Contact .intro .intro-content .intro-body {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.Contact .intro .intro-content .intro-body {\n    padding: 2rem;\n}\n}\n.Contact .body {\n  display: grid;\n  grid-template-columns: 45% 45%;\n  padding: 3rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.Contact .body {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.Contact .body {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.Contact .body {\n    padding: 2rem;\n}\n}\n.Contact .body .left {\n  display: flex;\n  flex-direction: column;\n  row-gap: 1rem;\n}\n.Contact .body .left .info div {\n  margin-bottom: 1rem;\n  color: #000;\n}\n.Contact .body .left .info div b {\n  font-weight: 500;\n}\n.Contact .body .right h2 {\n  color: #000;\n}\n.Contact .body .right form {\n  background: #ffffff;\n  display: flex;\n  flex-direction: column;\n  row-gap: 2rem;\n  padding: 1rem;\n  border-radius: 3px;\n}\n.Contact .body .right form label {\n  color: #000;\n}\n.Contact .body .right form .form-group {\n  display: flex;\n  flex-direction: column;\n  row-gap: 1rem;\n}\n.Contact .body .right form .form-group input,\n.Contact .body .right form .form-group textarea {\n  padding: 0.75em;\n  border: 1px #e2e2e2 solid;\n  outline: none;\n  border-radius: 3px;\n  background: #eeeeee1e;\n  color: #000;\n}\n.Contact .body .right form .form-group input[type=\"submit\"] {\n  cursor: pointer;\n  border: none;\n  background: #ef6203;\n  color: white;\n  font-weight: 500;\n}\n@media screen and (max-width: 900px) {\n.Contact .body {\n    display: grid;\n    grid-template-columns: 96%;\n    row-gap: 2%;\n    margin-top: 2rem;\n    margin-bottom: 3rem;\n}\n}\n", ""]);
 
 // exports
 
@@ -3892,7 +4081,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".clientFooter .footer-content[data-v-7b34e630] {\n  width: 99.1vw;\n  overflow: hidden;\n  background: #1d1d1d;\n  padding: 3rem 15rem;\n  align-items: flex-start;\n  display: grid;\n  grid-template-columns: 33% 33% 33%;\n}\n@media screen and (max-width: 1700px) {\n.clientFooter .footer-content[data-v-7b34e630] {\n    padding: 3rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.clientFooter .footer-content[data-v-7b34e630] {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.clientFooter .footer-content[data-v-7b34e630] {\n    padding: 2rem 3rem;\n    width: 100vw;\n}\n}\n.clientFooter .footer-content .left img[data-v-7b34e630] {\n  width: 150px;\n}\n.clientFooter .footer-content .left p[data-v-7b34e630] {\n  font-size: 0.9rem;\n  color: white;\n  width: 70%;\n  margin-top: 1rem;\n}\n.clientFooter .footer-content .middle[data-v-7b34e630] {\n  display: flex;\n  flex-direction: column;\n  row-gap: 1rem;\n}\n.clientFooter .footer-content .middle label[data-v-7b34e630] {\n  font-weight: 600;\n  font-size: 1.2rem;\n  color: #fff;\n}\n.clientFooter .footer-content .middle ul[data-v-7b34e630] {\n  list-style: none;\n  line-height: 2;\n}\n.clientFooter .footer-content .middle ul .nav-item[data-v-7b34e630] {\n  color: white;\n  font-size: 0.9rem;\n}\n.clientFooter .footer-content .middle ul .nav-item[data-v-7b34e630]:hover {\n  color: #ef6203;\n}\n.clientFooter .footer-content .middle ul .nav-item[data-v-7b34e630]:hover:after {\n  color: #ef6203;\n  transform: scaleX(1);\n  transform-origin: bottom left;\n}\n.clientFooter .footer-content .middle ul .nav-item.router-link-exact-active[data-v-7b34e630] {\n  color: #ef6203;\n}\n.clientFooter .footer-content .middle ul .nav-item[data-v-7b34e630]:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  transform: scaleX(0);\n  height: 1px;\n  bottom: 0;\n  left: 0;\n  background-color: #ef6203;\n  transform-origin: bottom right;\n  transition: transform 0.4s ease-in-out;\n}\n.clientFooter .footer-content .right[data-v-7b34e630] {\n  display: flex;\n  flex-direction: column;\n  row-gap: 0.2rem;\n}\n.clientFooter .footer-content .right label[data-v-7b34e630] {\n  font-weight: 600;\n  font-size: 1.2rem;\n  color: #fff;\n}\n.clientFooter .footer-content .right ul[data-v-7b34e630] {\n  list-style: none;\n  font-size: 0.9rem;\n  color: #fff;\n  line-height: 2;\n}\n.clientFooter .footer-content .right ul i[data-v-7b34e630] {\n  color: #ef6203;\n  margin-right: 0.5rem;\n}\n.clientFooter .footer-content .right .socials[data-v-7b34e630] {\n  display: flex;\n  align-items: center;\n  font-size: 1.5rem;\n  -moz-column-gap: 1rem;\n       column-gap: 1rem;\n}\n.clientFooter .footer-content .right .socials a[data-v-7b34e630] {\n  color: #fff;\n}\n.clientFooter .footer-content .right .socials a[data-v-7b34e630]:hover {\n  color: #ef6203;\n}\n.clientFooter .copyright[data-v-7b34e630] {\n  padding: 1rem 0;\n  display: flex;\n  justify-content: center;\n  background: #1d1d1d;\n  border-top: 1px #3b3b3b dashed;\n}\n.clientFooter .copyright p[data-v-7b34e630] {\n  color: white;\n  font-weight: 200;\n  font-size: 0.9rem;\n}\n.clientFooter .copyright p strong[data-v-7b34e630] {\n  text-transform: uppercase;\n}\n.clientFooter .copyright p a[data-v-7b34e630] {\n  color: #ef6203;\n  font-weight: 500;\n}\n", ""]);
+exports.push([module.i, ".clientFooter .footer-content[data-v-7b34e630] {\n  width: 99.1vw;\n  overflow: hidden;\n  background: #1d1d1d;\n  padding: 3rem 15rem;\n  align-items: flex-start;\n  display: grid;\n  grid-template-columns: 33% 33% 33%;\n}\n@media screen and (max-width: 1700px) {\n.clientFooter .footer-content[data-v-7b34e630] {\n    padding: 3rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.clientFooter .footer-content[data-v-7b34e630] {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.clientFooter .footer-content[data-v-7b34e630] {\n    padding: 2rem 3rem;\n    width: 100vw;\n    grid-template-columns: 100%;\n}\n}\n@media screen and (max-width: 900px) {\n.clientFooter .footer-content .left[data-v-7b34e630] {\n    border-bottom: 1px #ffffff65 solid;\n    margin-bottom: 1rem;\n}\n}\n.clientFooter .footer-content .left img[data-v-7b34e630] {\n  width: 150px;\n}\n.clientFooter .footer-content .left p[data-v-7b34e630] {\n  font-size: 0.9rem;\n  color: white;\n  width: 70%;\n  margin-top: 1rem;\n}\n.clientFooter .footer-content .middle[data-v-7b34e630] {\n  display: flex;\n  flex-direction: column;\n  row-gap: 1rem;\n}\n@media screen and (max-width: 900px) {\n.clientFooter .footer-content .middle[data-v-7b34e630] {\n    border-bottom: 1px #ffffff65 solid;\n    margin-bottom: 1rem;\n}\n}\n.clientFooter .footer-content .middle label[data-v-7b34e630] {\n  font-weight: 600;\n  font-size: 1.2rem;\n  color: #fff;\n}\n.clientFooter .footer-content .middle ul[data-v-7b34e630] {\n  list-style: none;\n  line-height: 2;\n}\n.clientFooter .footer-content .middle ul .nav-item[data-v-7b34e630] {\n  color: white;\n  font-size: 0.9rem;\n}\n.clientFooter .footer-content .middle ul .nav-item[data-v-7b34e630]:hover {\n  color: #ef6203;\n}\n.clientFooter .footer-content .middle ul .nav-item[data-v-7b34e630]:hover:after {\n  color: #ef6203;\n  transform: scaleX(1);\n  transform-origin: bottom left;\n}\n.clientFooter .footer-content .middle ul .nav-item.router-link-exact-active[data-v-7b34e630] {\n  color: #ef6203;\n}\n.clientFooter .footer-content .middle ul .nav-item[data-v-7b34e630]:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  transform: scaleX(0);\n  height: 1px;\n  bottom: 0;\n  left: 0;\n  background-color: #ef6203;\n  transform-origin: bottom right;\n  transition: transform 0.4s ease-in-out;\n}\n.clientFooter .footer-content .right[data-v-7b34e630] {\n  display: flex;\n  flex-direction: column;\n  row-gap: 0.2rem;\n}\n.clientFooter .footer-content .right label[data-v-7b34e630] {\n  font-weight: 600;\n  font-size: 1.2rem;\n  color: #fff;\n  margin-bottom: 0.8rem;\n}\n.clientFooter .footer-content .right ul[data-v-7b34e630] {\n  list-style: none;\n  font-size: 0.9rem;\n  color: #fff;\n  line-height: 2;\n}\n.clientFooter .footer-content .right ul i[data-v-7b34e630] {\n  color: #ef6203;\n  margin-right: 0.5rem;\n}\n.clientFooter .footer-content .right .socials[data-v-7b34e630] {\n  display: flex;\n  align-items: center;\n  font-size: 1.5rem;\n  -moz-column-gap: 1rem;\n       column-gap: 1rem;\n}\n.clientFooter .footer-content .right .socials a[data-v-7b34e630] {\n  color: #fff;\n}\n.clientFooter .footer-content .right .socials a[data-v-7b34e630]:hover {\n  color: #ef6203;\n}\n.clientFooter .copyright[data-v-7b34e630] {\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: center;\n  background: #1d1d1d;\n  border-top: 1px #3b3b3b dashed;\n}\n.clientFooter .copyright p[data-v-7b34e630] {\n  color: white;\n  font-weight: 200;\n  font-size: 0.9rem;\n}\n.clientFooter .copyright p strong[data-v-7b34e630] {\n  text-transform: uppercase;\n}\n.clientFooter .copyright p a[data-v-7b34e630] {\n  color: #ef6203;\n  font-weight: 500;\n}\n", ""]);
 
 // exports
 
@@ -8093,6 +8282,21 @@ var render = function () {
     "div",
     { staticClass: "About" },
     [
+      _c("loading", {
+        attrs: {
+          active: _vm.isLoading,
+          "can-cancel": true,
+          "on-cancel": _vm.onCancel,
+          color: _vm.color,
+          "is-full-page": _vm.fullPage,
+        },
+        on: {
+          "update:active": function ($event) {
+            _vm.isLoading = $event
+          },
+        },
+      }),
+      _vm._v(" "),
       _c("clientHeader"),
       _vm._v(" "),
       _vm._m(0),
@@ -8131,6 +8335,89 @@ var staticRenderFns = [
           ]),
         ]),
       ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "about-content" }, [
+        _c("div", { staticClass: "about-item" }, [
+          _c("div", { staticClass: "my-title" }, [_vm._v("Who we are")]),
+          _vm._v(" "),
+          _c("hr", { staticClass: "myhr" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "about-body" }, [
+            _c("p", [
+              _vm._v("\n            For 2 years "),
+              _c("strong", [_vm._v("Maken Africa Safaris")]),
+              _vm._v(
+                " has been\n            providing an unrivalled full spectrum of business and leisure\n            travel services that our satisfied customers will certainly attest\n            to.\n          "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            We pride ourselves in offering world class service in the regions\n            we operate. Our well experienced consultants offer clients with\n            most economical, practical and convenient travel solutions.\n          "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _c("strong", [_vm._v("Maken Africa Safaris")]),
+              _vm._v(
+                " was incorporated on May 2018\n            and is ready to receive numerous awards and recognitions since\n            date. We have established a reputation in the industry for having\n            strong and long lasting relationships with both our suppliers and\n            clients\n          "
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "missions-widget" }, [
+        _c("div", { staticClass: "mis-body" }, [
+          _c("div", { staticClass: "mission" }, [
+            _c("h2", { staticClass: "my-title" }, [_vm._v("Our Mission")]),
+            _vm._v(" "),
+            _c("hr", { staticClass: "myhr" }),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            To fulfill your Group's and private tour dreams and mission in new\n            and Exciting way, and do it better than envisioned. We aim to make\n            every safari Exhilarating and energizing for everyone involved.\n          "
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "vision" }, [
+            _c("h2", { staticClass: "my-title" }, [_vm._v("Our Vision")]),
+            _vm._v(" "),
+            _c("hr", { staticClass: "myhr" }),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            To lead travel agency in the travel industry by providing\n            efficient and effective Services to our customers.\n          "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            To maintain a high class travel services at reasonable prices\n            through consistent Leadership controlled growth and excellent\n            commitment.\n          "
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "vision" }, [
+            _c("h2", { staticClass: "my-title" }, [_vm._v("Our Strengths")]),
+            _vm._v(" "),
+            _c("hr", { staticClass: "myhr" }),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            To lead travel agency in the travel industry by providing\n            efficient and effective Services to our customers.\n          "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            To maintain a high class travel services at reasonable prices\n            through consistent Leadership controlled growth and excellent\n            commitment.\n          "
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
     ])
   },
 ]
@@ -8159,9 +8446,178 @@ var render = function () {
     "div",
     { staticClass: "Contact" },
     [
+      _c("loading", {
+        attrs: {
+          active: _vm.isLoading,
+          "can-cancel": true,
+          "on-cancel": _vm.onCancel,
+          color: _vm.color,
+          "is-full-page": _vm.fullPage,
+        },
+        on: {
+          "update:active": function ($event) {
+            _vm.isLoading = $event
+          },
+        },
+      }),
+      _vm._v(" "),
       _c("clientHeader"),
       _vm._v(" "),
-      _vm._m(0),
+      _c("div", { staticClass: "all-content" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "body" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "right" }, [
+            _c(
+              "form",
+              {
+                on: {
+                  submit: function ($event) {
+                    $event.preventDefault()
+                    return _vm.contactNow.apply(null, arguments)
+                  },
+                },
+              },
+              [
+                _c("h2", [_vm._v("Contact form")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "names" } }, [
+                    _vm._v("Fullname:"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.contacts.fullname,
+                        expression: "contacts.fullname",
+                      },
+                    ],
+                    attrs: {
+                      type: "text",
+                      name: "fullname",
+                      id: "",
+                      placeholder: "fullname",
+                    },
+                    domProps: { value: _vm.contacts.fullname },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.contacts, "fullname", $event.target.value)
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "names" } }, [
+                    _vm._v("Email Address:"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.contacts.email,
+                        expression: "contacts.email",
+                      },
+                    ],
+                    attrs: {
+                      type: "text",
+                      name: "email",
+                      id: "",
+                      placeholder: "email",
+                    },
+                    domProps: { value: _vm.contacts.email },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.contacts, "email", $event.target.value)
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "names" } }, [
+                    _vm._v("Subject:"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.contacts.subject,
+                        expression: "contacts.subject",
+                      },
+                    ],
+                    attrs: {
+                      type: "text",
+                      name: "subject",
+                      id: "",
+                      placeholder: "subject",
+                    },
+                    domProps: { value: _vm.contacts.subject },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.contacts, "subject", $event.target.value)
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "names" } }, [
+                    _vm._v("Message:"),
+                  ]),
+                  _vm._v(" "),
+                  _c("textarea", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.contacts.message,
+                        expression: "contacts.message",
+                      },
+                    ],
+                    attrs: {
+                      name: "message",
+                      id: "",
+                      cols: "30",
+                      rows: "10",
+                      placeholder: "message",
+                    },
+                    domProps: { value: _vm.contacts.message },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.contacts, "message", $event.target.value)
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _vm._m(2),
+              ]
+            ),
+          ]),
+        ]),
+      ]),
       _vm._v(" "),
       _c("clientFooter"),
     ],
@@ -8173,34 +8629,73 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "all-content" }, [
-      _c("div", { staticClass: "intro" }, [
-        _c("div", { staticClass: "intro-content" }, [
-          _c("div", { staticClass: "intro-body" }, [
-            _c(
-              "h2",
-              {
-                staticClass: "intro-header",
-                attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
-              },
-              [_vm._v("\n            Contact Us\n          ")]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass: "txt-shad-sm intro-desc",
-                attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
-              },
-              [
-                _vm._v(
-                  "\n            Let us help you understand everything.\n          "
-                ),
-              ]
-            ),
-          ]),
+    return _c("div", { staticClass: "intro" }, [
+      _c("div", { staticClass: "intro-content" }, [
+        _c("div", { staticClass: "intro-body" }, [
+          _c(
+            "h2",
+            {
+              staticClass: "intro-header",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [_vm._v("\n            Contact Us\n          ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "p",
+            {
+              staticClass: "txt-shad-sm intro-desc",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [
+              _vm._v(
+                "\n            Let us help you understand everything.\n          "
+              ),
+            ]
+          ),
         ]),
       ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "left" }, [
+      _c("h2", { attrs: { for: "rsl title" } }, [
+        _vm._v("We are always here to help you"),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "indicator" }, [_vm._v("- Reach Out to Us")]),
+      _vm._v(" "),
+      _c("h2", { attrs: { for: "rsl title" } }, [
+        _vm._v("Please fill out the contact form"),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "info" }, [
+        _c("div", [
+          _c("b", [_vm._v("Email: ")]),
+          _vm._v("info@makenafricasafaris.rw"),
+        ]),
+        _vm._v(" "),
+        _c("div", [_c("b", [_vm._v("Phone: ")]), _vm._v("(+250) 785 848 669")]),
+        _vm._v(" "),
+        _c("div", [
+          _c("b", [_vm._v("Address: ")]),
+          _vm._v("RN15, Kigali, Rwanda"),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "mybtn",
+        attrs: { type: "submit", value: "Send" },
+      }),
     ])
   },
 ]
@@ -8229,6 +8724,21 @@ var render = function () {
     "div",
     { staticClass: "Gallery" },
     [
+      _c("loading", {
+        attrs: {
+          active: _vm.isLoading,
+          "can-cancel": true,
+          "on-cancel": _vm.onCancel,
+          color: _vm.color,
+          "is-full-page": _vm.fullPage,
+        },
+        on: {
+          "update:active": function ($event) {
+            _vm.isLoading = $event
+          },
+        },
+      }),
+      _vm._v(" "),
       _c("clientHeader"),
       _vm._v(" "),
       _vm._m(0),
@@ -8296,6 +8806,21 @@ var render = function () {
     { staticClass: "home" },
     [
       _c("clientHeader"),
+      _vm._v(" "),
+      _c("loading", {
+        attrs: {
+          active: _vm.isLoading,
+          "can-cancel": true,
+          "on-cancel": _vm.onCancel,
+          color: _vm.color,
+          "is-full-page": _vm.fullPage,
+        },
+        on: {
+          "update:active": function ($event) {
+            _vm.isLoading = $event
+          },
+        },
+      }),
       _vm._v(" "),
       _c("div", { staticClass: "all-content" }, [
         _c("div", { staticClass: "jumbo" }, [
@@ -9570,6 +10095,21 @@ var render = function () {
     "div",
     { staticClass: "Services" },
     [
+      _c("loading", {
+        attrs: {
+          active: _vm.isLoading,
+          "can-cancel": true,
+          "on-cancel": _vm.onCancel,
+          color: _vm.color,
+          "is-full-page": _vm.fullPage,
+        },
+        on: {
+          "update:active": function ($event) {
+            _vm.isLoading = $event
+          },
+        },
+      }),
+      _vm._v(" "),
       _c("clientHeader"),
       _vm._v(" "),
       _c("div", { staticClass: "all-content" }, [
@@ -10667,6 +11207,21 @@ var render = function () {
     "div",
     { staticClass: "Services" },
     [
+      _c("loading", {
+        attrs: {
+          active: _vm.isLoading,
+          "can-cancel": true,
+          "on-cancel": _vm.onCancel,
+          color: _vm.color,
+          "is-full-page": _vm.fullPage,
+        },
+        on: {
+          "update:active": function ($event) {
+            _vm.isLoading = $event
+          },
+        },
+      }),
+      _vm._v(" "),
       _c("clientHeader"),
       _vm._v(" "),
       _c("div", { staticClass: "all-content" }, [
@@ -11092,6 +11647,21 @@ var render = function () {
     "div",
     { staticClass: "Trips" },
     [
+      _c("loading", {
+        attrs: {
+          active: _vm.isLoading,
+          "can-cancel": true,
+          "on-cancel": _vm.onCancel,
+          color: _vm.color,
+          "is-full-page": _vm.fullPage,
+        },
+        on: {
+          "update:active": function ($event) {
+            _vm.isLoading = $event
+          },
+        },
+      }),
+      _vm._v(" "),
       _c("clientHeader"),
       _vm._v(" "),
       _c("div", { staticClass: "all-content" }, [

@@ -93,8 +93,13 @@ $green: #044914;
     @media screen and (max-width: 900px) {
       padding: 2rem 3rem;
       width: 100vw;
+      grid-template-columns: 100%;
     }
     .left {
+      @media screen and (max-width: 900px) {
+        border-bottom: 1px #ffffff65 solid;
+        margin-bottom: 1rem;
+      }
       img {
         width: 150px;
       }
@@ -109,6 +114,10 @@ $green: #044914;
       display: flex;
       flex-direction: column;
       row-gap: 1rem;
+      @media screen and (max-width: 900px) {
+        border-bottom: 1px #ffffff65 solid;
+        margin-bottom: 1rem;
+      }
       label {
         font-weight: 600;
         font-size: 1.2rem;
@@ -154,6 +163,7 @@ $green: #044914;
         font-weight: 600;
         font-size: 1.2rem;
         color: #fff;
+        margin-bottom: 0.8rem;
       }
       ul {
         list-style: none;
@@ -180,7 +190,7 @@ $green: #044914;
     }
   }
   .copyright {
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: center;
     background: #1d1d1d;

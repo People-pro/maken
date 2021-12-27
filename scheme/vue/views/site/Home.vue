@@ -1,6 +1,13 @@
 <template>
   <div class="home">
     <clientHeader />
+    <loading
+      :active.sync="isLoading"
+      :can-cancel="true"
+      :on-cancel="onCancel"
+      :color="color"
+      :is-full-page="fullPage"
+    ></loading>
     <div class="all-content">
       <div class="jumbo">
         <div class="jumbo-content">

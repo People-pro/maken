@@ -1,5 +1,12 @@
 <template>
   <div class="Gallery">
+    <loading
+      :active.sync="isLoading"
+      :can-cancel="true"
+      :on-cancel="onCancel"
+      :color="color"
+      :is-full-page="fullPage"
+    ></loading>
     <clientHeader />
     <div class="all-content">
       <div class="intro">
