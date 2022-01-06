@@ -4057,6 +4057,443 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ViewPackage",
+  data: function data() {
+    return {
+      isLoading: false,
+      color: "#072e4d",
+      fullPage: true,
+      Settings: {
+        itemsToShow: 1,
+        centerMode: false,
+        autoPlay: true,
+        wheelControl: false,
+        trimWhiteSpace: true,
+        infiniteScroll: true,
+        playSpeed: 3000,
+        transition: 1000,
+        hoverPause: false,
+        breakpoints: {
+          400: {
+            itemsToShow: 1
+          },
+          800: {
+            itemsToShow: 2
+          },
+          1300: {
+            itemsToShow: 3
+          },
+          1600: {
+            itemsToShow: 3
+          }
+        }
+      }
+    };
+  },
+  methods: {
+    onCancel: function onCancel() {
+      console.log();
+    }
+  },
+  mounted: function mounted() {
+    var vm = this;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewTrip.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./scheme/vue/views/site/ViewTrip.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ViewPackage",
   data: function data() {
@@ -4295,7 +4732,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Mo
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);", ""]);
 
 // module
-exports.push([module.i, "* {\n  font-family: \"Poppins\", sans-serif;\n  outline: none;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n.help {\n  position: fixed;\n  bottom: 1.5rem;\n  right: 1.5rem;\n  padding: 1.1rem;\n  background-color: #ef6203;\n  border-radius: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  outline: none;\n  box-shadow: 0px 0px 10px 2px #0000004f;\n  transition: all 0.4s ease-in-out;\n}\n.help:hover, .help:focus {\n  background: #044914;\n}\n.help i {\n  color: white;\n  font-size: 2rem;\n}\n.app-loader {\n  position: fixed;\n  z-index: 9999999999999999999999999;\n  bottom: 20px;\n  right: 25px;\n}\n.app-loader .loading-panel {\n  width: 174px;\n  display: flex;\n  justify-content: center;\n  background: #000;\n  padding: 10px 13px;\n  align-items: center;\n  border: 1px solid #ddd;\n  border-radius: 5px;\n}\n.app-loader .loading-panel .text {\n  font-size: 19px;\n  margin-left: 19px;\n}\n.my-title {\n  font-size: 2.2rem;\n  font-weight: 500;\n  line-height: 2;\n}\n@media screen and (max-width: 900px) {\n.my-title {\n    font-size: 2rem;\n}\n}\n@media screen and (max-width: 800px) {\n.my-title {\n    font-size: 1.8rem;\n    line-height: 1.25;\n    padding-bottom: 0.5rem;\n}\n}\n.intro-header {\n  text-shadow: 0 4px 2px #0000007e;\n  color: white;\n  font-size: 4rem;\n  line-height: 1.25em;\n  font-weight: 700;\n  text-align: center;\n}\n@media screen and (max-width: 900px) {\n.intro-header {\n    font-size: 3rem;\n}\n}\n@media screen and (max-width: 800px) {\n.intro-header {\n    font-size: 2.25rem;\n    line-height: 1.25;\n    padding-bottom: 0.5rem;\n}\n}\n.intro-desc {\n  color: #fff;\n  font-weight: 400;\n  font-size: 1.25rem;\n  text-shadow: 0 4px 2px #0000007e;\n  text-align: center;\n}\n@media screen and (max-width: 900px) {\n.intro-desc {\n    font-size: 1rem;\n}\n}\n@media screen and (max-width: 800px) {\n.intro-desc {\n    font-size: 0.9rem;\n}\n}\n.myhr {\n  border: none;\n  border-top: 3px #ef6203 solid;\n  width: 70px;\n  margin-bottom: 1rem;\n}\n.mybtn {\n  padding: 0.8rem 1.5rem;\n  border: none;\n  color: white;\n  background: #ef6203;\n  border-radius: 3px;\n  transition: all 0.7s ease-in-out;\n  display: inline-block;\n}\n.mybtn:hover, .mybtn:focus {\n  box-shadow: inset 20em 3rem 0 0 #044914;\n  color: white;\n}\n@media screen and (max-width: 600px) {\n.mybtn {\n    font-size: 0.8rem;\n    padding: 0.6rem 1.2rem;\n}\n}\n.mybtn-o {\n  padding: 0.8rem 1.5rem;\n  border: none;\n  color: #ef6203;\n  border-radius: 3px;\n  transition: all 0.7s ease-in-out;\n  display: inline-block;\n  border: 2px #ef6203 solid;\n  background-color: #fff;\n}\n.mybtn-o:hover, .mybtn-o:focus {\n  box-shadow: inset 20em 3rem 0 0 #ef6203;\n  color: white;\n}\n@media screen and (max-width: 600px) {\n.mybtn-o {\n    font-size: 0.8rem;\n    padding: 0.6rem 1.2rem;\n}\n}\n.txt-shad {\n  text-shadow: 0 4px 2px #0000007e;\n}\n.txt-shad-sm {\n  text-shadow: 0 2px 2px #0000007e;\n}\n.d-flex {\n  display: flex;\n}\n.jc-center {\n  display: flex;\n  justify-content: center;\n}\n.ai-center {\n  display: flex;\n  align-items: center;\n}\n.intro {\n  background: url(\"/assets/images/pe3.jpg\");\n  background-size: cover;\n  background-position: center;\n  background-attachment: fixed;\n  position: relative;\n}\n.intro .intro-content {\n  padding: 3rem 0;\n  width: 100%;\n  height: 100%;\n  background: #000000a4;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.intro .intro-content .intro-body {\n  width: 100%;\n  padding: 0 15rem;\n}\n@media screen and (max-width: 1700px) {\n.intro .intro-content .intro-body {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.intro .intro-content .intro-body {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.intro .intro-content .intro-body {\n    padding: 2rem;\n}\n}\n", ""]);
+exports.push([module.i, "* {\n  font-family: \"Poppins\", sans-serif;\n  outline: none;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n.help {\n  position: fixed;\n  bottom: 1.5rem;\n  right: 1.5rem;\n  padding: 1.1rem;\n  background-color: #ef6203;\n  border-radius: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  outline: none;\n  box-shadow: 0px 0px 10px 2px #0000004f;\n  transition: all 0.4s ease-in-out;\n}\n.help:hover, .help:focus {\n  background: #044914;\n}\n.help i {\n  color: white;\n  font-size: 2rem;\n}\n.app-loader {\n  position: fixed;\n  z-index: 9999999999999999999999999;\n  bottom: 20px;\n  right: 25px;\n}\n.app-loader .loading-panel {\n  width: 174px;\n  display: flex;\n  justify-content: center;\n  background: #000;\n  padding: 10px 13px;\n  align-items: center;\n  border: 1px solid #ddd;\n  border-radius: 5px;\n}\n.app-loader .loading-panel .text {\n  font-size: 19px;\n  margin-left: 19px;\n}\n.my-title {\n  font-size: 2.2rem;\n  font-weight: 500;\n  line-height: 2;\n}\n@media screen and (max-width: 900px) {\n.my-title {\n    font-size: 2rem;\n}\n}\n@media screen and (max-width: 800px) {\n.my-title {\n    font-size: 1.8rem;\n    line-height: 1.25;\n    padding-bottom: 0.5rem;\n}\n}\n.intro-header {\n  text-shadow: 0 4px 2px #0000007e;\n  color: white;\n  font-size: 4rem;\n  line-height: 1.25em;\n  font-weight: 700;\n  text-align: center;\n}\n@media screen and (max-width: 900px) {\n.intro-header {\n    font-size: 3rem;\n}\n}\n@media screen and (max-width: 800px) {\n.intro-header {\n    font-size: 2.25rem;\n    line-height: 1.25;\n    padding-bottom: 0.5rem;\n}\n}\n.intro-desc {\n  color: #fff;\n  font-weight: 400;\n  font-size: 1.25rem;\n  text-shadow: 0 4px 2px #0000007e;\n  text-align: center;\n}\n@media screen and (max-width: 900px) {\n.intro-desc {\n    font-size: 1rem;\n}\n}\n@media screen and (max-width: 800px) {\n.intro-desc {\n    font-size: 0.9rem;\n}\n}\n.myhr {\n  border: none;\n  border-top: 3px #ef6203 solid;\n  width: 70px;\n  margin-bottom: 1rem;\n}\n.mybtn {\n  padding: 0.8rem 1.5rem;\n  border: none;\n  color: white;\n  background: #ef6203;\n  border-radius: 3px;\n  transition: all 0.7s ease-in-out;\n  display: inline-block;\n  cursor: pointer;\n}\n.mybtn:hover, .mybtn:focus {\n  box-shadow: inset 20em 3rem 0 0 #044914;\n  color: white;\n}\n@media screen and (max-width: 600px) {\n.mybtn {\n    font-size: 0.8rem;\n    padding: 0.6rem 1.2rem;\n}\n}\n.mybtn-o {\n  padding: 0.8rem 1.5rem;\n  border: none;\n  color: #ef6203;\n  border-radius: 3px;\n  transition: all 0.7s ease-in-out;\n  display: inline-block;\n  border: 2px #ef6203 solid;\n  background-color: #fff;\n  cursor: pointer;\n}\n.mybtn-o:hover, .mybtn-o:focus {\n  box-shadow: inset 20em 3rem 0 0 #ef6203;\n  color: white;\n}\n@media screen and (max-width: 600px) {\n.mybtn-o {\n    font-size: 0.8rem;\n    padding: 0.6rem 1.2rem;\n}\n}\n.txt-shad {\n  text-shadow: 0 4px 2px #0000007e;\n}\n.txt-shad-sm {\n  text-shadow: 0 2px 2px #0000007e;\n}\n.d-flex {\n  display: flex;\n}\n.jc-center {\n  display: flex;\n  justify-content: center;\n}\n.ai-center {\n  display: flex;\n  align-items: center;\n}\n.intro {\n  background: url(\"/assets/images/pe3.jpg\");\n  background-size: cover;\n  background-position: center;\n  background-attachment: fixed;\n  position: relative;\n}\n.intro .intro-content {\n  padding: 3rem 0;\n  width: 100%;\n  height: 100%;\n  background: #000000a4;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.intro .intro-content .intro-body {\n  width: 100%;\n  padding: 0 15rem;\n}\n@media screen and (max-width: 1700px) {\n.intro .intro-content .intro-body {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.intro .intro-content .intro-body {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.intro .intro-content .intro-body {\n    padding: 2rem;\n}\n}\n", ""]);
 
 // exports
 
@@ -4599,7 +5036,26 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".ViewPackage {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage {\n    width: 100vw;\n}\n}\n.ViewPackage .view-package-widget .widget-header .widget-body {\n  height: 500px;\n}\n.ViewPackage .view-package-widget .widget-header .widget-body .widget-item img {\n  height: 500px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.ViewPackage .view-package-widget .widget-desc {\n  padding: 4rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 2rem;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content {\n  display: grid;\n  grid-template-columns: 50% 50%;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc .desc-content {\n    grid-template-columns: 100%;\n    grid-row-gap: 1rem;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body {\n  display: flex;\n  flex-direction: column;\n  -moz-column-gap: 1rem;\n       column-gap: 1rem;\n  row-gap: 1rem;\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item {\n  display: flex;\n  font-size: 1.15rem;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item {\n    font-size: 1rem;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item .title {\n  font-weight: 600;\n}\n.ViewPackage .view-package-widget .widget-desc .desc-footer {\n  margin-top: 1.5rem;\n}\n.ViewPackage .view-package-widget .widget-inclusives {\n  padding: 2rem 15rem;\n  background: #eee;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem;\n}\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content {\n  display: grid;\n  grid-template-columns: 45% 45%;\n  grid-column-gap: 10%;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content {\n    grid-template-columns: 100%;\n}\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .left .inclusive-body .inclusive-item i {\n  color: green;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .left .inclusive-body .inclusive-item label {\n  line-height: 1.5;\n  font-weight: 500;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .right .inclusive-body .inclusive-item i {\n  color: red;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .right .inclusive-body .inclusive-item label {\n  line-height: 1.5;\n  font-weight: 500;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-footer {\n  margin-top: 1.5rem;\n}\n.ViewPackage .packages {\n  position: relative;\n  background: #f5f5f5;\n  padding: 4rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .packages {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .packages {\n    padding: 2rem;\n}\n}\n.ViewPackage .packages .header {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  width: 100%;\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .packages .header {\n    align-items: flex-start;\n}\n}\n.ViewPackage .packages .header .desc {\n  color: #333333;\n  font-weight: 400;\n  font-size: 1.1rem;\n}\n@media screen and (max-width: 1200px) {\n.ViewPackage .packages .header .desc {\n    font-size: 1rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .packages .header .desc {\n    font-size: 0.8rem;\n}\n}\n.ViewPackage .packages .packages-body {\n  display: grid;\n  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;\n  grid-column-gap: 2%;\n  grid-row-gap: 2rem;\n  margin: 2rem 0;\n  flex-wrap: wrap;\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .packages .packages-body {\n    grid-template-columns: 48% 48%;\n}\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .packages .packages-body {\n    grid-template-columns: 100%;\n}\n}\n.ViewPackage .packages .packages-body .package-item {\n  background: #fff;\n  border-radius: 1.5rem;\n  box-shadow: 0px 0px 10px 3px #4d4d4d2a;\n  transition: all 0.4s ease-in-out;\n}\n.ViewPackage .packages .packages-body .package-item:hover, .ViewPackage .packages .packages-body .package-item:focus {\n  transform: scale(1.2, 1.2);\n  z-index: 1;\n}\n.ViewPackage .packages .packages-body .package-item .content {\n  display: flex;\n  flex-direction: column;\n  position: relative;\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section {\n  position: relative;\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n  height: 250px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border-radius: 1.5rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n    height: 200px;\n}\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n    height: 250px;\n}\n}\n@media screen and (max-width: 700px) {\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n    height: 200px;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section .specs {\n  background-color: #fff;\n  border-radius: 100px;\n  padding: 0.4rem 1rem;\n  position: absolute;\n  bottom: -10px;\n  width: 80%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  color: #2b2b2b;\n  font-size: 0.8rem;\n  box-shadow: 0px 0px 10px 3px #0000003b;\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section .specs .region {\n  display: flex;\n  align-items: center;\n  -moz-column-gap: 0.25rem;\n       column-gap: 0.25rem;\n}\n.ViewPackage .packages .packages-body .package-item .content .text-section {\n  padding: 0 1rem;\n  padding-top: 2rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .text-section {\n    padding: 0 0.75rem;\n    padding-top: 1.5rem;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content .text-section .package-title {\n  color: #1d1d1d;\n  font-weight: 500;\n  font-size: 1.2rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .text-section .package-title {\n    font-size: 1rem;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content hr {\n  align-self: center;\n  width: 90%;\n  border: none;\n  border-top: 1px #eee solid;\n  margin: 1rem 0;\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer {\n  display: flex;\n  justify-content: space-between;\n  padding: 0 1rem;\n  padding-bottom: 1rem;\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer .money {\n  color: #ef6203;\n  font-size: 1.5rem;\n  font-weight: 500;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .content-footer .money {\n    font-size: 1.25rem;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer .book .book-btn {\n  color: #1d1d1d;\n  font-size: 0.8rem;\n  font-weight: 600;\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer .book .book-btn:hover {\n  color: #ef6203;\n}\n.ViewPackage .packages .packages-footer {\n  padding: 2rem 0;\n}\n", ""]);
+exports.push([module.i, ".ViewPackage {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage {\n    width: 100vw;\n}\n}\n.ViewPackage .view-package-widget .widget-header .widget-body {\n  height: 500px;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-header .widget-body {\n    height: 400px;\n}\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .view-package-widget .widget-header .widget-body {\n    height: 250px;\n}\n}\n.ViewPackage .view-package-widget .widget-header .widget-body .widget-item img {\n  height: 500px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-header .widget-body .widget-item img {\n    height: 400px;\n}\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .view-package-widget .widget-header .widget-body .widget-item img {\n    height: 300px;\n}\n}\n.ViewPackage .view-package-widget .widget-desc {\n  padding: 4rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 2rem;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content {\n  display: grid;\n  grid-template-columns: 50% 50%;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc .desc-content {\n    grid-template-columns: 100%;\n    grid-row-gap: 1rem;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body {\n  display: flex;\n  flex-direction: column;\n  -moz-column-gap: 1rem;\n       column-gap: 1rem;\n  row-gap: 1rem;\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item {\n  display: flex;\n  font-size: 1.15rem;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item {\n    font-size: 1rem;\n}\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item {\n    flex-direction: column;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item .title {\n  font-weight: 600;\n}\n.ViewPackage .view-package-widget .widget-desc .desc-footer {\n  margin-top: 1.5rem;\n}\n.ViewPackage .view-package-widget .widget-inclusives {\n  padding: 2rem 15rem;\n  background: #eee;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem;\n}\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content {\n  display: flex;\n  justify-content: space-evenly;\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content {\n    flex-direction: column;\n}\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .left .inclusive-body .inclusive-item i {\n  color: green;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .left .inclusive-body .inclusive-item label {\n  line-height: 1.5;\n  font-weight: 500;\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .right {\n    margin-top: 2rem;\n}\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .right .inclusive-body .inclusive-item i {\n  color: red;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .right .inclusive-body .inclusive-item label {\n  line-height: 1.5;\n  font-weight: 500;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-footer {\n  margin-top: 1.5rem;\n}\n.ViewPackage .packages {\n  position: relative;\n  background: #f5f5f5;\n  padding: 4rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .packages {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .packages {\n    padding: 2rem;\n}\n}\n.ViewPackage .packages .header {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  width: 100%;\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .packages .header {\n    align-items: flex-start;\n}\n}\n.ViewPackage .packages .header .desc {\n  color: #333333;\n  font-weight: 400;\n  font-size: 1.1rem;\n}\n@media screen and (max-width: 1200px) {\n.ViewPackage .packages .header .desc {\n    font-size: 1rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .packages .header .desc {\n    font-size: 0.8rem;\n}\n}\n.ViewPackage .packages .packages-body {\n  display: grid;\n  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;\n  grid-column-gap: 2%;\n  grid-row-gap: 2rem;\n  margin: 2rem 0;\n  flex-wrap: wrap;\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .packages .packages-body {\n    grid-template-columns: 48% 48%;\n}\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .packages .packages-body {\n    grid-template-columns: 100%;\n}\n}\n.ViewPackage .packages .packages-body .package-item {\n  background: #fff;\n  border-radius: 1.5rem;\n  box-shadow: 0px 0px 10px 3px #4d4d4d2a;\n  transition: all 0.4s ease-in-out;\n}\n.ViewPackage .packages .packages-body .package-item:hover, .ViewPackage .packages .packages-body .package-item:focus {\n  transform: scale(1.2, 1.2);\n  z-index: 1;\n}\n.ViewPackage .packages .packages-body .package-item .content {\n  display: flex;\n  flex-direction: column;\n  position: relative;\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section {\n  position: relative;\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n  height: 250px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border-radius: 1.5rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n    height: 200px;\n}\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n    height: 250px;\n}\n}\n@media screen and (max-width: 700px) {\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n    height: 200px;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section .specs {\n  background-color: #fff;\n  border-radius: 100px;\n  padding: 0.4rem 1rem;\n  position: absolute;\n  bottom: -10px;\n  width: 80%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  color: #2b2b2b;\n  font-size: 0.8rem;\n  box-shadow: 0px 0px 10px 3px #0000003b;\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section .specs .region {\n  display: flex;\n  align-items: center;\n  -moz-column-gap: 0.25rem;\n       column-gap: 0.25rem;\n}\n.ViewPackage .packages .packages-body .package-item .content .text-section {\n  padding: 0 1rem;\n  padding-top: 2rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .text-section {\n    padding: 0 0.75rem;\n    padding-top: 1.5rem;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content .text-section .package-title {\n  color: #1d1d1d;\n  font-weight: 500;\n  font-size: 1.2rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .text-section .package-title {\n    font-size: 1rem;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content hr {\n  align-self: center;\n  width: 90%;\n  border: none;\n  border-top: 1px #eee solid;\n  margin: 1rem 0;\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer {\n  display: flex;\n  justify-content: space-between;\n  padding: 0 1rem;\n  padding-bottom: 1rem;\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer .money {\n  color: #ef6203;\n  font-size: 1.5rem;\n  font-weight: 500;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .content-footer .money {\n    font-size: 1.25rem;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer .book .book-btn {\n  color: #1d1d1d;\n  font-size: 0.8rem;\n  font-weight: 600;\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer .book .book-btn:hover {\n  color: #ef6203;\n}\n.ViewPackage .packages .packages-footer {\n  padding: 2rem 0;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewTrip.vue?vue&type=style&index=0&lang=scss&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./scheme/vue/views/site/ViewTrip.vue?vue&type=style&index=0&lang=scss& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".ViewPackage {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage {\n    width: 100vw;\n}\n}\n.ViewPackage .view-package-widget .widget-header .widget-body {\n  height: 500px;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-header .widget-body {\n    height: 400px;\n}\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .view-package-widget .widget-header .widget-body {\n    height: 300px;\n}\n}\n.ViewPackage .view-package-widget .widget-header .widget-body .widget-item img {\n  height: 500px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-header .widget-body .widget-item img {\n    height: 400px;\n}\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .view-package-widget .widget-header .widget-body .widget-item img {\n    height: 250px;\n}\n}\n.ViewPackage .view-package-widget .widget-desc {\n  padding: 4rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 2rem;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content {\n  display: flex;\n  justify-content: space-between;\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .view-package-widget .widget-desc .desc-content {\n    flex-direction: column;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content img {\n  width: 90%;\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body {\n  display: flex;\n  flex-direction: column;\n  -moz-column-gap: 1rem;\n       column-gap: 1rem;\n  row-gap: 1rem;\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item {\n  display: flex;\n  font-size: 1.15rem;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item {\n    font-size: 1rem;\n}\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item {\n    flex-direction: column;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item .title {\n  font-weight: 600;\n  margin-right: 0.5rem;\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item .price {\n  font-weight: 600;\n  color: #ef6203;\n  font-size: 1.25;\n}\n.ViewPackage .view-package-widget .widget-desc .desc-footer {\n  margin-top: 1.5rem;\n}\n.ViewPackage .view-package-widget .widget-inclusives {\n  padding: 2rem 15rem;\n  background: #eee;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem;\n}\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content {\n  display: flex;\n  justify-content: space-evenly;\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content {\n    flex-direction: column;\n}\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .left .inclusive-body .inclusive-item i {\n  color: green;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .left .inclusive-body .inclusive-item label {\n  line-height: 1.5;\n  font-weight: 500;\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .right {\n    margin-top: 2rem;\n}\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .right .inclusive-body .inclusive-item i {\n  color: red;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .right .inclusive-body .inclusive-item label {\n  line-height: 1.5;\n  font-weight: 500;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-footer {\n  margin-top: 1.5rem;\n}\n.ViewPackage .trips {\n  position: relative;\n  background: #f5f5f5;\n  padding: 4rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .trips {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .trips {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .trips {\n    padding: 2rem;\n}\n}\n.ViewPackage .trips .header {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  width: 100%;\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .trips .header {\n    align-items: flex-start;\n}\n}\n.ViewPackage .trips .header .desc {\n  color: #333333;\n  font-weight: 400;\n  font-size: 1.1rem;\n}\n@media screen and (max-width: 1200px) {\n.ViewPackage .trips .header .desc {\n    font-size: 1rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .trips .header .desc {\n    font-size: 0.8rem;\n}\n}\n.ViewPackage .trips .trips-body {\n  display: grid;\n  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;\n  grid-column-gap: 2%;\n  grid-row-gap: 2rem;\n  margin: 2rem 0;\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .trips .trips-body {\n    grid-template-columns: 48% 48%;\n}\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .trips .trips-body {\n    grid-template-columns: 100%;\n}\n}\n.ViewPackage .trips .trips-body .trip-item {\n  background: #fff;\n  border-radius: 0 1.5rem 0 1.5rem;\n  box-shadow: 0px 0px 10px 3px #4d4d4d2a;\n  transition: all 0.4s ease-in-out;\n  position: relative;\n}\n.ViewPackage .trips .trips-body .trip-item:hover, .ViewPackage .trips .trips-body .trip-item:focus {\n  transform: scale(1.2, 1.2);\n  z-index: 1;\n}\n.ViewPackage .trips .trips-body .trip-item .date-widget {\n  position: absolute;\n  top: -10px;\n  left: 0;\n  background-color: #ef6203;\n  color: white;\n  border-radius: 0 1.5rem 1.5rem 0;\n  padding: 0.2rem 0.4rem;\n}\n.ViewPackage .trips .trips-body .trip-item .content {\n  display: flex;\n  flex-direction: column;\n  position: relative;\n}\n.ViewPackage .trips .trips-body .trip-item .content .img-section {\n  position: relative;\n}\n.ViewPackage .trips .trips-body .trip-item .content .img-section img {\n  height: 250px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border-radius: 0 1.5rem 0 1.5rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .trips .trips-body .trip-item .content .img-section img {\n    height: 200px;\n}\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .trips .trips-body .trip-item .content .img-section img {\n    height: 250px;\n}\n}\n@media screen and (max-width: 700px) {\n.ViewPackage .trips .trips-body .trip-item .content .img-section img {\n    height: 200px;\n}\n}\n.ViewPackage .trips .trips-body .trip-item .content .img-section .specs {\n  background-color: #fff;\n  border-radius: 100px;\n  padding: 0.4rem 1rem;\n  position: absolute;\n  bottom: -10px;\n  width: 80%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  color: #2b2b2b;\n  font-size: 0.8rem;\n  box-shadow: 0px 0px 10px 3px #0000003b;\n}\n.ViewPackage .trips .trips-body .trip-item .content .img-section .specs .region {\n  display: flex;\n  align-items: center;\n  -moz-column-gap: 0.25rem;\n       column-gap: 0.25rem;\n}\n.ViewPackage .trips .trips-body .trip-item .content .text-section {\n  padding: 0 1rem;\n  padding-top: 2rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .trips .trips-body .trip-item .content .text-section {\n    padding: 0 0.75rem;\n    padding-top: 1.5rem;\n}\n}\n.ViewPackage .trips .trips-body .trip-item .content .text-section .trip-title {\n  color: #1d1d1d;\n  font-weight: 500;\n  font-size: 1.2rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .trips .trips-body .trip-item .content .text-section .trip-title {\n    font-size: 1rem;\n}\n}\n.ViewPackage .trips .trips-body .trip-item .content hr {\n  align-self: center;\n  width: 90%;\n  border: none;\n  border-top: 1px #eee solid;\n  margin: 1rem 0;\n}\n.ViewPackage .trips .trips-body .trip-item .content .content-footer {\n  display: flex;\n  justify-content: space-between;\n  padding: 0 1rem;\n  padding-bottom: 1rem;\n}\n.ViewPackage .trips .trips-body .trip-item .content .content-footer .money {\n  color: #ef6203;\n  font-size: 1.5rem;\n  font-weight: 500;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .trips .trips-body .trip-item .content .content-footer .money {\n    font-size: 1.25rem;\n}\n}\n.ViewPackage .trips .trips-body .trip-item .content .content-footer .book .book-btn {\n  color: #1d1d1d;\n  font-size: 0.8rem;\n  font-weight: 600;\n}\n.ViewPackage .trips .trips-body .trip-item .content .content-footer .book .book-btn:hover {\n  color: #ef6203;\n}\n.ViewPackage .trips .trips-footer {\n  padding: 2rem 0;\n}\n", ""]);
 
 // exports
 
@@ -5435,6 +5891,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./ViewPackage.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewPackage.vue?vue&type=style&index=0&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewTrip.vue?vue&type=style&index=0&lang=scss&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./scheme/vue/views/site/ViewTrip.vue?vue&type=style&index=0&lang=scss& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./ViewTrip.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewTrip.vue?vue&type=style&index=0&lang=scss&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -12473,6 +12959,166 @@ var render = function () {
               attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
             },
             [
+              _c(
+                "router-link",
+                { staticClass: "trip-item", attrs: { to: "/viewTrip/1" } },
+                [
+                  _c("div", { staticClass: "content" }, [
+                    _c("div", { staticClass: "img-section jc-center" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/assets/images/pack1.jpg",
+                          alt: "",
+                          srcset: "",
+                        },
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "specs" }, [
+                        _c("div", { staticClass: "region" }, [
+                          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "Tourism Region" } }, [
+                            _vm._v("Rwanda"),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "days" }, [
+                          _c("label", { attrs: { for: "Days" } }, [
+                            _vm._v("5 Days"),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-section" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "trip-title",
+                          attrs: { for: "Akagera National Park" },
+                        },
+                        [_vm._v("Akagera National Park")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "content-footer" }, [
+                      _c("div", { staticClass: "money" }, [
+                        _c("label", { attrs: { for: "Amount" } }, [
+                          _vm._v("$4300"),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "book" },
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "book-btn",
+                              attrs: { to: "/book/1" },
+                            },
+                            [
+                              _vm._v("View more "),
+                              _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                            ]
+                          ),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "date-widget" }, [
+                    _c("label", { attrs: { for: "trip date" } }, [
+                      _vm._v("28th, Dec 2021"),
+                    ]),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "router-link",
+                { staticClass: "trip-item", attrs: { to: "/viewTrip/1" } },
+                [
+                  _c("div", { staticClass: "content" }, [
+                    _c("div", { staticClass: "img-section jc-center" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/assets/uploaded/trip1.jpg",
+                          alt: "",
+                          srcset: "",
+                        },
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "specs" }, [
+                        _c("div", { staticClass: "region" }, [
+                          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "Tourism Region" } }, [
+                            _vm._v("Rwanda"),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "days" }, [
+                          _c("label", { attrs: { for: "Days" } }, [
+                            _vm._v("2 Days"),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-section" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "trip-title",
+                          attrs: { for: "Nyungwe National Park" },
+                        },
+                        [_vm._v("Nyungwe National Park")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "content-footer" }, [
+                      _c("div", { staticClass: "money" }, [
+                        _c("label", { attrs: { for: "Amount" } }, [
+                          _vm._v("$2400"),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "book" },
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "book-btn",
+                              attrs: { to: "/book/1" },
+                            },
+                            [
+                              _vm._v("View more "),
+                              _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                            ]
+                          ),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "date-widget" }, [
+                    _c("label", { attrs: { for: "trip date" } }, [
+                      _vm._v("28th, Dec 2021"),
+                    ]),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
               _c("div", { staticClass: "trip-item" }, [
                 _c("div", { staticClass: "content" }, [
                   _vm._m(2),
@@ -12664,71 +13310,8 @@ var render = function () {
                 _vm._v(" "),
                 _vm._m(25),
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "trip-item" }, [
-                _c("div", { staticClass: "content" }, [
-                  _vm._m(26),
-                  _vm._v(" "),
-                  _vm._m(27),
-                  _vm._v(" "),
-                  _c("hr"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(28),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "book" },
-                      [
-                        _c(
-                          "router-link",
-                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
-                          [
-                            _vm._v("View more "),
-                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
-                          ]
-                        ),
-                      ],
-                      1
-                    ),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _vm._m(29),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "trip-item" }, [
-                _c("div", { staticClass: "content" }, [
-                  _vm._m(30),
-                  _vm._v(" "),
-                  _vm._m(31),
-                  _vm._v(" "),
-                  _c("hr"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(32),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "book" },
-                      [
-                        _c(
-                          "router-link",
-                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
-                          [
-                            _vm._v("View more "),
-                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
-                          ]
-                        ),
-                      ],
-                      1
-                    ),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _vm._m(33),
-              ]),
-            ]
+            ],
+            1
           ),
           _vm._v(" "),
           _c(
@@ -12805,106 +13388,6 @@ var staticRenderFns = [
         ]),
       ]
     )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "img-section jc-center" }, [
-      _c("img", {
-        attrs: { src: "/assets/images/pack1.jpg", alt: "", srcset: "" },
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "specs" }, [
-        _c("div", { staticClass: "region" }, [
-          _c("i", { staticClass: "fas fa-map-marker-alt" }),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "days" }, [
-          _c("label", { attrs: { for: "Days" } }, [_vm._v("5 Days")]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-section" }, [
-      _c(
-        "label",
-        { staticClass: "trip-title", attrs: { for: "Akagera National Park" } },
-        [_vm._v("Akagera National Park")]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "money" }, [
-      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$4300")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "date-widget" }, [
-      _c("label", { attrs: { for: "trip date" } }, [_vm._v("28th, Dec 2021")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "img-section jc-center" }, [
-      _c("img", {
-        attrs: { src: "/assets/images/canopy.jpg", alt: "", srcset: "" },
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "specs" }, [
-        _c("div", { staticClass: "region" }, [
-          _c("i", { staticClass: "fas fa-map-marker-alt" }),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "days" }, [
-          _c("label", { attrs: { for: "Days" } }, [_vm._v("2 Days")]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-section" }, [
-      _c(
-        "label",
-        { staticClass: "trip-title", attrs: { for: "Nyungwe National Park" } },
-        [_vm._v("Nyungwe National Park")]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "money" }, [
-      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$2400")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "date-widget" }, [
-      _c("label", { attrs: { for: "trip date" } }, [_vm._v("28th, Dec 2021")]),
-    ])
   },
   function () {
     var _vm = this
@@ -13255,6 +13738,8 @@ var render = function () {
         _vm._m(0),
         _vm._v(" "),
         _c("div", { staticClass: "view-package-widget" }, [
+          _vm._m(1),
+          _vm._v(" "),
           _c(
             "div",
             { staticClass: "widget-header" },
@@ -13295,8 +13780,6 @@ var render = function () {
             ],
             1
           ),
-          _vm._v(" "),
-          _vm._m(1),
           _vm._v(" "),
           _vm._m(2),
         ]),
@@ -13580,6 +14063,44 @@ var staticRenderFns = [
             ]),
           ]),
         ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "desc-body" }, [
+          _c("div", { staticClass: "desc-item" }, [
+            _c("label", { staticClass: "title", attrs: { for: "Price" } }, [
+              _vm._v("Price(Rwandans):"),
+            ]),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "item price", attrs: { for: "price" } },
+              [_vm._v("45K")]
+            ),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "desc-item" }, [
+            _c("label", { staticClass: "title", attrs: { for: "Price" } }, [
+              _vm._v("Price(Residents):"),
+            ]),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "item price", attrs: { for: "price" } },
+              [_vm._v("90K")]
+            ),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "desc-item" }, [
+            _c("label", { staticClass: "title", attrs: { for: "Price" } }, [
+              _vm._v("Price(Foreigners):"),
+            ]),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "item price", attrs: { for: "price" } },
+              [_vm._v("130K")]
+            ),
+          ]),
+        ]),
       ]),
       _vm._v(" "),
       _c(
@@ -13699,6 +14220,30 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("label", { attrs: { for: "Travel insurance" } }, [
                 _vm._v("Travel insurance"),
+              ]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "right" }, [
+          _c(
+            "label",
+            { staticClass: "my-title", attrs: { for: "Trip Overview" } },
+            [_vm._v("Requirements")]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "myhr" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "inclusive-body" }, [
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("label", { attrs: { for: "National ID(Rwandans)" } }, [
+                _vm._v("National ID(Rwandans)"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("label", { attrs: { for: "Passport(Foreigners)" } }, [
+                _vm._v("Passport(Foreigners)"),
               ]),
             ]),
           ]),
@@ -13917,6 +14462,836 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "money" }, [
       _c("label", { attrs: { for: "Amount" } }, [_vm._v("$4300")]),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewTrip.vue?vue&type=template&id=34f77e0c&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./scheme/vue/views/site/ViewTrip.vue?vue&type=template&id=34f77e0c& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "ViewPackage" },
+    [
+      _c("loading", {
+        attrs: {
+          active: _vm.isLoading,
+          "can-cancel": true,
+          "on-cancel": _vm.onCancel,
+          color: _vm.color,
+          "is-full-page": _vm.fullPage,
+        },
+        on: {
+          "update:active": function ($event) {
+            _vm.isLoading = $event
+          },
+        },
+      }),
+      _vm._v(" "),
+      _c("clientHeader"),
+      _vm._v(" "),
+      _c("div", { staticClass: "all-content" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "view-package-widget" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "widget-header" },
+            [
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "hooper",
+                {
+                  staticClass: "widget-body",
+                  attrs: { settings: _vm.Settings },
+                },
+                [
+                  _c("slide", { staticClass: "widget-item" }, [
+                    _c("img", {
+                      attrs: { src: "/assets/uploaded/pack1.jpg", alt: "" },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("slide", { staticClass: "widget-item" }, [
+                    _c("img", {
+                      attrs: { src: "/assets/uploaded/akag2.jpg", alt: "" },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("slide", { staticClass: "widget-item" }, [
+                    _c("img", {
+                      attrs: { src: "/assets/uploaded/akag3.jpg", alt: "" },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("slide", { staticClass: "widget-item" }, [
+                    _c("img", {
+                      attrs: { src: "/assets/uploaded/akag4.jpg", alt: "" },
+                    }),
+                  ]),
+                ],
+                1
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _vm._m(3),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "trips" }, [
+          _vm._m(4),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "trips-body",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [
+              _c("div", { staticClass: "trip-item" }, [
+                _c("div", { staticClass: "content" }, [
+                  _vm._m(5),
+                  _vm._v(" "),
+                  _vm._m(6),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content-footer" }, [
+                    _vm._m(7),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "book" },
+                      [
+                        _c(
+                          "router-link",
+                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
+                          [
+                            _vm._v("View more "),
+                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                          ]
+                        ),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _vm._m(8),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "trip-item" }, [
+                _c("div", { staticClass: "content" }, [
+                  _vm._m(9),
+                  _vm._v(" "),
+                  _vm._m(10),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content-footer" }, [
+                    _vm._m(11),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "book" },
+                      [
+                        _c(
+                          "router-link",
+                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
+                          [
+                            _vm._v("View more "),
+                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                          ]
+                        ),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _vm._m(12),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "trip-item" }, [
+                _c("div", { staticClass: "content" }, [
+                  _vm._m(13),
+                  _vm._v(" "),
+                  _vm._m(14),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content-footer" }, [
+                    _vm._m(15),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "book" },
+                      [
+                        _c(
+                          "router-link",
+                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
+                          [
+                            _vm._v("View more "),
+                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                          ]
+                        ),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _vm._m(16),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "trip-item" }, [
+                _c("div", { staticClass: "content" }, [
+                  _vm._m(17),
+                  _vm._v(" "),
+                  _vm._m(18),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content-footer" }, [
+                    _vm._m(19),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "book" },
+                      [
+                        _c(
+                          "router-link",
+                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
+                          [
+                            _vm._v("View more "),
+                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                          ]
+                        ),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _vm._m(20),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "trips-footer jc-center",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [
+              _c(
+                "router-link",
+                { staticClass: "mybtn-o", attrs: { to: "/trips" } },
+                [_vm._v("View More Trips")]
+              ),
+            ],
+            1
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("clientFooter"),
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "intro" }, [
+      _c("div", { staticClass: "intro-content" }, [
+        _c("div", { staticClass: "intro-body" }, [
+          _c(
+            "h2",
+            {
+              staticClass: "intro-header",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [_vm._v("\n            Akagera National Park Trip\n          ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "p",
+            {
+              staticClass: "txt-shad-sm intro-desc",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [
+              _vm._v(
+                "\n            Come join us and lets explore beyond expectations.\n          "
+              ),
+            ]
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "widget-desc" }, [
+      _c("div", { staticClass: "desc-content" }, [
+        _c("div", [
+          _c("img", { attrs: { src: "/assets/uploaded/trip1.jpg", alt: "" } }),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "label",
+            { staticClass: "my-title", attrs: { for: "Trip Overview" } },
+            [_vm._v("Overview")]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "myhr" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "desc-body" }, [
+            _c("div", { staticClass: "desc-item" }, [
+              _c(
+                "label",
+                { staticClass: "title", attrs: { for: "Destination" } },
+                [_vm._v("Destination:")]
+              ),
+              _vm._v(" "),
+              _c(
+                "label",
+                {
+                  staticClass: "item",
+                  attrs: { for: "Akagera National Park" },
+                },
+                [_vm._v("Akagera National Park")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "desc-item" }, [
+              _c(
+                "label",
+                { staticClass: "title", attrs: { for: "Destination" } },
+                [_vm._v("Duration:")]
+              ),
+              _vm._v(" "),
+              _c("label", { staticClass: "item", attrs: { for: "5 Days" } }, [
+                _vm._v("5 Days"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "desc-item" }, [
+              _c(
+                "label",
+                { staticClass: "title", attrs: { for: "Destination" } },
+                [_vm._v("Country:")]
+              ),
+              _vm._v(" "),
+              _c("label", { staticClass: "item", attrs: { for: "Rwanda" } }, [
+                _vm._v("Rwanda"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "desc-item" }, [
+              _c(
+                "label",
+                { staticClass: "title", attrs: { for: "Destination" } },
+                [_vm._v("Region/Province:")]
+              ),
+              _vm._v(" "),
+              _c(
+                "label",
+                { staticClass: "item", attrs: { for: "Eastern Province" } },
+                [_vm._v("Eastern Province")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "desc-item" }, [
+              _c("label", { staticClass: "title", attrs: { for: "Min Age" } }, [
+                _vm._v("Min Age:"),
+              ]),
+              _vm._v(" "),
+              _c("label", { staticClass: "item", attrs: { for: "16 Years" } }, [
+                _vm._v("16 Years"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "desc-item" }, [
+              _c(
+                "label",
+                { staticClass: "title", attrs: { for: "Max People" } },
+                [_vm._v("Max People:")]
+              ),
+              _vm._v(" "),
+              _c("label", { staticClass: "item", attrs: { for: "6" } }, [
+                _vm._v("6"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "desc-item" }, [
+              _c("label", { staticClass: "title", attrs: { for: "Price" } }, [
+                _vm._v("Price(Rwandans):"),
+              ]),
+              _vm._v(" "),
+              _c(
+                "label",
+                { staticClass: "item price", attrs: { for: "price" } },
+                [_vm._v("45K")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "desc-item" }, [
+              _c("label", { staticClass: "title", attrs: { for: "Price" } }, [
+                _vm._v("Price(Residents):"),
+              ]),
+              _vm._v(" "),
+              _c(
+                "label",
+                { staticClass: "item price", attrs: { for: "price" } },
+                [_vm._v("90K")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "desc-item" }, [
+              _c("label", { staticClass: "title", attrs: { for: "Price" } }, [
+                _vm._v("Price(Foreigners):"),
+              ]),
+              _vm._v(" "),
+              _c(
+                "label",
+                { staticClass: "item price", attrs: { for: "price" } },
+                [_vm._v("130K")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "desc-item" }, [
+              _c("button", { staticClass: "mybtn" }, [_vm._v("Book Now")]),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "header",
+        staticStyle: { "margin-left": "1rem" },
+        attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+      },
+      [
+        _c(
+          "label",
+          {
+            staticClass: "my-title",
+            attrs: { for: "Akagera National Park Images" },
+          },
+          [_vm._v("Akagera National Park Images")]
+        ),
+        _vm._v(" "),
+        _c("hr", { staticClass: "myhr" }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "widget-inclusives" }, [
+      _c("div", { staticClass: "inclusives-content" }, [
+        _c("div", { staticClass: "left" }, [
+          _c(
+            "label",
+            { staticClass: "my-title", attrs: { for: "Trip Overview" } },
+            [_vm._v("Inclusives")]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "myhr" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "inclusive-body" }, [
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Transport" } }, [
+                _vm._v("Transport"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Accommodations" } }, [
+                _vm._v("Accommodations"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c(
+                "label",
+                { attrs: { for: "Entry fees to the park mentioned" } },
+                [_vm._v("Entry fees to the park mentioned")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Covid -19 Test Fees" } }, [
+                _vm._v("Covid -19 Test Fees"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Local Taxes" } }, [
+                _vm._v("Local Taxes"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Meals & Soft Drinks" } }, [
+                _vm._v("Meals & Soft Drinks"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Guiding & service fee" } }, [
+                _vm._v("Guiding & service fee"),
+              ]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "right" }, [
+          _c(
+            "label",
+            { staticClass: "my-title", attrs: { for: "Trip Overview" } },
+            [_vm._v("Exclusives")]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "myhr" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "inclusive-body" }, [
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-times" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Airline tickets" } }, [
+                _vm._v("Airline tickets"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-times" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Visa Fees" } }, [
+                _vm._v("Visa Fees"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-times" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Travel insurance" } }, [
+                _vm._v("Travel insurance"),
+              ]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "right" }, [
+          _c(
+            "label",
+            { staticClass: "my-title", attrs: { for: "Trip Overview" } },
+            [_vm._v("Requirements")]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "myhr" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "inclusive-body" }, [
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("label", { attrs: { for: "National ID(Rwandans)" } }, [
+                _vm._v("National ID(Rwandans)"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("label", { attrs: { for: "Passport(Foreigners)" } }, [
+                _vm._v("Passport(Foreigners)"),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "inclusives-footer jc-center",
+          attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+        },
+        [_c("button", { staticClass: "mybtn" }, [_vm._v("Book Now")])]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "header",
+        attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+      },
+      [
+        _c(
+          "label",
+          { staticClass: "my-title", attrs: { for: "Upcoming Trips" } },
+          [_vm._v("Other Upcoming Trips")]
+        ),
+        _vm._v(" "),
+        _c("hr", { staticClass: "myhr" }),
+        _vm._v(" "),
+        _c("p", { staticClass: "desc" }, [
+          _vm._v("Come join us and lets explore beyond expectations."),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "img-section jc-center" }, [
+      _c("img", {
+        attrs: { src: "/assets/images/pack1.jpg", alt: "", srcset: "" },
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "specs" }, [
+        _c("div", { staticClass: "region" }, [
+          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "days" }, [
+          _c("label", { attrs: { for: "Days" } }, [_vm._v("5 Days")]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-section" }, [
+      _c(
+        "label",
+        { staticClass: "trip-title", attrs: { for: "Akagera National Park" } },
+        [_vm._v("Akagera National Park")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "money" }, [
+      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$4300")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "date-widget" }, [
+      _c("label", { attrs: { for: "trip date" } }, [_vm._v("28th, Dec 2021")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "img-section jc-center" }, [
+      _c("img", {
+        attrs: { src: "/assets/images/canopy.jpg", alt: "", srcset: "" },
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "specs" }, [
+        _c("div", { staticClass: "region" }, [
+          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "days" }, [
+          _c("label", { attrs: { for: "Days" } }, [_vm._v("2 Days")]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-section" }, [
+      _c(
+        "label",
+        { staticClass: "trip-title", attrs: { for: "Nyungwe National Park" } },
+        [_vm._v("Nyungwe National Park")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "money" }, [
+      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$2400")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "date-widget" }, [
+      _c("label", { attrs: { for: "trip date" } }, [_vm._v("28th, Dec 2021")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "img-section jc-center" }, [
+      _c("img", {
+        attrs: { src: "/assets/images/gor2.jpg", alt: "", srcset: "" },
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "specs" }, [
+        _c("div", { staticClass: "region" }, [
+          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "days" }, [
+          _c("label", { attrs: { for: "Days" } }, [_vm._v("3 Days")]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-section" }, [
+      _c(
+        "label",
+        {
+          staticClass: "trip-title",
+          attrs: { for: "Volcanoes National Park" },
+        },
+        [_vm._v("Volcanoes National Park")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "money" }, [
+      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$5100")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "date-widget" }, [
+      _c("label", { attrs: { for: "trip date" } }, [_vm._v("28th, Dec 2021")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "img-section jc-center" }, [
+      _c("img", {
+        attrs: { src: "/assets/images/bg2.jpg", alt: "", srcset: "" },
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "specs" }, [
+        _c("div", { staticClass: "region" }, [
+          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "days" }, [
+          _c("label", { attrs: { for: "Days" } }, [_vm._v("1 Day")]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-section" }, [
+      _c("label", { staticClass: "trip-title", attrs: { for: "Twin Lakes" } }, [
+        _vm._v("Twin Lakes"),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "money" }, [
+      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$1400")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "date-widget" }, [
+      _c("label", { attrs: { for: "trip date" } }, [_vm._v("28th, Dec 2021")]),
     ])
   },
 ]
@@ -15429,6 +16804,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_site_About_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../views/site/About.vue */ "./scheme/vue/views/site/About.vue");
 /* harmony import */ var _views_site_Contact_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../views/site/Contact.vue */ "./scheme/vue/views/site/Contact.vue");
 /* harmony import */ var _views_site_ViewPackage_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../views/site/ViewPackage.vue */ "./scheme/vue/views/site/ViewPackage.vue");
+/* harmony import */ var _views_site_ViewTrip_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../views/site/ViewTrip.vue */ "./scheme/vue/views/site/ViewTrip.vue");
+
 
 
 
@@ -15469,6 +16846,10 @@ var routes = [{
   path: "/trips",
   name: "Trips",
   component: _views_site_Trips_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
+}, {
+  path: "/viewTrip/:id",
+  name: "ViewTrip",
+  component: _views_site_ViewTrip_vue__WEBPACK_IMPORTED_MODULE_11__["default"]
 }, {
   path: "/aboutus",
   name: "About",
@@ -16583,6 +17964,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_template_id_2ecddbaf___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_template_id_2ecddbaf___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./scheme/vue/views/site/ViewTrip.vue":
+/*!********************************************!*\
+  !*** ./scheme/vue/views/site/ViewTrip.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ViewTrip_vue_vue_type_template_id_34f77e0c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ViewTrip.vue?vue&type=template&id=34f77e0c& */ "./scheme/vue/views/site/ViewTrip.vue?vue&type=template&id=34f77e0c&");
+/* harmony import */ var _ViewTrip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ViewTrip.vue?vue&type=script&lang=js& */ "./scheme/vue/views/site/ViewTrip.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _ViewTrip_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ViewTrip.vue?vue&type=style&index=0&lang=scss& */ "./scheme/vue/views/site/ViewTrip.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _ViewTrip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ViewTrip_vue_vue_type_template_id_34f77e0c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ViewTrip_vue_vue_type_template_id_34f77e0c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "scheme/vue/views/site/ViewTrip.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./scheme/vue/views/site/ViewTrip.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./scheme/vue/views/site/ViewTrip.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewTrip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./ViewTrip.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewTrip.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewTrip_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./scheme/vue/views/site/ViewTrip.vue?vue&type=style&index=0&lang=scss&":
+/*!******************************************************************************!*\
+  !*** ./scheme/vue/views/site/ViewTrip.vue?vue&type=style&index=0&lang=scss& ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewTrip_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./ViewTrip.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewTrip.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewTrip_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewTrip_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewTrip_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewTrip_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./scheme/vue/views/site/ViewTrip.vue?vue&type=template&id=34f77e0c&":
+/*!***************************************************************************!*\
+  !*** ./scheme/vue/views/site/ViewTrip.vue?vue&type=template&id=34f77e0c& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewTrip_vue_vue_type_template_id_34f77e0c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./ViewTrip.vue?vue&type=template&id=34f77e0c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewTrip.vue?vue&type=template&id=34f77e0c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewTrip_vue_vue_type_template_id_34f77e0c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewTrip_vue_vue_type_template_id_34f77e0c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

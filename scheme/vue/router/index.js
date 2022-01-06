@@ -9,6 +9,7 @@ import Trips from "../views/site/Trips.vue";
 import About from "../views/site/About.vue";
 import Contact from "../views/site/Contact.vue";
 import ViewPackage from "../views/site/ViewPackage.vue";
+import ViewTrip from "../views/site/ViewTrip.vue";
 
 Vue.use(VueRouter);
 const routes = [
@@ -46,6 +47,11 @@ const routes = [
     path: "/trips",
     name: "Trips",
     component: Trips,
+  },
+  {
+    path: "/viewTrip/:id",
+    name: "ViewTrip",
+    component: ViewTrip,
   },
   {
     path: "/aboutus",

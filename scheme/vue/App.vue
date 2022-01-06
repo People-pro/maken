@@ -131,6 +131,7 @@ $green: #044914;
   border-radius: 3px;
   transition: all 0.7s ease-in-out;
   display: inline-block;
+  cursor: pointer;
   &:hover,
   &:focus {
     box-shadow: inset 20em 3rem 0 0 $green;
@@ -150,6 +151,7 @@ $green: #044914;
   display: inline-block;
   border: 2px $orange solid;
   background-color: #fff;
+  cursor: pointer;
   &:hover,
   &:focus {
     box-shadow: inset 20em 3rem 0 0 $orange;

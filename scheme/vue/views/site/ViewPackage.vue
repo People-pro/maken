@@ -30,22 +30,6 @@
         </div>
       </div>
       <div class="view-package-widget">
-        <div class="widget-header">
-          <hooper :settings="Settings" class="widget-body">
-            <slide class="widget-item">
-              <img src="/assets/uploaded/pack1.jpg" alt="" />
-            </slide>
-            <slide class="widget-item">
-              <img src="/assets/uploaded/akag2.jpg" alt="" />
-            </slide>
-            <slide class="widget-item">
-              <img src="/assets/uploaded/akag3.jpg" alt="" />
-            </slide>
-            <slide class="widget-item">
-              <img src="/assets/uploaded/akag4.jpg" alt="" />
-            </slide>
-          </hooper>
-        </div>
         <div class="widget-desc">
           <label for="Trip Overview" class="my-title">Overview</label>
           <hr class="myhr" />
@@ -82,6 +66,20 @@
                 <label for="6" class="item">6</label>
               </div>
             </div>
+            <div class="desc-body">
+              <div class="desc-item">
+                <label for="Price" class="title">Price(Rwandans):</label>
+                <label for="price" class="item price">45K</label>
+              </div>
+              <div class="desc-item">
+                <label for="Price" class="title">Price(Residents):</label>
+                <label for="price" class="item price">90K</label>
+              </div>
+              <div class="desc-item">
+                <label for="Price" class="title">Price(Foreigners):</label>
+                <label for="price" class="item price">130K</label>
+              </div>
+            </div>
           </div>
           <div
             class="desc-footer jc-center"
@@ -90,6 +88,22 @@
           >
             <button class="mybtn">Book Now</button>
           </div>
+        </div>
+        <div class="widget-header">
+          <hooper :settings="Settings" class="widget-body">
+            <slide class="widget-item">
+              <img src="/assets/uploaded/pack1.jpg" alt="" />
+            </slide>
+            <slide class="widget-item">
+              <img src="/assets/uploaded/akag2.jpg" alt="" />
+            </slide>
+            <slide class="widget-item">
+              <img src="/assets/uploaded/akag3.jpg" alt="" />
+            </slide>
+            <slide class="widget-item">
+              <img src="/assets/uploaded/akag4.jpg" alt="" />
+            </slide>
+          </hooper>
         </div>
         <div class="widget-inclusives">
           <div class="inclusives-content">
@@ -148,6 +162,20 @@
                 <div class="inclusive-item">
                   <i class="fas fa-times"></i>
                   <label for="Travel insurance">Travel insurance</label>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <label for="Trip Overview" class="my-title">Requirements</label>
+              <hr class="myhr" />
+              <div class="inclusive-body">
+                <div class="inclusive-item">
+                  <label for="National ID(Rwandans)"
+                    >National ID(Rwandans)</label
+                  >
+                </div>
+                <div class="inclusive-item">
+                  <label for="Passport(Foreigners)">Passport(Foreigners)</label>
                 </div>
               </div>
             </div>
@@ -363,11 +391,23 @@ $green: #044914;
     .widget-header {
       .widget-body {
         height: 500px;
+        @media screen and (max-width: 900px) {
+          height: 400px;
+        }
+        @media screen and (max-width: 600px) {
+          height: 250px;
+        }
         .widget-item {
           img {
             height: 500px;
             width: 100%;
             object-fit: cover;
+            @media screen and (max-width: 900px) {
+              height: 400px;
+            }
+            @media screen and (max-width: 600px) {
+              height: 300px;
+            }
           }
         }
       }
@@ -401,6 +441,9 @@ $green: #044914;
             @media screen and (max-width: 900px) {
               font-size: 1rem;
             }
+            @media screen and (max-width: 600px) {
+              flex-direction: column;
+            }
             .title {
               font-weight: 600;
             }
@@ -424,11 +467,10 @@ $green: #044914;
         padding: 2rem;
       }
       .inclusives-content {
-        display: grid;
-        grid-template-columns: 45% 45%;
-        grid-column-gap: 10%;
-        @media screen and (max-width: 900px) {
-          grid-template-columns: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        @media screen and (max-width: 1100px) {
+          flex-direction: column;
         }
 
         .left {
@@ -445,6 +487,9 @@ $green: #044914;
           }
         }
         .right {
+          @media screen and (max-width: 1100px) {
+            margin-top: 2rem;
+          }
           .inclusive-body {
             .inclusive-item {
               i {
