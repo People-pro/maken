@@ -37,10 +37,10 @@
           </p>
         </div>
         <div class="packages-body" data-aos="fade-up" data-aos-duration="1000">
-          <div class="package-item">
+          <router-link to="/viewPackage/1" class="package-item">
             <div class="content">
               <div class="img-section jc-center">
-                <img src="/assets/images/pack1.jpg" alt="" srcset="" />
+                <img src="/assets/uploaded/pack1.jpg" alt="" srcset="" />
                 <div class="specs">
                   <div class="region">
                     <i class="fas fa-map-marker-alt"></i>
@@ -66,11 +66,11 @@
                 </div>
               </div>
             </div>
-          </div>
+          </router-link>
           <div class="package-item">
             <div class="content">
               <div class="img-section jc-center">
-                <img src="/assets/images/canopy.jpg" alt="" srcset="" />
+                <img src="/assets/uploaded/canopy.jpg" alt="" srcset="" />
                 <div class="specs">
                   <div class="region">
                     <i class="fas fa-map-marker-alt"></i>
@@ -100,7 +100,7 @@
           <div class="package-item">
             <div class="content">
               <div class="img-section jc-center">
-                <img src="/assets/images/gor2.jpg" alt="" srcset="" />
+                <img src="/assets/uploaded/gor2.jpg" alt="" srcset="" />
                 <div class="specs">
                   <div class="region">
                     <i class="fas fa-map-marker-alt"></i>
@@ -130,7 +130,7 @@
           <div class="package-item">
             <div class="content">
               <div class="img-section jc-center">
-                <img src="/assets/images/bg2.jpg" alt="" srcset="" />
+                <img src="/assets/uploaded/bg2.jpg" alt="" srcset="" />
                 <div class="specs">
                   <div class="region">
                     <i class="fas fa-map-marker-alt"></i>

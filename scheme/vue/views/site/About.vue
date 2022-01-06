@@ -31,7 +31,7 @@
       </div>
       <div class="about-content">
         <div class="about-item">
-          <div class="my-title">Who we are</div>
+          <div class="my-title">WHO WE ARE</div>
           <hr class="myhr" />
           <div class="about-body">
             <p>
@@ -91,6 +91,101 @@
               To maintain a high class travel services at reasonable prices
               through consistent Leadership controlled growth and excellent
               commitment.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="about-item">
+          <div class="my-title">HOW IS MAKEN AFRICA SAFARIS DIFFERENT</div>
+          <hr class="myhr" />
+          <div class="about-body">
+            <p>
+              Travel undertaken for corporate travel is an investment, which
+              companies quantify in their cost of business. The needs of
+              business travelers involves greater uncertainty and urgency as
+              compared to leisure travelers, as such, a large measure of
+              flexibility, speed and accuracy is required to ensure that their
+              requests are met in an appropriate manner.
+            </p>
+
+            <p>
+              Aside from providing choices, any deviation from the planned
+              itinerary becomes an unnecessary disruption to the flow of
+              Conducting a business outing, in this way, corporate travelers in
+              essence Require their travel agents to perform to the level of a
+              concierge, in order to support them whilst they prepare to meet
+              the business challenge ahead.
+            </p>
+            <p>
+              We believe every one of our multinational clients is different. We
+              never take a “one size fits all” approach with our clients. We
+              take the time to tailor a travel program based on our Clients'
+              unique requirements and how you see the program developing. What
+              sets us apart from our competitors is our expertise in meeting the
+              expectations and requirements of our clients locally while at the
+              same time working within the guidelines of the Rwanda travel
+              program.
+            </p>
+            <p>
+              The expectations and requirements of our clients locally while at
+              the same time working within the guidelines of the Rwanda travel
+              program.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="about-item">
+          <div class="my-title">MEET OUR TRAVEL EXPERTS</div>
+          <hr class="myhr" />
+          <div class="about-body">
+            <label for="Managemet Experience" class="item-title"
+              >Managemet Experience</label
+            >
+            <p>
+              Our qualified Management team has over two decades of experience.
+              Each member of the senior management will dedicate as much time as
+              necessary to ensure that our clients are satisfied and a
+              successful continuation of business is maintained.
+            </p>
+
+            <p>
+              Our qualified Management team has over two decades of experience.
+              Each member of the senior management will dedicate as much time as
+              necessary to ensure that our clients are satisfied and a
+              successful continuation of business is maintained.
+            </p>
+            <p>
+              All staff has spent several years working within a business travel
+              or airline reservation/ticketing environment. On-going training
+              and orientation is a key objective to ensuring the excellent level
+              of service is maintained year in year out.
+            </p>
+          </div>
+          <div class="about-body">
+            <label
+              for="Client Reporting System / Accounting System"
+              class="item-title"
+              >Client Reporting System / Accounting System</label
+            >
+            <p>
+              Various reporting requirements from clients have enabled us to
+              provide timely and accurate reports as required. In addition we
+              work closely with Amadeus and Galileo to ensure that all client
+              feedback is retrieved and provided back to the service provider to
+              ensure that future reporting includes the changes and comments in
+              the feedback.
+            </p>
+          </div>
+          <div class="about-body">
+            <label for="Customer Orientation" class="item-title"
+              >Customer Orientation</label
+            >
+            <p>
+              Although we have grown in all aspects of our operations our motto
+              of “customer satisfaction first” ensures that our customers are
+              given the best-personalized and unparalleled professional service.
             </p>
           </div>
         </div>
@@ -165,6 +260,16 @@ $green: #044914;
     }
     @media screen and (max-width: 900px) {
       padding: 2rem;
+      font-size: 0.75rem;
+    }
+    label {
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 3rem;
+      @media screen and (max-width: 900px) {
+        line-height: 2rem;
+        font-size: 1rem;
+      }
     }
   }
   .missions-widget {
@@ -182,6 +287,7 @@ $green: #044914;
     }
     @media screen and (max-width: 900px) {
       padding: 2rem;
+      font-size: 0.75rem;
     }
     .mis-body {
       display: grid;
@@ -200,7 +306,7 @@ $green: #044914;
       }
       @media screen and (max-width: 700px) {
         grid-template-columns: 100%;
-        grid-column-gap: 3%;
+        grid-column-gap: 0%;
       }
 
       .mission {
@@ -208,6 +314,9 @@ $green: #044914;
         box-shadow: 0px 0px 10px 3px #1d1d1d48;
         border-radius: 1rem;
         padding: 2rem;
+        @media screen and (max-width: 700px) {
+          padding: 1.5rem;
+        }
       }
       .vision {
         background: #ffffffd7;

@@ -164,7 +164,7 @@
           </p>
         </div>
         <div class="packages-body" data-aos="fade-up" data-aos-duration="1000">
-          <div class="package-item">
+          <router-link to="/viewPackage/1" class="package-item">
             <div class="content">
               <div class="img-section jc-center">
                 <img src="/assets/images/pack1.jpg" alt="" srcset="" />
@@ -193,7 +193,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </router-link>
           <div class="package-item">
             <div class="content">
               <div class="img-section jc-center">

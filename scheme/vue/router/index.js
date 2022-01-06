@@ -8,6 +8,7 @@ import Gallery from "../views/site/Gallery.vue";
 import Trips from "../views/site/Trips.vue";
 import About from "../views/site/About.vue";
 import Contact from "../views/site/Contact.vue";
+import ViewPackage from "../views/site/ViewPackage.vue";
 
 Vue.use(VueRouter);
 const routes = [
@@ -30,6 +31,11 @@ const routes = [
     path: "/packages",
     name: "Packages",
     component: Packages,
+  },
+  {
+    path: "/viewPackage/:id",
+    name: "ViewPackage",
+    component: ViewPackage,
   },
   {
     path: "/gallery",

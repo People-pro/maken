@@ -1550,6 +1550,101 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "About",
   data: function data() {
@@ -1770,6 +1865,68 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3585,6 +3742,367 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewPackage.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./scheme/vue/views/site/ViewPackage.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ViewPackage",
+  data: function data() {
+    return {
+      isLoading: false,
+      color: "#072e4d",
+      fullPage: true,
+      Settings: {
+        itemsToShow: 1,
+        centerMode: false,
+        autoPlay: true,
+        wheelControl: false,
+        trimWhiteSpace: true,
+        infiniteScroll: true,
+        playSpeed: 3000,
+        transition: 1000,
+        hoverPause: false,
+        breakpoints: {
+          400: {
+            itemsToShow: 1
+          },
+          800: {
+            itemsToShow: 2
+          },
+          1300: {
+            itemsToShow: 3
+          },
+          1600: {
+            itemsToShow: 3
+          }
+        }
+      }
+    };
+  },
+  methods: {
+    onCancel: function onCancel() {
+      console.log();
+    }
+  },
+  mounted: function mounted() {
+    var vm = this;
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/pages/Footer.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./scheme/vue/views/site/pages/Footer.vue?vue&type=script&lang=js& ***!
@@ -3948,7 +4466,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".About {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.About {\n    width: 100vw;\n}\n}\n.About .about-content {\n  padding: 2rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.About .about-content {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.About .about-content {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.About .about-content {\n    padding: 2rem;\n}\n}\n.About .missions-widget {\n  background: url(\"/assets/images/pe2.jpg\");\n  background-size: cover;\n  background-position: center;\n  background-attachment: fixed;\n  box-shadow: inset 0 0 0 2000px #0000004d;\n  padding: 2rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.About .missions-widget {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.About .missions-widget {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.About .missions-widget {\n    padding: 2rem;\n}\n}\n.About .missions-widget .mis-body {\n  display: grid;\n  grid-template-columns: 26.6% 26.6% 26.6%;\n  grid-column-gap: 10%;\n  grid-row-gap: 2rem;\n  margin: 2rem 0;\n}\n@media screen and (max-width: 1500px) {\n.About .missions-widget .mis-body {\n    grid-template-columns: 30% 30% 30%;\n    grid-column-gap: 3%;\n    margin: 0;\n}\n}\n@media screen and (max-width: 1100px) {\n.About .missions-widget .mis-body {\n    grid-template-columns: 47.5% 47.5%;\n    grid-column-gap: 3%;\n}\n}\n@media screen and (max-width: 700px) {\n.About .missions-widget .mis-body {\n    grid-template-columns: 100%;\n    grid-column-gap: 3%;\n}\n}\n.About .missions-widget .mis-body .mission {\n  background: #ffffffd7;\n  box-shadow: 0px 0px 10px 3px #1d1d1d48;\n  border-radius: 1rem;\n  padding: 2rem;\n}\n.About .missions-widget .mis-body .vision {\n  background: #ffffffd7;\n  box-shadow: 0px 0px 10px 3px #1d1d1d48;\n  border-radius: 1rem;\n  padding: 2rem;\n  position: relative;\n  left: -1rem;\n}\n", ""]);
+exports.push([module.i, ".About {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.About {\n    width: 100vw;\n}\n}\n.About .about-content {\n  padding: 2rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.About .about-content {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.About .about-content {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.About .about-content {\n    padding: 2rem;\n    font-size: 0.75rem;\n}\n}\n.About .about-content label {\n  font-weight: 600;\n  font-size: 1.25rem;\n  line-height: 3rem;\n}\n@media screen and (max-width: 900px) {\n.About .about-content label {\n    line-height: 2rem;\n    font-size: 1rem;\n}\n}\n.About .missions-widget {\n  background: url(\"/assets/images/pe2.jpg\");\n  background-size: cover;\n  background-position: center;\n  background-attachment: fixed;\n  box-shadow: inset 0 0 0 2000px #0000004d;\n  padding: 2rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.About .missions-widget {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.About .missions-widget {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.About .missions-widget {\n    padding: 2rem;\n    font-size: 0.75rem;\n}\n}\n.About .missions-widget .mis-body {\n  display: grid;\n  grid-template-columns: 26.6% 26.6% 26.6%;\n  grid-column-gap: 10%;\n  grid-row-gap: 2rem;\n  margin: 2rem 0;\n}\n@media screen and (max-width: 1500px) {\n.About .missions-widget .mis-body {\n    grid-template-columns: 30% 30% 30%;\n    grid-column-gap: 3%;\n    margin: 0;\n}\n}\n@media screen and (max-width: 1100px) {\n.About .missions-widget .mis-body {\n    grid-template-columns: 47.5% 47.5%;\n    grid-column-gap: 3%;\n}\n}\n@media screen and (max-width: 700px) {\n.About .missions-widget .mis-body {\n    grid-template-columns: 100%;\n    grid-column-gap: 0%;\n}\n}\n.About .missions-widget .mis-body .mission {\n  background: #ffffffd7;\n  box-shadow: 0px 0px 10px 3px #1d1d1d48;\n  border-radius: 1rem;\n  padding: 2rem;\n}\n@media screen and (max-width: 700px) {\n.About .missions-widget .mis-body .mission {\n    padding: 1.5rem;\n}\n}\n.About .missions-widget .mis-body .vision {\n  background: #ffffffd7;\n  box-shadow: 0px 0px 10px 3px #1d1d1d48;\n  border-radius: 1rem;\n  padding: 2rem;\n  position: relative;\n  left: -1rem;\n}\n", ""]);
 
 // exports
 
@@ -3986,7 +4504,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".Gallery {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.Gallery {\n    width: 100vw;\n}\n}\n", ""]);
+exports.push([module.i, ".Gallery {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.Gallery {\n    width: 100vw;\n}\n}\n.Gallery .gallery-content {\n  padding: 4rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.Gallery .gallery-content {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.Gallery .gallery-content {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.Gallery .gallery-content {\n    padding: 2rem;\n}\n}\n.Gallery .gallery-content .gallery-content-body {\n  display: grid;\n  grid-template-columns: 30% 30% 30%;\n  grid-column-gap: 3.333%;\n  grid-row-gap: 2rem;\n  margin: 2rem 0;\n}\n@media screen and (max-width: 1500px) {\n.Gallery .gallery-content .gallery-content-body {\n    grid-template-columns: 30% 30% 30%;\n    grid-column-gap: 3%;\n    margin: 0;\n}\n}\n@media screen and (max-width: 1100px) {\n.Gallery .gallery-content .gallery-content-body {\n    grid-template-columns: 47.5% 47.5%;\n    grid-column-gap: 3%;\n}\n}\n@media screen and (max-width: 700px) {\n.Gallery .gallery-content .gallery-content-body {\n    grid-template-columns: 100%;\n    grid-column-gap: 3%;\n}\n}\n.Gallery .gallery-content .gallery-content-body .gallery-item {\n  height: 300px;\n  border-radius: 0.5rem;\n  overflow: hidden;\n}\n.Gallery .gallery-content .gallery-content-body .gallery-item .gallery-body {\n  padding: 1rem;\n  background: black;\n  background: linear-gradient(0deg, rgba(0, 0, 0, 0.829569) 0%, rgba(19, 134, 3, 0) 50%);\n  height: 100%;\n  display: flex;\n  justify-content: flex-end;\n  flex-direction: column;\n}\n.Gallery .gallery-content .gallery-content-body .gallery-item .gallery-body .gallery-title {\n  color: white;\n  font-weight: 600;\n}\n.Gallery .gallery-content .gallery-content-body .gallery-item .gallery-body .date {\n  color: #eee;\n  font-weight: 400;\n  font-size: 0.75rem;\n}\n", ""]);
 
 // exports
 
@@ -4063,6 +4581,25 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 // module
 exports.push([module.i, ".Trips {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.Trips {\n    width: 100vw;\n}\n}\n.Trips .trips {\n  position: relative;\n  background: #f5f5f5;\n  padding: 4rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.Trips .trips {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.Trips .trips {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.Trips .trips {\n    padding: 2rem;\n}\n}\n.Trips .trips .header {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  width: 100%;\n}\n@media screen and (max-width: 600px) {\n.Trips .trips .header {\n    align-items: flex-start;\n}\n}\n.Trips .trips .header .desc {\n  color: #333333;\n  font-weight: 400;\n  font-size: 1.1rem;\n}\n@media screen and (max-width: 1200px) {\n.Trips .trips .header .desc {\n    font-size: 1rem;\n}\n}\n@media screen and (max-width: 900px) {\n.Trips .trips .header .desc {\n    font-size: 0.8rem;\n}\n}\n.Trips .trips .trips-body {\n  display: grid;\n  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;\n  grid-column-gap: 2%;\n  grid-row-gap: 2rem;\n  margin: 2rem 0;\n}\n@media screen and (max-width: 1100px) {\n.Trips .trips .trips-body {\n    grid-template-columns: 48% 48%;\n}\n}\n@media screen and (max-width: 600px) {\n.Trips .trips .trips-body {\n    grid-template-columns: 100%;\n}\n}\n.Trips .trips .trips-body .trip-item {\n  background: #fff;\n  border-radius: 0 1.5rem 0 1.5rem;\n  box-shadow: 0px 0px 10px 3px #4d4d4d2a;\n  transition: all 0.4s ease-in-out;\n  position: relative;\n}\n.Trips .trips .trips-body .trip-item:hover, .Trips .trips .trips-body .trip-item:focus {\n  transform: scale(1.2, 1.2);\n  z-index: 1;\n}\n.Trips .trips .trips-body .trip-item .date-widget {\n  position: absolute;\n  top: -10px;\n  left: 0;\n  background-color: #ef6203;\n  color: white;\n  border-radius: 0 1.5rem 1.5rem 0;\n  padding: 0.2rem 0.4rem;\n}\n.Trips .trips .trips-body .trip-item .content {\n  display: flex;\n  flex-direction: column;\n  position: relative;\n}\n.Trips .trips .trips-body .trip-item .content .img-section {\n  position: relative;\n}\n.Trips .trips .trips-body .trip-item .content .img-section img {\n  height: 250px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border-radius: 0 1.5rem 0 1.5rem;\n}\n@media screen and (max-width: 1300px) {\n.Trips .trips .trips-body .trip-item .content .img-section img {\n    height: 200px;\n}\n}\n@media screen and (max-width: 1100px) {\n.Trips .trips .trips-body .trip-item .content .img-section img {\n    height: 250px;\n}\n}\n@media screen and (max-width: 700px) {\n.Trips .trips .trips-body .trip-item .content .img-section img {\n    height: 200px;\n}\n}\n.Trips .trips .trips-body .trip-item .content .img-section .specs {\n  background-color: #fff;\n  border-radius: 100px;\n  padding: 0.4rem 1rem;\n  position: absolute;\n  bottom: -10px;\n  width: 80%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  color: #2b2b2b;\n  font-size: 0.8rem;\n  box-shadow: 0px 0px 10px 3px #0000003b;\n}\n.Trips .trips .trips-body .trip-item .content .img-section .specs .region {\n  display: flex;\n  align-items: center;\n  -moz-column-gap: 0.25rem;\n       column-gap: 0.25rem;\n}\n.Trips .trips .trips-body .trip-item .content .text-section {\n  padding: 0 1rem;\n  padding-top: 2rem;\n}\n@media screen and (max-width: 1300px) {\n.Trips .trips .trips-body .trip-item .content .text-section {\n    padding: 0 0.75rem;\n    padding-top: 1.5rem;\n}\n}\n.Trips .trips .trips-body .trip-item .content .text-section .trip-title {\n  color: #1d1d1d;\n  font-weight: 500;\n  font-size: 1.2rem;\n}\n@media screen and (max-width: 1300px) {\n.Trips .trips .trips-body .trip-item .content .text-section .trip-title {\n    font-size: 1rem;\n}\n}\n.Trips .trips .trips-body .trip-item .content hr {\n  align-self: center;\n  width: 90%;\n  border: none;\n  border-top: 1px #eee solid;\n  margin: 1rem 0;\n}\n.Trips .trips .trips-body .trip-item .content .content-footer {\n  display: flex;\n  justify-content: space-between;\n  padding: 0 1rem;\n  padding-bottom: 1rem;\n}\n.Trips .trips .trips-body .trip-item .content .content-footer .money {\n  color: #ef6203;\n  font-size: 1.5rem;\n  font-weight: 500;\n}\n@media screen and (max-width: 1300px) {\n.Trips .trips .trips-body .trip-item .content .content-footer .money {\n    font-size: 1.25rem;\n}\n}\n.Trips .trips .trips-body .trip-item .content .content-footer .book .book-btn {\n  color: #1d1d1d;\n  font-size: 0.8rem;\n  font-weight: 600;\n}\n.Trips .trips .trips-body .trip-item .content .content-footer .book .book-btn:hover {\n  color: #ef6203;\n}\n.Trips .trips .trips-footer {\n  padding: 2rem 0;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewPackage.vue?vue&type=style&index=0&lang=scss&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./scheme/vue/views/site/ViewPackage.vue?vue&type=style&index=0&lang=scss& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".ViewPackage {\n  width: 99.1vw;\n  overflow: hidden;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage {\n    width: 100vw;\n}\n}\n.ViewPackage .view-package-widget .widget-header .widget-body {\n  height: 500px;\n}\n.ViewPackage .view-package-widget .widget-header .widget-body .widget-item img {\n  height: 500px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.ViewPackage .view-package-widget .widget-desc {\n  padding: 4rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc {\n    padding: 2rem;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content {\n  display: grid;\n  grid-template-columns: 50% 50%;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc .desc-content {\n    grid-template-columns: 100%;\n    grid-row-gap: 1rem;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body {\n  display: flex;\n  flex-direction: column;\n  -moz-column-gap: 1rem;\n       column-gap: 1rem;\n  row-gap: 1rem;\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item {\n  display: flex;\n  font-size: 1.15rem;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item {\n    font-size: 1rem;\n}\n}\n.ViewPackage .view-package-widget .widget-desc .desc-content .desc-body .desc-item .title {\n  font-weight: 600;\n}\n.ViewPackage .view-package-widget .widget-desc .desc-footer {\n  margin-top: 1.5rem;\n}\n.ViewPackage .view-package-widget .widget-inclusives {\n  padding: 2rem 15rem;\n  background: #eee;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-inclusives {\n    padding: 2rem;\n}\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content {\n  display: grid;\n  grid-template-columns: 45% 45%;\n  grid-column-gap: 10%;\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content {\n    grid-template-columns: 100%;\n}\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .left .inclusive-body .inclusive-item i {\n  color: green;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .left .inclusive-body .inclusive-item label {\n  line-height: 1.5;\n  font-weight: 500;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .right .inclusive-body .inclusive-item i {\n  color: red;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-content .right .inclusive-body .inclusive-item label {\n  line-height: 1.5;\n  font-weight: 500;\n}\n.ViewPackage .view-package-widget .widget-inclusives .inclusives-footer {\n  margin-top: 1.5rem;\n}\n.ViewPackage .packages {\n  position: relative;\n  background: #f5f5f5;\n  padding: 4rem 15rem;\n}\n@media screen and (max-width: 1700px) {\n.ViewPackage .packages {\n    padding: 4rem 10rem;\n}\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages {\n    padding: 3rem 5rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .packages {\n    padding: 2rem;\n}\n}\n.ViewPackage .packages .header {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  width: 100%;\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .packages .header {\n    align-items: flex-start;\n}\n}\n.ViewPackage .packages .header .desc {\n  color: #333333;\n  font-weight: 400;\n  font-size: 1.1rem;\n}\n@media screen and (max-width: 1200px) {\n.ViewPackage .packages .header .desc {\n    font-size: 1rem;\n}\n}\n@media screen and (max-width: 900px) {\n.ViewPackage .packages .header .desc {\n    font-size: 0.8rem;\n}\n}\n.ViewPackage .packages .packages-body {\n  display: grid;\n  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;\n  grid-column-gap: 2%;\n  grid-row-gap: 2rem;\n  margin: 2rem 0;\n  flex-wrap: wrap;\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .packages .packages-body {\n    grid-template-columns: 48% 48%;\n}\n}\n@media screen and (max-width: 600px) {\n.ViewPackage .packages .packages-body {\n    grid-template-columns: 100%;\n}\n}\n.ViewPackage .packages .packages-body .package-item {\n  background: #fff;\n  border-radius: 1.5rem;\n  box-shadow: 0px 0px 10px 3px #4d4d4d2a;\n  transition: all 0.4s ease-in-out;\n}\n.ViewPackage .packages .packages-body .package-item:hover, .ViewPackage .packages .packages-body .package-item:focus {\n  transform: scale(1.2, 1.2);\n  z-index: 1;\n}\n.ViewPackage .packages .packages-body .package-item .content {\n  display: flex;\n  flex-direction: column;\n  position: relative;\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section {\n  position: relative;\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n  height: 250px;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border-radius: 1.5rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n    height: 200px;\n}\n}\n@media screen and (max-width: 1100px) {\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n    height: 250px;\n}\n}\n@media screen and (max-width: 700px) {\n.ViewPackage .packages .packages-body .package-item .content .img-section img {\n    height: 200px;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section .specs {\n  background-color: #fff;\n  border-radius: 100px;\n  padding: 0.4rem 1rem;\n  position: absolute;\n  bottom: -10px;\n  width: 80%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  color: #2b2b2b;\n  font-size: 0.8rem;\n  box-shadow: 0px 0px 10px 3px #0000003b;\n}\n.ViewPackage .packages .packages-body .package-item .content .img-section .specs .region {\n  display: flex;\n  align-items: center;\n  -moz-column-gap: 0.25rem;\n       column-gap: 0.25rem;\n}\n.ViewPackage .packages .packages-body .package-item .content .text-section {\n  padding: 0 1rem;\n  padding-top: 2rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .text-section {\n    padding: 0 0.75rem;\n    padding-top: 1.5rem;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content .text-section .package-title {\n  color: #1d1d1d;\n  font-weight: 500;\n  font-size: 1.2rem;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .text-section .package-title {\n    font-size: 1rem;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content hr {\n  align-self: center;\n  width: 90%;\n  border: none;\n  border-top: 1px #eee solid;\n  margin: 1rem 0;\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer {\n  display: flex;\n  justify-content: space-between;\n  padding: 0 1rem;\n  padding-bottom: 1rem;\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer .money {\n  color: #ef6203;\n  font-size: 1.5rem;\n  font-weight: 500;\n}\n@media screen and (max-width: 1300px) {\n.ViewPackage .packages .packages-body .package-item .content .content-footer .money {\n    font-size: 1.25rem;\n}\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer .book .book-btn {\n  color: #1d1d1d;\n  font-size: 0.8rem;\n  font-weight: 600;\n}\n.ViewPackage .packages .packages-body .package-item .content .content-footer .book .book-btn:hover {\n  color: #ef6203;\n}\n.ViewPackage .packages .packages-footer {\n  padding: 2rem 0;\n}\n", ""]);
 
 // exports
 
@@ -4868,6 +5405,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Trips.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/Trips.vue?vue&type=style&index=0&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewPackage.vue?vue&type=style&index=0&lang=scss&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./scheme/vue/views/site/ViewPackage.vue?vue&type=style&index=0&lang=scss& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./ViewPackage.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewPackage.vue?vue&type=style&index=0&lang=scss&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -8338,7 +8905,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "about-content" }, [
         _c("div", { staticClass: "about-item" }, [
-          _c("div", { staticClass: "my-title" }, [_vm._v("Who we are")]),
+          _c("div", { staticClass: "my-title" }, [_vm._v("WHO WE ARE")]),
           _vm._v(" "),
           _c("hr", { staticClass: "myhr" }),
           _vm._v(" "),
@@ -8413,6 +8980,115 @@ var staticRenderFns = [
             _c("p", [
               _vm._v(
                 "\n            To maintain a high class travel services at reasonable prices\n            through consistent Leadership controlled growth and excellent\n            commitment.\n          "
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "about-content" }, [
+        _c("div", { staticClass: "about-item" }, [
+          _c("div", { staticClass: "my-title" }, [
+            _vm._v("HOW IS MAKEN AFRICA SAFARIS DIFFERENT"),
+          ]),
+          _vm._v(" "),
+          _c("hr", { staticClass: "myhr" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "about-body" }, [
+            _c("p", [
+              _vm._v(
+                "\n            Travel undertaken for corporate travel is an investment, which\n            companies quantify in their cost of business. The needs of\n            business travelers involves greater uncertainty and urgency as\n            compared to leisure travelers, as such, a large measure of\n            flexibility, speed and accuracy is required to ensure that their\n            requests are met in an appropriate manner.\n          "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            Aside from providing choices, any deviation from the planned\n            itinerary becomes an unnecessary disruption to the flow of\n            Conducting a business outing, in this way, corporate travelers in\n            essence Require their travel agents to perform to the level of a\n            concierge, in order to support them whilst they prepare to meet\n            the business challenge ahead.\n          "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            We believe every one of our multinational clients is different. We\n            never take a “one size fits all” approach with our clients. We\n            take the time to tailor a travel program based on our Clients'\n            unique requirements and how you see the program developing. What\n            sets us apart from our competitors is our expertise in meeting the\n            expectations and requirements of our clients locally while at the\n            same time working within the guidelines of the Rwanda travel\n            program.\n          "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            The expectations and requirements of our clients locally while at\n            the same time working within the guidelines of the Rwanda travel\n            program.\n          "
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "about-content" }, [
+        _c("div", { staticClass: "about-item" }, [
+          _c("div", { staticClass: "my-title" }, [
+            _vm._v("MEET OUR TRAVEL EXPERTS"),
+          ]),
+          _vm._v(" "),
+          _c("hr", { staticClass: "myhr" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "about-body" }, [
+            _c(
+              "label",
+              {
+                staticClass: "item-title",
+                attrs: { for: "Managemet Experience" },
+              },
+              [_vm._v("Managemet Experience")]
+            ),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            Our qualified Management team has over two decades of experience.\n            Each member of the senior management will dedicate as much time as\n            necessary to ensure that our clients are satisfied and a\n            successful continuation of business is maintained.\n          "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            Our qualified Management team has over two decades of experience.\n            Each member of the senior management will dedicate as much time as\n            necessary to ensure that our clients are satisfied and a\n            successful continuation of business is maintained.\n          "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            All staff has spent several years working within a business travel\n            or airline reservation/ticketing environment. On-going training\n            and orientation is a key objective to ensuring the excellent level\n            of service is maintained year in year out.\n          "
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "about-body" }, [
+            _c(
+              "label",
+              {
+                staticClass: "item-title",
+                attrs: { for: "Client Reporting System / Accounting System" },
+              },
+              [_vm._v("Client Reporting System / Accounting System")]
+            ),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            Various reporting requirements from clients have enabled us to\n            provide timely and accurate reports as required. In addition we\n            work closely with Amadeus and Galileo to ensure that all client\n            feedback is retrieved and provided back to the service provider to\n            ensure that future reporting includes the changes and comments in\n            the feedback.\n          "
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "about-body" }, [
+            _c(
+              "label",
+              {
+                staticClass: "item-title",
+                attrs: { for: "Customer Orientation" },
+              },
+              [_vm._v("Customer Orientation")]
+            ),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n            Although we have grown in all aspects of our operations our motto\n            of “customer satisfaction first” ensures that our customers are\n            given the best-personalized and unparalleled professional service.\n          "
               ),
             ]),
           ]),
@@ -8741,7 +9417,123 @@ var render = function () {
       _vm._v(" "),
       _c("clientHeader"),
       _vm._v(" "),
-      _vm._m(0),
+      _c("div", { staticClass: "all-content" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "gallery-content" }, [
+          _c(
+            "div",
+            { staticClass: "gallery-content-body" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass: "gallery-item",
+                  staticStyle: {
+                    background: "url('/assets/images/pe2.jpg')",
+                    "background-size": "cover",
+                    "background-position": "center",
+                  },
+                  attrs: { to: "/viewGallery" },
+                },
+                [
+                  _c("div", { staticClass: "gallery-body" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "gallery-title",
+                        attrs: { for: "Our Trip To Nyungwe National Park" },
+                      },
+                      [_vm._v("Our Trip To Nyungwe National Park.")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      { staticClass: "date", attrs: { for: "trip date" } },
+                      [
+                        _vm._v("Saturday, 18"),
+                        _c("sup", [_vm._v("th")]),
+                        _vm._v(" December 2021"),
+                      ]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "router-link",
+                {
+                  staticClass: "gallery-item",
+                  staticStyle: {
+                    background: "url('/assets/images/pe3.jpg')",
+                    "background-size": "cover",
+                    "background-position": "center",
+                  },
+                  attrs: { to: "/viewGallery" },
+                },
+                [
+                  _c("div", { staticClass: "gallery-body" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "gallery-title",
+                        attrs: { for: "Our Trip To Akagera National Park" },
+                      },
+                      [_vm._v("Our Trip To Akagera National Park.")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      { staticClass: "date", attrs: { for: "trip date" } },
+                      [
+                        _vm._v("Thursday, 11"),
+                        _c("sup", [_vm._v("th")]),
+                        _vm._v(" November 2021"),
+                      ]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "router-link",
+                {
+                  staticClass: "gallery-item",
+                  staticStyle: {
+                    background: "url('/assets/images/pe4.jpg')",
+                    "background-size": "cover",
+                    "background-position": "center",
+                  },
+                  attrs: { to: "/viewGallery" },
+                },
+                [
+                  _c("div", { staticClass: "gallery-body" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "gallery-title",
+                        attrs: { for: "Our Trip To Fazenda" },
+                      },
+                      [_vm._v("Our Trip To Fazenda.")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      { staticClass: "date", attrs: { for: "trip date" } },
+                      [
+                        _vm._v("Tuesday, 27"),
+                        _c("sup", [_vm._v("th")]),
+                        _vm._v(" Octover 2020"),
+                      ]
+                    ),
+                  ]),
+                ]
+              ),
+            ],
+            1
+          ),
+        ]),
+      ]),
       _vm._v(" "),
       _c("clientFooter"),
     ],
@@ -8753,28 +9545,26 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "all-content" }, [
-      _c("div", { staticClass: "intro" }, [
-        _c("div", { staticClass: "intro-content" }, [
-          _c("div", { staticClass: "intro-body" }, [
-            _c(
-              "h2",
-              {
-                staticClass: "intro-header",
-                attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
-              },
-              [_vm._v("\n            Gallery\n          ")]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass: "txt-shad-sm intro-desc",
-                attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
-              },
-              [_vm._v("\n            What we've been up to.\n          ")]
-            ),
-          ]),
+    return _c("div", { staticClass: "intro" }, [
+      _c("div", { staticClass: "intro-content" }, [
+        _c("div", { staticClass: "intro-body" }, [
+          _c(
+            "h2",
+            {
+              staticClass: "intro-header",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [_vm._v("\n            Gallery\n          ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "p",
+            {
+              staticClass: "txt-shad-sm intro-desc",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [_vm._v("\n            What we've been up to.\n          ")]
+          ),
         ]),
       ]),
     ])
@@ -8957,6 +9747,83 @@ var render = function () {
               attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
             },
             [
+              _c(
+                "router-link",
+                {
+                  staticClass: "package-item",
+                  attrs: { to: "/viewPackage/1" },
+                },
+                [
+                  _c("div", { staticClass: "content" }, [
+                    _c("div", { staticClass: "img-section jc-center" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/assets/images/pack1.jpg",
+                          alt: "",
+                          srcset: "",
+                        },
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "specs" }, [
+                        _c("div", { staticClass: "region" }, [
+                          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "Tourism Region" } }, [
+                            _vm._v("Rwanda"),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "days" }, [
+                          _c("label", { attrs: { for: "Days" } }, [
+                            _vm._v("5 Days"),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-section" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "package-title",
+                          attrs: { for: "Akagera National Park" },
+                        },
+                        [_vm._v("Akagera National Park")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "content-footer" }, [
+                      _c("div", { staticClass: "money" }, [
+                        _c("label", { attrs: { for: "Amount" } }, [
+                          _vm._v("$4300"),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "book" },
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "book-btn",
+                              attrs: { to: "/book/1" },
+                            },
+                            [
+                              _vm._v("Explore "),
+                              _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                            ]
+                          ),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
               _c("div", { staticClass: "package-item" }, [
                 _c("div", { staticClass: "content" }, [
                   _vm._m(4),
@@ -9046,37 +9913,8 @@ var render = function () {
                   ]),
                 ]),
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "package-item" }, [
-                _c("div", { staticClass: "content" }, [
-                  _vm._m(13),
-                  _vm._v(" "),
-                  _vm._m(14),
-                  _vm._v(" "),
-                  _c("hr"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(15),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "book" },
-                      [
-                        _c(
-                          "router-link",
-                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
-                          [
-                            _vm._v("Explore "),
-                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
-                          ]
-                        ),
-                      ],
-                      1
-                    ),
-                  ]),
-                ]),
-              ]),
-            ]
+            ],
+            1
           ),
           _vm._v(" "),
           _c(
@@ -9096,10 +9934,10 @@ var render = function () {
           ),
         ]),
         _vm._v(" "),
-        _vm._m(16),
+        _vm._m(13),
         _vm._v(" "),
         _c("div", { staticClass: "trips" }, [
-          _vm._m(17),
+          _vm._m(14),
           _vm._v(" "),
           _c(
             "div",
@@ -9110,14 +9948,46 @@ var render = function () {
             [
               _c("div", { staticClass: "trip-item" }, [
                 _c("div", { staticClass: "content" }, [
-                  _vm._m(18),
+                  _vm._m(15),
                   _vm._v(" "),
+                  _vm._m(16),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content-footer" }, [
+                    _vm._m(17),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "book" },
+                      [
+                        _c(
+                          "router-link",
+                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
+                          [
+                            _vm._v("View more "),
+                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                          ]
+                        ),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _vm._m(18),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "trip-item" }, [
+                _c("div", { staticClass: "content" }, [
                   _vm._m(19),
                   _vm._v(" "),
+                  _vm._m(20),
+                  _vm._v(" "),
                   _c("hr"),
                   _vm._v(" "),
                   _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(20),
+                    _vm._m(21),
                     _vm._v(" "),
                     _c(
                       "div",
@@ -9137,19 +10007,19 @@ var render = function () {
                   ]),
                 ]),
                 _vm._v(" "),
-                _vm._m(21),
+                _vm._m(22),
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "trip-item" }, [
                 _c("div", { staticClass: "content" }, [
-                  _vm._m(22),
-                  _vm._v(" "),
                   _vm._m(23),
                   _vm._v(" "),
+                  _vm._m(24),
+                  _vm._v(" "),
                   _c("hr"),
                   _vm._v(" "),
                   _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(24),
+                    _vm._m(25),
                     _vm._v(" "),
                     _c(
                       "div",
@@ -9169,19 +10039,19 @@ var render = function () {
                   ]),
                 ]),
                 _vm._v(" "),
-                _vm._m(25),
+                _vm._m(26),
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "trip-item" }, [
                 _c("div", { staticClass: "content" }, [
-                  _vm._m(26),
-                  _vm._v(" "),
                   _vm._m(27),
                   _vm._v(" "),
+                  _vm._m(28),
+                  _vm._v(" "),
                   _c("hr"),
                   _vm._v(" "),
                   _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(28),
+                    _vm._m(29),
                     _vm._v(" "),
                     _c(
                       "div",
@@ -9201,39 +10071,7 @@ var render = function () {
                   ]),
                 ]),
                 _vm._v(" "),
-                _vm._m(29),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "trip-item" }, [
-                _c("div", { staticClass: "content" }, [
-                  _vm._m(30),
-                  _vm._v(" "),
-                  _vm._m(31),
-                  _vm._v(" "),
-                  _c("hr"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(32),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "book" },
-                      [
-                        _c(
-                          "router-link",
-                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
-                          [
-                            _vm._v("View more "),
-                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
-                          ]
-                        ),
-                      ],
-                      1
-                    ),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _vm._m(33),
+                _vm._m(30),
               ]),
             ]
           ),
@@ -9257,10 +10095,10 @@ var render = function () {
         _vm._v(" "),
         _c("div", { staticClass: "testimonials" }, [
           _c("div", { staticClass: "testimonials-content" }, [
-            _vm._m(34),
+            _vm._m(31),
             _vm._v(" "),
             _c("div", { staticClass: "testimonials-body" }, [
-              _vm._m(35),
+              _vm._m(32),
               _vm._v(" "),
               _c(
                 "div",
@@ -9520,51 +10358,6 @@ var staticRenderFns = [
         ]),
       ]
     )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "img-section jc-center" }, [
-      _c("img", {
-        attrs: { src: "/assets/images/pack1.jpg", alt: "", srcset: "" },
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "specs" }, [
-        _c("div", { staticClass: "region" }, [
-          _c("i", { staticClass: "fas fa-map-marker-alt" }),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "days" }, [
-          _c("label", { attrs: { for: "Days" } }, [_vm._v("5 Days")]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-section" }, [
-      _c(
-        "label",
-        {
-          staticClass: "package-title",
-          attrs: { for: "Akagera National Park" },
-        },
-        [_vm._v("Akagera National Park")]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "money" }, [
-      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$4300")]),
-    ])
   },
   function () {
     var _vm = this
@@ -10125,6 +10918,83 @@ var render = function () {
               attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
             },
             [
+              _c(
+                "router-link",
+                {
+                  staticClass: "package-item",
+                  attrs: { to: "/viewPackage/1" },
+                },
+                [
+                  _c("div", { staticClass: "content" }, [
+                    _c("div", { staticClass: "img-section jc-center" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/assets/uploaded/pack1.jpg",
+                          alt: "",
+                          srcset: "",
+                        },
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "specs" }, [
+                        _c("div", { staticClass: "region" }, [
+                          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "Tourism Region" } }, [
+                            _vm._v("Rwanda"),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "days" }, [
+                          _c("label", { attrs: { for: "Days" } }, [
+                            _vm._v("5 Days"),
+                          ]),
+                        ]),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-section" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "package-title",
+                          attrs: { for: "Akagera National Park" },
+                        },
+                        [_vm._v("Akagera National Park")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "content-footer" }, [
+                      _c("div", { staticClass: "money" }, [
+                        _c("label", { attrs: { for: "Amount" } }, [
+                          _vm._v("$4300"),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "book" },
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "book-btn",
+                              attrs: { to: "/book/1" },
+                            },
+                            [
+                              _vm._v("Explore "),
+                              _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                            ]
+                          ),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
               _c("div", { staticClass: "package-item" }, [
                 _c("div", { staticClass: "content" }, [
                   _vm._m(2),
@@ -10334,37 +11204,8 @@ var render = function () {
                   ]),
                 ]),
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "package-item" }, [
-                _c("div", { staticClass: "content" }, [
-                  _vm._m(23),
-                  _vm._v(" "),
-                  _vm._m(24),
-                  _vm._v(" "),
-                  _c("hr"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(25),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "book" },
-                      [
-                        _c(
-                          "router-link",
-                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
-                          [
-                            _vm._v("Explore "),
-                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
-                          ]
-                        ),
-                      ],
-                      1
-                    ),
-                  ]),
-                ]),
-              ]),
-            ]
+            ],
+            1
           ),
           _vm._v(" "),
           _c(
@@ -10385,7 +11226,7 @@ var render = function () {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "trips" }, [
-          _vm._m(26),
+          _vm._m(23),
           _vm._v(" "),
           _c(
             "div",
@@ -10396,14 +11237,46 @@ var render = function () {
             [
               _c("div", { staticClass: "trip-item" }, [
                 _c("div", { staticClass: "content" }, [
-                  _vm._m(27),
+                  _vm._m(24),
                   _vm._v(" "),
+                  _vm._m(25),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content-footer" }, [
+                    _vm._m(26),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "book" },
+                      [
+                        _c(
+                          "router-link",
+                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
+                          [
+                            _vm._v("View more "),
+                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                          ]
+                        ),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _vm._m(27),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "trip-item" }, [
+                _c("div", { staticClass: "content" }, [
                   _vm._m(28),
                   _vm._v(" "),
+                  _vm._m(29),
+                  _vm._v(" "),
                   _c("hr"),
                   _vm._v(" "),
                   _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(29),
+                    _vm._m(30),
                     _vm._v(" "),
                     _c(
                       "div",
@@ -10423,19 +11296,19 @@ var render = function () {
                   ]),
                 ]),
                 _vm._v(" "),
-                _vm._m(30),
+                _vm._m(31),
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "trip-item" }, [
                 _c("div", { staticClass: "content" }, [
-                  _vm._m(31),
-                  _vm._v(" "),
                   _vm._m(32),
                   _vm._v(" "),
+                  _vm._m(33),
+                  _vm._v(" "),
                   _c("hr"),
                   _vm._v(" "),
                   _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(33),
+                    _vm._m(34),
                     _vm._v(" "),
                     _c(
                       "div",
@@ -10455,19 +11328,19 @@ var render = function () {
                   ]),
                 ]),
                 _vm._v(" "),
-                _vm._m(34),
+                _vm._m(35),
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "trip-item" }, [
                 _c("div", { staticClass: "content" }, [
-                  _vm._m(35),
-                  _vm._v(" "),
                   _vm._m(36),
                   _vm._v(" "),
+                  _vm._m(37),
+                  _vm._v(" "),
                   _c("hr"),
                   _vm._v(" "),
                   _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(37),
+                    _vm._m(38),
                     _vm._v(" "),
                     _c(
                       "div",
@@ -10487,39 +11360,7 @@ var render = function () {
                   ]),
                 ]),
                 _vm._v(" "),
-                _vm._m(38),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "trip-item" }, [
-                _c("div", { staticClass: "content" }, [
-                  _vm._m(39),
-                  _vm._v(" "),
-                  _vm._m(40),
-                  _vm._v(" "),
-                  _c("hr"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "content-footer" }, [
-                    _vm._m(41),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "book" },
-                      [
-                        _c(
-                          "router-link",
-                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
-                          [
-                            _vm._v("View more "),
-                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
-                          ]
-                        ),
-                      ],
-                      1
-                    ),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _vm._m(42),
+                _vm._m(39),
               ]),
             ]
           ),
@@ -10607,52 +11448,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "img-section jc-center" }, [
       _c("img", {
-        attrs: { src: "/assets/images/pack1.jpg", alt: "", srcset: "" },
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "specs" }, [
-        _c("div", { staticClass: "region" }, [
-          _c("i", { staticClass: "fas fa-map-marker-alt" }),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "days" }, [
-          _c("label", { attrs: { for: "Days" } }, [_vm._v("5 Days")]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-section" }, [
-      _c(
-        "label",
-        {
-          staticClass: "package-title",
-          attrs: { for: "Akagera National Park" },
-        },
-        [_vm._v("Akagera National Park")]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "money" }, [
-      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$4300")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "img-section jc-center" }, [
-      _c("img", {
-        attrs: { src: "/assets/images/canopy.jpg", alt: "", srcset: "" },
+        attrs: { src: "/assets/uploaded/canopy.jpg", alt: "", srcset: "" },
       }),
       _vm._v(" "),
       _c("div", { staticClass: "specs" }, [
@@ -10697,7 +11493,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "img-section jc-center" }, [
       _c("img", {
-        attrs: { src: "/assets/images/gor2.jpg", alt: "", srcset: "" },
+        attrs: { src: "/assets/uploaded/gor2.jpg", alt: "", srcset: "" },
       }),
       _vm._v(" "),
       _c("div", { staticClass: "specs" }, [
@@ -10742,7 +11538,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "img-section jc-center" }, [
       _c("img", {
-        attrs: { src: "/assets/images/bg2.jpg", alt: "", srcset: "" },
+        attrs: { src: "/assets/uploaded/bg2.jpg", alt: "", srcset: "" },
       }),
       _vm._v(" "),
       _c("div", { staticClass: "specs" }, [
@@ -12419,6 +13215,717 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewPackage.vue?vue&type=template&id=2ecddbaf&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./scheme/vue/views/site/ViewPackage.vue?vue&type=template&id=2ecddbaf& ***!
+  \************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "ViewPackage" },
+    [
+      _c("loading", {
+        attrs: {
+          active: _vm.isLoading,
+          "can-cancel": true,
+          "on-cancel": _vm.onCancel,
+          color: _vm.color,
+          "is-full-page": _vm.fullPage,
+        },
+        on: {
+          "update:active": function ($event) {
+            _vm.isLoading = $event
+          },
+        },
+      }),
+      _vm._v(" "),
+      _c("clientHeader"),
+      _vm._v(" "),
+      _c("div", { staticClass: "all-content" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "view-package-widget" }, [
+          _c(
+            "div",
+            { staticClass: "widget-header" },
+            [
+              _c(
+                "hooper",
+                {
+                  staticClass: "widget-body",
+                  attrs: { settings: _vm.Settings },
+                },
+                [
+                  _c("slide", { staticClass: "widget-item" }, [
+                    _c("img", {
+                      attrs: { src: "/assets/uploaded/pack1.jpg", alt: "" },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("slide", { staticClass: "widget-item" }, [
+                    _c("img", {
+                      attrs: { src: "/assets/uploaded/akag2.jpg", alt: "" },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("slide", { staticClass: "widget-item" }, [
+                    _c("img", {
+                      attrs: { src: "/assets/uploaded/akag3.jpg", alt: "" },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("slide", { staticClass: "widget-item" }, [
+                    _c("img", {
+                      attrs: { src: "/assets/uploaded/akag4.jpg", alt: "" },
+                    }),
+                  ]),
+                ],
+                1
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _vm._m(2),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "packages" }, [
+          _vm._m(3),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "packages-body",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [
+              _c("div", { staticClass: "package-item" }, [
+                _c("div", { staticClass: "content" }, [
+                  _vm._m(4),
+                  _vm._v(" "),
+                  _vm._m(5),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content-footer" }, [
+                    _vm._m(6),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "book" },
+                      [
+                        _c(
+                          "router-link",
+                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
+                          [
+                            _vm._v("Explore "),
+                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                          ]
+                        ),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "package-item" }, [
+                _c("div", { staticClass: "content" }, [
+                  _vm._m(7),
+                  _vm._v(" "),
+                  _vm._m(8),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content-footer" }, [
+                    _vm._m(9),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "book" },
+                      [
+                        _c(
+                          "router-link",
+                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
+                          [
+                            _vm._v("Explore "),
+                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                          ]
+                        ),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "package-item" }, [
+                _c("div", { staticClass: "content" }, [
+                  _vm._m(10),
+                  _vm._v(" "),
+                  _vm._m(11),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content-footer" }, [
+                    _vm._m(12),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "book" },
+                      [
+                        _c(
+                          "router-link",
+                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
+                          [
+                            _vm._v("Explore "),
+                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                          ]
+                        ),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "package-item" }, [
+                _c("div", { staticClass: "content" }, [
+                  _vm._m(13),
+                  _vm._v(" "),
+                  _vm._m(14),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content-footer" }, [
+                    _vm._m(15),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "book" },
+                      [
+                        _c(
+                          "router-link",
+                          { staticClass: "book-btn", attrs: { to: "/book/1" } },
+                          [
+                            _vm._v("Explore "),
+                            _c("i", { staticClass: "mdi mdi-arrow-right" }),
+                          ]
+                        ),
+                      ],
+                      1
+                    ),
+                  ]),
+                ]),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "packages-footer jc-center",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [
+              _c(
+                "router-link",
+                { staticClass: "mybtn-o", attrs: { to: "/packages" } },
+                [_vm._v("View More Packages")]
+              ),
+            ],
+            1
+          ),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("clientFooter"),
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "intro" }, [
+      _c("div", { staticClass: "intro-content" }, [
+        _c("div", { staticClass: "intro-body" }, [
+          _c(
+            "h2",
+            {
+              staticClass: "intro-header",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [_vm._v("\n            Akagera National Park\n          ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "p",
+            {
+              staticClass: "txt-shad-sm intro-desc",
+              attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+            },
+            [
+              _vm._v(
+                "\n            A 5 days Trip to Akagera National Park.\n          "
+              ),
+            ]
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "widget-desc" }, [
+      _c(
+        "label",
+        { staticClass: "my-title", attrs: { for: "Trip Overview" } },
+        [_vm._v("Overview")]
+      ),
+      _vm._v(" "),
+      _c("hr", { staticClass: "myhr" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "desc-content" }, [
+        _c("div", { staticClass: "desc-body" }, [
+          _c("div", { staticClass: "desc-item" }, [
+            _c(
+              "label",
+              { staticClass: "title", attrs: { for: "Destination" } },
+              [_vm._v("Destination:")]
+            ),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "item", attrs: { for: "Akagera National Park" } },
+              [_vm._v("Akagera National Park")]
+            ),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "desc-item" }, [
+            _c(
+              "label",
+              { staticClass: "title", attrs: { for: "Destination" } },
+              [_vm._v("Duration:")]
+            ),
+            _vm._v(" "),
+            _c("label", { staticClass: "item", attrs: { for: "5 Days" } }, [
+              _vm._v("5 Days"),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "desc-item" }, [
+            _c(
+              "label",
+              { staticClass: "title", attrs: { for: "Destination" } },
+              [_vm._v("Country:")]
+            ),
+            _vm._v(" "),
+            _c("label", { staticClass: "item", attrs: { for: "Rwanda" } }, [
+              _vm._v("Rwanda"),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "desc-body" }, [
+          _c("div", { staticClass: "desc-item" }, [
+            _c(
+              "label",
+              { staticClass: "title", attrs: { for: "Destination" } },
+              [_vm._v("Region/Province:")]
+            ),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "item", attrs: { for: "Eastern Province" } },
+              [_vm._v("Eastern Province")]
+            ),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "desc-item" }, [
+            _c("label", { staticClass: "title", attrs: { for: "Min Age" } }, [
+              _vm._v("Min Age:"),
+            ]),
+            _vm._v(" "),
+            _c("label", { staticClass: "item", attrs: { for: "16 Years" } }, [
+              _vm._v("16 Years"),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "desc-item" }, [
+            _c(
+              "label",
+              { staticClass: "title", attrs: { for: "Max People" } },
+              [_vm._v("Max People:")]
+            ),
+            _vm._v(" "),
+            _c("label", { staticClass: "item", attrs: { for: "6" } }, [
+              _vm._v("6"),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "desc-footer jc-center",
+          attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+        },
+        [_c("button", { staticClass: "mybtn" }, [_vm._v("Book Now")])]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "widget-inclusives" }, [
+      _c("div", { staticClass: "inclusives-content" }, [
+        _c("div", { staticClass: "left" }, [
+          _c(
+            "label",
+            { staticClass: "my-title", attrs: { for: "Trip Overview" } },
+            [_vm._v("Inclusives")]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "myhr" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "inclusive-body" }, [
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Transport" } }, [
+                _vm._v("Transport"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Accommodations" } }, [
+                _vm._v("Accommodations"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c(
+                "label",
+                { attrs: { for: "Entry fees to the park mentioned" } },
+                [_vm._v("Entry fees to the park mentioned")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Covid -19 Test Fees" } }, [
+                _vm._v("Covid -19 Test Fees"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Local Taxes" } }, [
+                _vm._v("Local Taxes"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Meals & Soft Drinks" } }, [
+                _vm._v("Meals & Soft Drinks"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-check" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Guiding & service fee" } }, [
+                _vm._v("Guiding & service fee"),
+              ]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "right" }, [
+          _c(
+            "label",
+            { staticClass: "my-title", attrs: { for: "Trip Overview" } },
+            [_vm._v("Exclusives")]
+          ),
+          _vm._v(" "),
+          _c("hr", { staticClass: "myhr" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "inclusive-body" }, [
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-times" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Airline tickets" } }, [
+                _vm._v("Airline tickets"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-times" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Visa Fees" } }, [
+                _vm._v("Visa Fees"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inclusive-item" }, [
+              _c("i", { staticClass: "fas fa-times" }),
+              _vm._v(" "),
+              _c("label", { attrs: { for: "Travel insurance" } }, [
+                _vm._v("Travel insurance"),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "inclusives-footer jc-center",
+          attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+        },
+        [_c("button", { staticClass: "mybtn" }, [_vm._v("Book Now")])]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "header",
+        attrs: { "data-aos": "fade-up", "data-aos-duration": "1000" },
+      },
+      [
+        _c(
+          "label",
+          { staticClass: "my-title", attrs: { for: "Upcoming Trips" } },
+          [_vm._v("Related Packages")]
+        ),
+        _vm._v(" "),
+        _c("hr", { staticClass: "myhr" }),
+        _vm._v(" "),
+        _c("p", { staticClass: "desc" }, [
+          _vm._v(
+            "\n          Book a package with us and let's bring adventure to your table.\n        "
+          ),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "img-section jc-center" }, [
+      _c("img", {
+        attrs: { src: "/assets/images/canopy.jpg", alt: "", srcset: "" },
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "specs" }, [
+        _c("div", { staticClass: "region" }, [
+          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "days" }, [
+          _c("label", { attrs: { for: "Days" } }, [_vm._v("2 Days")]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-section" }, [
+      _c(
+        "label",
+        {
+          staticClass: "package-title",
+          attrs: { for: "Nyungwe National Park" },
+        },
+        [_vm._v("Nyungwe National Park")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "money" }, [
+      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$2400")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "img-section jc-center" }, [
+      _c("img", {
+        attrs: { src: "/assets/images/gor2.jpg", alt: "", srcset: "" },
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "specs" }, [
+        _c("div", { staticClass: "region" }, [
+          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "days" }, [
+          _c("label", { attrs: { for: "Days" } }, [_vm._v("3 Days")]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-section" }, [
+      _c(
+        "label",
+        {
+          staticClass: "package-title",
+          attrs: { for: "Volcanoes National Park" },
+        },
+        [_vm._v("Volcanoes National Park")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "money" }, [
+      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$5100")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "img-section jc-center" }, [
+      _c("img", {
+        attrs: { src: "/assets/images/bg2.jpg", alt: "", srcset: "" },
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "specs" }, [
+        _c("div", { staticClass: "region" }, [
+          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "days" }, [
+          _c("label", { attrs: { for: "Days" } }, [_vm._v("1 Day")]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-section" }, [
+      _c(
+        "label",
+        { staticClass: "package-title", attrs: { for: "Twin Lakes" } },
+        [_vm._v("Twin Lakes")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "money" }, [
+      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$1400")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "img-section jc-center" }, [
+      _c("img", {
+        attrs: { src: "/assets/images/pack1.jpg", alt: "", srcset: "" },
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "specs" }, [
+        _c("div", { staticClass: "region" }, [
+          _c("i", { staticClass: "fas fa-map-marker-alt" }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "Tourism Region" } }, [_vm._v("Rwanda")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "days" }, [
+          _c("label", { attrs: { for: "Days" } }, [_vm._v("5 Days")]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-section" }, [
+      _c(
+        "label",
+        {
+          staticClass: "package-title",
+          attrs: { for: "Akagera National Park" },
+        },
+        [_vm._v("Akagera National Park")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "money" }, [
+      _c("label", { attrs: { for: "Amount" } }, [_vm._v("$4300")]),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/pages/Footer.vue?vue&type=template&id=7b34e630&scoped=true&":
 /*!*************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./scheme/vue/views/site/pages/Footer.vue?vue&type=template&id=7b34e630&scoped=true& ***!
@@ -13921,6 +15428,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_site_Trips_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../views/site/Trips.vue */ "./scheme/vue/views/site/Trips.vue");
 /* harmony import */ var _views_site_About_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../views/site/About.vue */ "./scheme/vue/views/site/About.vue");
 /* harmony import */ var _views_site_Contact_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../views/site/Contact.vue */ "./scheme/vue/views/site/Contact.vue");
+/* harmony import */ var _views_site_ViewPackage_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../views/site/ViewPackage.vue */ "./scheme/vue/views/site/ViewPackage.vue");
+
 
 
 
@@ -13948,6 +15457,10 @@ var routes = [{
   path: "/packages",
   name: "Packages",
   component: _views_site_Packages_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
+}, {
+  path: "/viewPackage/:id",
+  name: "ViewPackage",
+  component: _views_site_ViewPackage_vue__WEBPACK_IMPORTED_MODULE_10__["default"]
 }, {
   path: "/gallery",
   name: "Gallery",
@@ -14983,6 +16496,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Trips_vue_vue_type_template_id_6d5ae0bc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Trips_vue_vue_type_template_id_6d5ae0bc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./scheme/vue/views/site/ViewPackage.vue":
+/*!***********************************************!*\
+  !*** ./scheme/vue/views/site/ViewPackage.vue ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ViewPackage_vue_vue_type_template_id_2ecddbaf___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ViewPackage.vue?vue&type=template&id=2ecddbaf& */ "./scheme/vue/views/site/ViewPackage.vue?vue&type=template&id=2ecddbaf&");
+/* harmony import */ var _ViewPackage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ViewPackage.vue?vue&type=script&lang=js& */ "./scheme/vue/views/site/ViewPackage.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _ViewPackage_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ViewPackage.vue?vue&type=style&index=0&lang=scss& */ "./scheme/vue/views/site/ViewPackage.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _ViewPackage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ViewPackage_vue_vue_type_template_id_2ecddbaf___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ViewPackage_vue_vue_type_template_id_2ecddbaf___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "scheme/vue/views/site/ViewPackage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./scheme/vue/views/site/ViewPackage.vue?vue&type=script&lang=js&":
+/*!************************************************************************!*\
+  !*** ./scheme/vue/views/site/ViewPackage.vue?vue&type=script&lang=js& ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./ViewPackage.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewPackage.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./scheme/vue/views/site/ViewPackage.vue?vue&type=style&index=0&lang=scss&":
+/*!*********************************************************************************!*\
+  !*** ./scheme/vue/views/site/ViewPackage.vue?vue&type=style&index=0&lang=scss& ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./ViewPackage.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewPackage.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./scheme/vue/views/site/ViewPackage.vue?vue&type=template&id=2ecddbaf&":
+/*!******************************************************************************!*\
+  !*** ./scheme/vue/views/site/ViewPackage.vue?vue&type=template&id=2ecddbaf& ***!
+  \******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_template_id_2ecddbaf___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./ViewPackage.vue?vue&type=template&id=2ecddbaf& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./scheme/vue/views/site/ViewPackage.vue?vue&type=template&id=2ecddbaf&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_template_id_2ecddbaf___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewPackage_vue_vue_type_template_id_2ecddbaf___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
