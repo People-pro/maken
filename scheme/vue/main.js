@@ -67,9 +67,13 @@ import "hooper/dist/hooper.css";
 
 import clientHeader from "./views/site/pages/Header.vue";
 import clientFooter from "./views/site/pages/Footer.vue";
+import BookPackage from "./views/site/components/BookPackage.vue";
+import Done from "./views/site/components/Done.vue";
 
 Vue.component("clientHeader", clientHeader);
 Vue.component("clientFooter", clientFooter);
+Vue.component("BookPackage", BookPackage);
+Vue.component("Done", Done);
 Vue.use(Antd);
 AOS.init();
 

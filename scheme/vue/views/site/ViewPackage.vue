@@ -71,10 +71,10 @@
                 <label for="Price" class="title">Price(Rwandans):</label>
                 <label for="price" class="item price">45K</label>
               </div>
-              <div class="desc-item">
+              <!-- <div class="desc-item">
                 <label for="Price" class="title">Price(Residents):</label>
                 <label for="price" class="item price">90K</label>
-              </div>
+              </div> -->
               <div class="desc-item">
                 <label for="Price" class="title">Price(Foreigners):</label>
                 <label for="price" class="item price">130K</label>
@@ -86,7 +86,7 @@
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <button class="mybtn">Book Now</button>
+            <button class="mybtn" @click="startBooking = true">Book Now</button>
           </div>
         </div>
         <div class="widget-header">
@@ -185,7 +185,7 @@
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <button class="mybtn">Book Now</button>
+            <button class="mybtn" @click="startBooking = true">Book Now</button>
           </div>
         </div>
       </div>
@@ -328,6 +328,7 @@
         </div>
       </div>
     </div>
+    <BookPackage v-show="startBooking" @closeModal="startBooking = false;"/>
     <clientFooter />
   </div>
 </template>
@@ -340,6 +341,7 @@ export default {
       isLoading: false,
       color: "#072e4d",
       fullPage: true,
+      startBooking: false,
       Settings: {
         itemsToShow: 1,
         centerMode: false,
