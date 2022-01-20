@@ -10,13 +10,6 @@
         <span class="text">Loading...</span>
       </div>
     </div>
-    <a
-      href="https://api.whatsapp.com/send/?phone=250785848669"
-      target="_blank"
-      class="help"
-    >
-      <i class="fas fa-comment-alt"></i>
-    </a>
   </div>
 </template>
 
@@ -46,6 +39,7 @@ $green: #044914;
   outline: none;
   box-shadow: 0px 0px 10px 2px #0000004f;
   transition: all 0.4s ease-in-out;
+  z-index: 99999;
   &:hover,
   &:focus {
     background: $green;
@@ -205,6 +199,127 @@ $green: #044914;
       }
       @media screen and (max-width: 900px) {
         padding: 2rem;
+      }
+    }
+  }
+}
+
+.admin-content {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.admin-body {
+  width: calc(100vw - 200px);
+}
+.page-brand {
+  font-size: 1rem;
+  color: #2a2a2a;
+  padding: 1rem;
+  border-bottom: 1px #eee solid;
+  width: 100%;
+}
+
+.table {
+  padding: 0 2rem;
+  overflow-x: auto;
+  max-height: 90vh;
+  .table-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and(max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 1rem;
+    }
+    label {
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 1rem 0;
+      border-bottom: 1px #f0f0f0 solid;
+      line-height: 2;
+    }
+    .add-new {
+      padding: 5px 1rem;
+      font-size: 0.9rem;
+      color: white;
+      font-weight: 500;
+      border-radius: 3000px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: $orange;
+      box-shadow: 0px 0px 10px 2px #015b0a32;
+    }
+  }
+  table {
+    width: 100%;
+    tr {
+      border-bottom: 1px #f0f0f0 solid;
+      th {
+        line-height: 2;
+        padding: 0 1rem;
+        text-transform: capitalize;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      td {
+        font-weight: 300;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0 1rem;
+        img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+          padding: 3px;
+          &.alt {
+            width: auto;
+            border-radius: 0;
+          }
+        }
+        button,
+        .button {
+          padding: 3px 1rem;
+          font-size: 0.7rem;
+          color: white;
+          font-weight: 500;
+          border-radius: 3000px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          margin-right: 0.25rem;
+          &.edit {
+            background: #02b4eb;
+            box-shadow: 0px 0px 10px 2px #02b5eb4d;
+          }
+          &.videos {
+            background: #01cc60;
+            box-shadow: 0px 0px 10px 2px #01cc6055;
+          }
+          &.delete {
+            background: #b80303;
+            box-shadow: 0px 0px 10px 2px #b8030363;
+          }
+          a {
+            color: white;
+          }
+        }
+      }
+      .noData {
+        text-align: center;
+        padding: 3rem;
+        color: #f54d4d;
+      }
+    }
+    &.pads {
+      th,
+      td {
+        padding: 10px 0;
       }
     }
   }

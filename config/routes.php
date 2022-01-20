@@ -23,6 +23,26 @@ $routes = [
     ],
 
 
+    // ADMIN API
+    [
+        'path' => '/api/v1/admin',
+        "children" => [
+            [
+                'path' => '/adminLogin',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'adminLoginController@adminLogin',
+            ],
+            [
+                'path' => '/getDashboards',
+                'method' => 'POST',
+                'folder' => 'site',
+                'return' => 'PagesController@getDashboards',
+            ],
+        ],
+    ],
+
+
 
 
 

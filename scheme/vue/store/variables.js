@@ -48,4 +48,12 @@ export const SEARCH_GET_HISTORY_URL = "/search/mine/history";
 export const SEARCH_REMOVE_FROM_HISTORY_URL = "/search/remove/history";
 export const SEND_CONTACT_MESSAGE_URL = "/send/contact/message";
 
+// users
+export const ADMIN_LOGIN_URL = api_base_url + "/admin/adminLogin";
+export const GET_USERS_URL = api_base_url + "/admin/getUsers";
+export const ADD_USER_URL = api_base_url + "/admin/addUser";
+export const UPDATE_USER_URL = api_base_url + "/admin/updateUser";
+export const DELETE_USER_URL = api_base_url + "/admin/deleteUser/";
 
+// Others
+export const DASHBOARDS_URL = api_base_url + "/admin/getDashboards";

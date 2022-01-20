@@ -14,16 +14,41 @@ export default {
       vm.$store.state.isLoading = false;
     },
 
-    $writerlogout() {
+    $adminlogout() {
       let vm = this;
-      vm.$localStorage.remove("writter_access_token");
-      vm.$localStorage.remove("writer");
-      vm.$router.push({ name: "Login" });
+      vm.$localStorage.remove("maken_admin_access_token");
+      vm.$localStorage.remove("maken_admin");
+      vm.$router.push({ name: "AdminLogin" });
     },
-    $clientlogout() {
+    $loggedAdmin() {
       let vm = this;
-      vm.$localStorage.remove("client_access_token");
-      vm.$localStorage.remove("client");
+      if (vm.$localStorage.get("maken_admin")) {
+        let admin = JSON.parse(vm.$localStorage.get("maken_admin"));
+        return admin;
+      } else {
+        return false;
+      }
+    },
+    $loggedAdminToken() {
+      let vm = this;
+      if (vm.$localStorage.get("maken_admin_access_token")) {
+        let admin_access_token = vm.$localStorage.get(
+          "maken_admin_access_token"
+        );
+        return admin_access_token;
+      } else {
+        return false;
+      }
+    },
+    $adminLogin(user, token) {
+      this.$localStorage.set("maken_admin_access_token", token);
+      this.$localStorage.set("maken_admin", JSON.stringify(user));
+      this.$router.push({ name: "Dashboard" });
+    },
+    $clientLogout() {
+      let vm = this;
+      vm.$localStorage.remove("maken_client_access_token");
+      vm.$localStorage.remove("maken_client");
       vm.$notify({
         group: "status",
         type: "success",
@@ -31,6 +56,24 @@ export default {
         text: "You are logged out now",
       });
       document.location.reload();
+    },
+    $loggedClient() {
+      let vm = this;
+      if (vm.$localStorage.get("maken_client")) {
+        let client = JSON.parse(vm.$localStorage.get("client"));
+        return client;
+      } else {
+        return false;
+      }
+    },
+    $loggedClientToken() {
+      let vm = this;
+      if (vm.$localStorage.get("maken_client")) {
+        let client_access_token = vm.$localStorage.get("client_access_token");
+        return client_access_token;
+      } else {
+        return false;
+      }
     },
     $isFieldsValidated(form, rules) {
       let vm = this;

@@ -11,6 +11,10 @@ import Contact from "../views/site/Contact.vue";
 import ViewPackage from "../views/site/ViewPackage.vue";
 import ViewTrip from "../views/site/ViewTrip.vue";
 
+// admin
+import Dashboard from "../views/admin/Dashboard.vue";
+import AdminLogin from "../views/admin/AdminLogin.vue";
+
 Vue.use(VueRouter);
 const routes = [
   {
@@ -62,6 +66,19 @@ const routes = [
     path: "/contact",
     name: "Contact",
     component: Contact,
+  },
+  
+  // admin
+
+  {
+    path: "/admin",
+    name: "Dashboard",
+    component: Dashboard,
+  },
+  {
+    path: "/admin/login",
+    name: "AdminLogin",
+    component: AdminLogin,
   },
 ];
 

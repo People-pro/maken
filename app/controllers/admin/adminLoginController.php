@@ -12,27 +12,27 @@ class adminLoginController extends Controller
     {
         parent::__construct();
     }
-    public function index()
+    public function adminLogin()
     {
-        $username        = input('username');
+        $email        = input('email');
         $password     = input('password');
         $adminLogin         = new adminLogin();
-        Cookies::delete('client_logged_data');
-        $checkLogin = $adminLogin->checkLogin($username, $password);
+        Cookies::delete('maken_admin_logged_data');
+        $checkLogin = $adminLogin->checkLogin($email, $password);
         if ($checkLogin) {
-            Cookies::add('client_logged_data', json_encode($checkLogin), 10);
-            $loggedInId = $checkLogin->user_id;
+            Cookies::add('maken_admin_logged_data', json_encode($checkLogin), 10);
+            $loggedInId = $checkLogin->id;
             $newToken = getToken($length = 200, $type = 'string');
             $token = $adminLogin->setToken($newToken, $loggedInId);
             $responce['status'] = "ok";
             $responce['message'] = "You are successfully logged in";
-            $responce['logged_in_user'] = $checkLogin;
-            $responce['logged_in_token'] = $newToken;
+            $responce['user'] = $checkLogin;
+            $responce['user_token'] = $newToken;
             responce(json_encode($responce), 202);
         } else {
             $responce['status'] = "bad";
-            $responce['message'] = "Email or password are not correct,Try again";
-            responce(json_encode($responce), 404);
+            $responce['message'] = "Email or password are not correct";
+            responce(json_encode($responce), 202);
         }
     }
     public function validateToken()

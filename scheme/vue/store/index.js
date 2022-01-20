@@ -2,6 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import { BASE_URL, UPLOAD_BASE_URL } from "./variables";
 import Upload from "./modules/upload.js";
+import User from "./modules/users.js";
 
 Vue.use(Vuex);
 export default new Vuex.Store({
@@ -46,5 +47,6 @@ export default new Vuex.Store({
   actions: {},
   modules: {
     Upload,
+    User,
   },
 });

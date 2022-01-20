@@ -11,20 +11,21 @@ use Illuminate\Database\Schema\Blueprint;
 $db_up_migration = [
     [
         'key' => 1,
-        'table' => 'user',
+        'table' => 'users',
         "todo" => 'create',
         'run' => function (Blueprint $table) {
-            $table->bigIncrements('user_id');
+            $table->bigIncrements('id');
             $table->string('names')->nullable();
-            $table->string('username')->unique()->nullable();
+            $table->string('email')->unique()->nullable();
             $table->string('user_image')->nullable();
             $table->text('password')->nullable();
+            $table->integer('type')->nullable();
             $table->text('token')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->boolean('is_deleted')->nullable();
         },
-        'reason' => 'Creating user table',
+        'reason' => 'Creating users table',
     ],
     [
         'key' => 2,
@@ -32,7 +33,7 @@ $db_up_migration = [
         "todo" => 'create',
         'run' => function (Blueprint $table) {
             $table->bigIncrements('id');
-            // $table->bigInteger('user_id');
+            $table->bigInteger('user_id');
             $table->string('unique_index')->unique()->nullable();
             $table->string('virtual_name')->nullable();
             $table->string('file_name')->nullable();
@@ -43,176 +44,126 @@ $db_up_migration = [
             $table->text('content')->nullable();
             $table->string('keyword')->nullable();
             $table->timestamps();
+            $table->softDeletes();
+            $table->boolean('is_deleted')->nullable();
         },
         'reason' => 'Creating files table',
     ],
     [
         'key' => 3,
-        'table' => 'clients',
+        'table' => 'attractions',
         "todo" => 'create',
         'run' => function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('fullname')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('email')->unique()->nullable();
-            $table->text('token')->nullable();
-            $table->text('password')->nullable();
+            $table->string('name')->nullable();
+            $table->text('images')->nullable();
+            $table->string('country')->nullable();
+            $table->string('region')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->boolean('is_deleted')->nullable();
         },
-        'reason' => 'Creating clients table',
+        'reason' => 'Creating attractions table',
     ],
     [
         'key' => 4,
-        'table' => 'writter',
+        'table' => 'packages',
         "todo" => 'create',
         'run' => function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('fullname')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('email')->nullable();
-            $table->string('gender')->nullable();
-            $table->string('nationalism')->nullable();
-            $table->string('cv')->nullable();
-            $table->string('status')->nullable();
-            $table->text('summary')->nullable();
-            $table->text('bio')->nullable();
+            $table->integer('attraction_id')->nullable();
+            $table->string('duration')->nullable();
+            $table->string('min_age')->nullable();
+            $table->string('max_people')->nullable();
+            $table->text('price')->nullable();
+            $table->text('inclusives')->nullable();
+            $table->text('exclusives')->nullable();
+            $table->text('reqs')->nullable();
             $table->text('image')->nullable();
-            $table->text('category')->nullable();
-            $table->text('token')->nullable();
-            $table->text('password')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->boolean('is_deleted')->nullable();
         },
-        'reason' => 'Creating writter table',
+        'reason' => 'Creating packages table',
     ],
     [
         'key' => 5,
-        'table' => 'script',
+        'table' => 'trips',
         "todo" => 'create',
         'run' => function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('user_id')->nullable();
-            $table->string('title')->nullable();
-            $table->string('image')->nullable();
-            $table->string('price')->nullable();
-            $table->text('summary')->nullable();
-            $table->text('description')->nullable();
-            $table->string('category')->nullable();
-            $table->string('genre')->nullable();
-            $table->string('filter')->nullable();
-            $table->string('status')->nullable();
-            $table->string('file')->nullable();
+            $table->integer('attraction_id')->nullable();
+            $table->string('duration')->nullable();
+            $table->string('min_age')->nullable();
+            $table->string('max_people')->nullable();
+            $table->text('price')->nullable();
+            $table->text('inclusives')->nullable();
+            $table->text('exclusives')->nullable();
+            $table->text('reqs')->nullable();
+            $table->text('image')->nullable();
+            $table->string('date')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->boolean('is_deleted')->nullable();
         },
-        'reason' => 'Creating script table',
+        'reason' => 'Creating trips table',
     ],
     [
         'key' => 6,
-        'table' => 'script_order',
+        'table' => 'gallery',
         "todo" => 'create',
         'run' => function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('user_id')->nullable();
-            $table->integer('script_id')->nullable();
-            $table->string('amount')->nullable();
-            $table->string('payment_status')->nullable();
-            $table->string('payment_type')->nullable();
-            $table->text('link')->nullable();
-            $table->text('token')->nullable();
-            $table->integer('repeat')->nullable();
+            $table->string('title')->nullable();
+            $table->string('date')->nullable();
+            $table->string('image')->nullable();
+            $table->text('images')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->boolean('is_deleted')->nullable();
         },
-        'reason' => 'Creating script_order table',
+        'reason' => 'Creating gallery table',
     ],
     [
         'key' => 7,
-        'table' => 'contact',
+        'table' => 'trip_orders',
         "todo" => 'create',
         'run' => function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('trip_id')->nullable();
             $table->string('fullname')->nullable();
-            $table->string('email')->nullable();
-            $table->string('subject')->nullable();
-            $table->text('message')->nullable();
-            $table->timestamps();
-            $table->softDeletes();
-            $table->boolean('is_deleted')->nullable();
-        },
-        'reason' => 'Creating contact table',
-    ],
-    [
-        'key' => 8,
-        'table' => 'consultancy',
-        "todo" => 'create',
-        'run' => function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('fullname')->nullable();
-            $table->string('email')->nullable();
             $table->string('phone')->nullable();
-            $table->string('file')->nullable();
-            $table->text('message')->nullable();
+            $table->string('email')->nullable();
+            $table->string('people')->nullable();
+            $table->string('nationality')->nullable();
+            $table->text('details')->nullable();
             $table->string('status')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->boolean('is_deleted')->nullable();
         },
-        'reason' => 'Creating consultancy table',
+        'reason' => 'Creating trip_orders table',
     ],
     [
-        'key' => 9,
-        'table' => 'trash',
+        'key' => 8,
+        'table' => 'package_orders',
         "todo" => 'create',
         'run' => function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('item_id')->nullable();
-            $table->string('item_type')->nullable();
+            $table->integer('package_id')->nullable();
+            $table->string('fullname')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('email')->nullable();
+            $table->string('people')->nullable();
+            $table->string('nationality')->nullable();
+            $table->text('details')->nullable();
+            $table->string('status')->nullable();
+            $table->string('date')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->boolean('is_deleted')->nullable();
         },
-        'reason' => 'Creating trash table',
-    ],
-    [
-        'key' => 10,
-        'table' => 'notification',
-        "todo" => 'create',
-        'run' => function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('user_id')->nullable();
-            $table->integer('item_id')->nullable();
-            $table->string('item_type')->nullable();
-            $table->text('message')->nullable();
-            $table->text('read')->nullable();
-            $table->timestamps();
-            $table->softDeletes();
-            $table->boolean('is_deleted')->nullable();
-        },
-        'reason' => 'Creating notification table',
-    ],
-    [
-        'key' => 11,
-        'table' => 'files',
-        "todo" => 'update',
-        'run' => function (Blueprint $table) {
-            $table->string('user_id')->after('id')->nullable();
-        },
-        'reason' => 'adding user_id on tb_files table',
-    ],
-    [
-        'key' => 12,
-        'table' => 'files',
-        "todo" => 'update',
-        'run' => function (Blueprint $table) {
-            $table->boolean('is_deleted')->after('updated_at')->nullable();
-        },
-        'reason' => 'adding is_deleted on tb_files table',
+        'reason' => 'Creating package_orders table',
     ],
 ];
 

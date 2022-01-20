@@ -69,10 +69,14 @@ import clientHeader from "./views/site/pages/Header.vue";
 import clientFooter from "./views/site/pages/Footer.vue";
 import BookPackage from "./views/site/components/BookPackage.vue";
 import Done from "./views/site/components/Done.vue";
+import adminSidebar from "./views/admin/pages/sidebar.vue";
+import AdminLogged from "./views/admin/components/Logged.vue";
 
 Vue.component("clientHeader", clientHeader);
 Vue.component("clientFooter", clientFooter);
 Vue.component("BookPackage", BookPackage);
+Vue.component("adminSidebar", adminSidebar);
+Vue.component("AdminLogged", AdminLogged);
 Vue.component("Done", Done);
 Vue.use(Antd);
 AOS.init();

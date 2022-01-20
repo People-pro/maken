@@ -8,16 +8,16 @@ use Carbon\Carbon;
 
 class adminLogin extends Models
 {
-    public function checkLogin($username, $password)
+    public function checkLogin($email, $password)
     {
         $today = Carbon::now('+2:00');
-        $checkUser = DB::table('tb_user')->where([
-            ['username', '=', $username]
+        $checkUser = DB::table('tb_users')->where([
+            ['email', '=', $email]
         ]);
         $user_exists = $checkUser->exists();
         if ($user_exists) {
-            $data = DB::table('tb_user')->where([
-                ['username', '=', $username]
+            $data = DB::table('tb_users')->where([
+                ['email', '=', $email]
             ])->get()->first();
             $hashed_password = $data->password;
             if (password_verify($password, $hashed_password)) {
@@ -29,8 +29,8 @@ class adminLogin extends Models
     }
     public function setToken($newToken, $loggedInId)
     {
-        if (DB::table('tb_user')
-            ->where([['user_id', '=', $loggedInId]])
+        if (DB::table('tb_users')
+            ->where([['id', '=', $loggedInId]])
             ->update(['token' => $newToken])
         ) {
             return $newToken;
@@ -39,7 +39,7 @@ class adminLogin extends Models
     }
     public function validateToken($token)
     {
-        $user = DB::table('tb_user')->where([['token', '=', $token]]);
+        $user = DB::table('tb_users')->where([['token', '=', $token]]);
         if ($user->exists()) {
             return true;
         }
