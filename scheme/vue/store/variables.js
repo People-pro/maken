@@ -57,3 +57,15 @@ export const DELETE_USER_URL = api_base_url + "/admin/deleteUser/";
 
 // Others
 export const DASHBOARDS_URL = api_base_url + "/admin/getDashboards";
+
+// Attractions
+export const GET_ATTRACTION_URL = api_base_url + "/admin/attractions/getAttraction";
+export const ADD_ATTRACTION_URL = api_base_url + "/admin/attractions/addAttraction";
+export const UPDATE_ATTRACTION_URL = api_base_url + "/admin/attractions/updateAttraction";
+export const DELETE_ATTRACTION_URL = api_base_url + "/admin/attractions/deleteAttraction/";
+
+// Packages
+export const GET_PACKAGE_URL = api_base_url + "/admin/packages/getPackage";
+export const ADD_PACKAGE_URL = api_base_url + "/admin/packages/addPackage";
+export const UPDATE_PACKAGE_URL = api_base_url + "/admin/packages/updatePackage";
+export const DELETE_PACKAGE_URL = api_base_url + "/admin/packages/deletePackage/";

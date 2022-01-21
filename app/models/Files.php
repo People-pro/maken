@@ -14,12 +14,13 @@ class Files extends Models
     {
         $this->table = _env('DB_PREFIX', "") . '_files';
     }
-    public function SaveToDb($name, $size, $ext, $v_name, $url, $user_id)
+    public function SaveToDb($name, $size, $ext, $v_name, $url, $user_id, $type)
     {
         $today = Carbon::now('+2:00');
         if (DB::table($this->table)->insert(
             [
                 'user_id' => $user_id,
+                // 'type' => $type,
                 'unique_index' => getToken(10, 'string'),
                 'virtual_name' => $v_name,
                 'file_name' => $name,
@@ -34,9 +35,10 @@ class Files extends Models
             return true;
         }
     }
-    public function GetAllFiles($id)
+    public function GetAllFiles($id, $type)
     {
-        return DB::table($this->table)->where([['user_id', '=', $id], ['is_deleted', '=', false]])->orderBy('id', 'desc')->get();
+        // return DB::table($this->table)->where([['is_deleted', '=', false], ['user_id', '=', $id], ['type', '=', $type]])->orderBy('id', 'desc')->get();
+        return DB::table($this->table)->where([['is_deleted', '=', false]])->orderBy('id', 'desc')->get();
     }
     public function DeleteFile($id)
     {

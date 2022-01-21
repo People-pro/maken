@@ -4,7 +4,7 @@ namespace app\controllers\helper;
 
 use app\models\Files;
 use app\models\User;
-use app\models\AdminWritter;
+use app\models\adminUser;
 use SplFileInfo;
 use system\library\Controller;
 use system\library\Session;
@@ -28,17 +28,17 @@ class Uploader extends Controller
             $fileinfo = new SplFileInfo($file_name);
             $ext = strtolower($fileinfo->getExtension());
 
-            $AdminWritter = new AdminWritter();
-            $user_info = $AdminWritter->getLoggedUser($token);
-            if ($token != 'empty') {
+            $adminUser = new adminUser();
+            $user_info = $adminUser->getLoggedUser($token);
+            if ($token && $user_info) {
                 $id = $user_info->id;
+                $type = $user_info->type;
             } else {
                 $id = null;
+                $type = null;
             }
-            // $user = new User();
-            // $user_info = $user->getLoggedUser();
             $files_model = new Files();
-            $files_model->SaveToDb($file_name, $size, $ext, $v_name, $url, $id);
+            $files_model->SaveToDb($file_name, $size, $ext, $v_name, $url, $id, $type);
         }
         $responce['message'] = "uploaded";
         $responce['data'] = $files;
@@ -47,12 +47,22 @@ class Uploader extends Controller
     public function allFiles($token)
     {
         $files_model = new Files();
-        $AdminWritter = new AdminWritter();
-        $data = $AdminWritter->getLoggedUser($token);
-        if ($data) {
-            echo $files_model->GetAllFiles($data->id);
+        $adminUser = new adminUser();
+        $user_info = $adminUser->getLoggedUser($token);
+        if ($token && $user_info) {
+            $id = $user_info->id;
+            $type = $user_info->type;
         } else {
-            echo $files_model->GetAllFiles(null);
+            $id = null;
+            $type = null;
+        }
+        $adminUser = new adminUser();
+        if ($token && $user_info) {
+            $id = $user_info->id;
+            $type = $user_info->type;
+            echo $files_model->GetAllFiles($id, $type);
+        } else {
+            echo $files_model->GetAllFiles(null, null);
         }
     }
     public function delete($id)
@@ -71,8 +81,8 @@ class Uploader extends Controller
         $keyword = input('keyword');
         // $user = new User();
         // $user_info = $user->getLoggedUser();
-        $AdminWritter = new AdminWritter();
-        $user = $AdminWritter->getLoggedUser($token);
+        $adminUser = new adminUser();
+        $user = $adminUser->getLoggedUser($token);
         if ($user) {
             echo $files_model->SearchFile($keyword, $user->id);
         } else {
@@ -82,10 +92,10 @@ class Uploader extends Controller
     public function searchByType($token)
     {
         $files_model = new Files();
-        $AdminWritter = new AdminWritter();
+        $adminUser = new adminUser();
         $keywords = input('keyword');
         $data = explode(',', $keywords);
-        $user = $AdminWritter->getLoggedUser($token);
+        $user = $adminUser->getLoggedUser($token);
         if ($user) {
             echo $files_model->SearchFileByType($data, $user->id);
         } else {
@@ -181,8 +191,8 @@ class Uploader extends Controller
             $fileinfo = new SplFileInfo($v_name);
             $ext = strtolower($fileinfo->getExtension());
             $files_model = new Files();
-            $AdminWritter = new AdminWritter();
-            $user_info = $AdminWritter->getLoggedUser();
+            $adminUser = new adminUser();
+            $user_info = $adminUser->getLoggedUser();
             $files_model->SaveToDb($file_name, $size, $ext, $v_name, $url, $user_info->id);
             responce(json_encode($result), 200);
         } else {

@@ -123,13 +123,10 @@ class adminUser extends Models
     public function getLoggedUser($token)
     {
         $admin = DB::table('tb_users')->where([['is_deleted', '=', false], ['token', '=', $token],])->get()->first();
-        $client = DB::table('tb_clients')->where([['is_deleted', '=', false], ['token', '=', $token],])->get()->first();
+        // $client = DB::table('tb_clients')->where([['is_deleted', '=', false], ['token', '=', $token],])->get()->first();
         if ($admin) {
             $data = $admin;
             $data->type = 'admin';
-        }elseif ($client) {
-            $data = $client;
-            $data->type = 'client';
         }else{
             $data = null;
         }

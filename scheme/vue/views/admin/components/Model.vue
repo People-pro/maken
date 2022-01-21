@@ -49,18 +49,29 @@ export default {
         justify-content: space-between;
         align-items: center;
         .close {
-          background: none;
           outline: none;
           border: none;
           cursor: pointer;
+          background: #b80000;
+          height: 23px;
+          width: 23px;
+          border-radius: 50%;
+          color: white;
+          font-size: .8rem;
+          font-weight: 500;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           &:hover {
-            color: #c70202;
+            background: #880000;
+            color: #5e4444;
           }
         }
       }
       .model-body {
         border-bottom: 1px #f0f0f0 solid;
         padding: 10px;
+        display: block;
         form {
           padding: 0 1rem;
           .form-group {
@@ -89,8 +100,8 @@ export default {
                 margin-bottom: 0;
               }
             }
-            span{
-              &.optional{
+            span {
+              &.optional {
                 color: red;
                 font-size: 10px;
               }

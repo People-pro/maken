@@ -1,56 +1,39 @@
 <template>
   <div class="Sidebar">
     <div class="nav">
-      <div class="brand">
+      <!-- <div class="brand">
         <img src="/assets/images/logo.png" alt="" srcset="" />
-      </div>
+      </div> -->
       <ul class="nav-items">
         <li>
-          <router-link to="/admin" class="nav-item">Dashboard</router-link>
-        </li>
-        <li>
-          <router-link to="/admin/accomodations" class="nav-item"
-            >Accomodations</router-link
+          <router-link to="/admin" class="nav-item"
+            ><i class="fa fa-tachometer-alt"></i>&nbsp;&nbsp;Dashboard</router-link
           >
         </li>
         <li>
-          <router-link to="/admin/clubs" class="nav-item"
-            >Night&nbsp;Clubs</router-link
+          <router-link to="/admin/attractions" class="nav-item"
+            ><i class="fa fa-tree"></i>&nbsp;&nbsp;Attractions</router-link
           >
         </li>
         <li>
-          <router-link to="/admin/coffee" class="nav-item"
-            >Coffee&nbsp;Shops</router-link
+          <router-link to="/admin/packages" class="nav-item"
+            ><i class="fas fa-list"></i>&nbsp;&nbsp;Packages</router-link
           >
         </li>
         <li>
-          <router-link to="/admin/restaurants" class="nav-item"
-            >Restaurants</router-link
+          <router-link to="/admin/trips" class="nav-item"
+            ><i class="fas fa-bus"></i>&nbsp;&nbsp;Trips</router-link
           >
         </li>
         <li>
-          <router-link to="/admin/car" class="nav-item"
-            >Car&nbsp;Rental</router-link
+          <router-link to="/admin/gallery" class="nav-item"
+            ><i class="fa fa-images"></i>&nbsp;&nbsp;Gallery</router-link
           >
         </li>
         <li>
-          <router-link to="/admin/car/bookings" class="nav-item"
-            >Booked&nbsp;Cars</router-link
+          <router-link to="/admin/users" class="nav-item"
+            ><i class="fa fa-users"></i>&nbsp;&nbsp;Users</router-link
           >
-        </li>
-        <!-- <li>
-          <router-link to="/admin/flights" class="nav-item"
-            >Flights</router-link
-          >
-        </li> -->
-        <!-- <li>
-          <router-link to="/admin/users" class="nav-item">Users</router-link>
-        </li> -->
-        <li>
-          <router-link to="/admin/users" class="nav-item">Users</router-link>
-        </li>
-        <li>
-          <router-link to="/admin/ads" class="nav-item">Ads</router-link>
         </li>
       </ul>
     </div>

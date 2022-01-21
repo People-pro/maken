@@ -14,6 +14,11 @@ import ViewTrip from "../views/site/ViewTrip.vue";
 // admin
 import Dashboard from "../views/admin/Dashboard.vue";
 import AdminLogin from "../views/admin/AdminLogin.vue";
+import Attractions from "../views/admin/Attractions.vue";
+import AdminPackages from "../views/admin/Packages.vue";
+// import AdminTrips from "../views/admin/Trips.vue";
+// import AdminGallery from "../views/admin/Gallery.vue";
+// import Users from "../views/admin/Users.vue";
 
 Vue.use(VueRouter);
 const routes = [
@@ -80,6 +85,31 @@ const routes = [
     name: "AdminLogin",
     component: AdminLogin,
   },
+  {
+    path: "/admin/attractions",
+    name: "Attractions",
+    component: Attractions,
+  },
+  {
+    path: "/admin/packages",
+    name: "AdminPackages",
+    component: AdminPackages,
+  },
+  // {
+  //   path: "/admin/trips",
+  //   name: "AdminTrips",
+  //   component: AdminTrips,
+  // },
+  // {
+  //   path: "/admin/gallery",
+  //   name: "AdminGallery",
+  //   component: AdminGallery,
+  // },
+  // {
+  //   path: "/admin/users",
+  //   name: "Users",
+  //   component: Users,
+  // },
 ];
 
 const router = new VueRouter({

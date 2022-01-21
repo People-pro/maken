@@ -39,6 +39,64 @@ $routes = [
                 'folder' => 'site',
                 'return' => 'PagesController@getDashboards',
             ],
+
+
+            // attractions
+
+            
+            [
+                'path' => '/attractions/getAttraction',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminAttractionsController@getAttraction',
+            ],
+            [
+                'path' => '/attractions/addAttraction',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminAttractionsController@addAttraction',
+            ],
+            [
+                'path' => '/attractions/updateAttraction',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminAttractionsController@updateAttraction',
+            ],
+            [
+                'path' => '/attractions/deleteAttraction/{id}',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminAttractionsController@deleteAttraction',
+            ],
+
+
+            // packages
+
+            
+            [
+                'path' => '/packages/getPackage',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminPackagesController@getPackage',
+            ],
+            [
+                'path' => '/packages/addPackage',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminPackagesController@addPackage',
+            ],
+            [
+                'path' => '/packages/updatePackage',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminPackagesController@updatePackage',
+            ],
+            [
+                'path' => '/packages/deletePackage/{id}',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminPackagesController@deletePackage',
+            ],
         ],
     ],
 

@@ -53,6 +53,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import VModal from "vue-js-modal";
 import VueYoutube from "vue-youtube";
 import VUpload from "./components/VUpload.vue";
+import uploadHelper from "./components/uploadHelper.vue";
 import VEditor from "./components/VEditor.vue";
 import {
   Hooper,
@@ -89,6 +90,7 @@ Vue.component("HooperProgress", HooperProgress);
 Vue.component("HooperPagination", HooperPagination);
 Vue.component("HooperNavigation", HooperNavigation);
 Vue.component("vupload", VUpload);
+Vue.component("uploadHelper", uploadHelper);
 Vue.component("veditor", VEditor);
 
 Vue.use(VueYoutube);

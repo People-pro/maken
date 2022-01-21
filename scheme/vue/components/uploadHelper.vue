@@ -1,6 +1,12 @@
 <template>
   <div class="upload-wrapper">
-    <input type="hidden" :name="name" :value="input_value" :required="required" v-if="enableinput" />
+    <input
+      type="hidden"
+      :name="name"
+      :value="input_value"
+      :required="required"
+      v-if="enableinput"
+    />
     <!-- Upload triger -->
     <div :class="classlist" @click="upload_widget = true" v-if="!input_value">
       <slot></slot>
@@ -9,35 +15,67 @@
     <!-- Selected file section -->
     <div class="selected-widget">
       <!-- List selected files -->
-      <div class="selected-container" v-if="selected_files.length !== 0 && multiple">
-        <div class="ant-upload-list ant-upload-list-picture-card" style="width: 100%;">
+      <div
+        class="selected-container"
+        v-if="selected_files.length !== 0 && multiple"
+      >
+        <div
+          class="ant-upload-list ant-upload-list-picture-card"
+          style="width: 100%;"
+        >
           <div
             class="ant-upload-list-item ant-upload-list-item-done"
-            v-for="(file,index) in  selected_files"
-            :key="index+'selected_file'"
+            v-for="(file, index) in selected_files"
+            :key="index + 'selected_file'"
           >
             <div class="ant-upload-list-item-info">
               <span>
                 <div class="ant-upload-list-item-thumbnail">
                   <img
-                    v-if="GetExt(file) == 'jpeg' || GetExt(file) == 'jpg' || GetExt(file) == 'png' || GetExt(file) == 'gif' "
-                    :src="`${url+location}thumbnail/${file}`"
+                    v-if="
+                      GetExt(file) == 'jpeg' ||
+                        GetExt(file) == 'jpg' ||
+                        GetExt(file) == 'png' ||
+                        GetExt(file) == 'gif'
+                    "
+                    :src="`${url + location}thumbnail/${file}`"
                   />
                   <img
-                    v-if="GetExt(file) == 'mp3' || GetExt(file) == 'ogg' || GetExt(file) == 'acc'"
+                    v-if="
+                      GetExt(file) == 'mp3' ||
+                        GetExt(file) == 'ogg' ||
+                        GetExt(file) == 'acc'
+                    "
                     :src="`${url}assets/images/ext/audio.png`"
                   />
                   <img
-                    v-if="GetExt(file) == 'mp4' || GetExt(file) == 'avi' || GetExt(file) == 'vob' || GetExt(file) == 'mov'"
+                    v-if="
+                      GetExt(file) == 'mp4' ||
+                        GetExt(file) == 'avi' ||
+                        GetExt(file) == 'vob' ||
+                        GetExt(file) == 'mov'
+                    "
                     :src="`${url}assets/images/ext/video.png`"
                   />
-                  <img v-if="GetExt(file) == 'pdf'" :src="`${url}assets/images/ext/pdf.png`" />
+                  <img
+                    v-if="GetExt(file) == 'pdf'"
+                    :src="`${url}assets/images/ext/pdf.png`"
+                  />
                   <img
                     v-if="GetExt(file) == 'docs' || GetExt(file) == 'doc'"
                     :src="`${url}assets/images/ext/word.png`"
                   />
                   <img
-                    v-if="GetExt(file) == 'xls' || GetExt(file) == 'xlsx' || GetExt(file) == 'xlsm' || GetExt(file) == 'xlt' || GetExt(file) == 'xltx' || GetExt(file) == 'xltm' || GetExt(file) == 'xla' || GetExt(file) == 'xlam'"
+                    v-if="
+                      GetExt(file) == 'xls' ||
+                        GetExt(file) == 'xlsx' ||
+                        GetExt(file) == 'xlsm' ||
+                        GetExt(file) == 'xlt' ||
+                        GetExt(file) == 'xltx' ||
+                        GetExt(file) == 'xltm' ||
+                        GetExt(file) == 'xla' ||
+                        GetExt(file) == 'xlam'
+                    "
                     :src="`${url}assets/images/ext/excel.png`"
                   />
                 </div>
@@ -50,13 +88,20 @@
                 okText="Yes"
                 cancelText="No"
               >
-                <a-icon slot="icon" type="question-circle-o" style="color: red" />
+                <a-icon
+                  slot="icon"
+                  type="question-circle-o"
+                  style="color: red"
+                />
                 <a-icon style="color:#fff" type="delete" />
               </a-popconfirm>
             </span>
           </div>
 
-          <div class="ant-upload-list-item ant-upload-list-item-done" @click="upload_widget = true">
+          <div
+            class="ant-upload-list-item ant-upload-list-item-done"
+            @click="upload_widget = true"
+          >
             <div class="ant-upload-list-item-thumbnail add-card">
               <a-icon style="color:#ccc" type="plus" />
             </div>
@@ -68,24 +113,50 @@
       <div class="selected-container" v-if="input_value && !multiple">
         <div class="image-widget">
           <img
-            v-if="GetExt(input_value) == 'jpeg' || GetExt(input_value) == 'jpg' || GetExt(input_value) == 'png' || GetExt(input_value) == 'gif' "
-            :src="`${url+location}thumbnail/${input_value}`"
+            v-if="
+              GetExt(input_value) == 'jpeg' ||
+                GetExt(input_value) == 'jpg' ||
+                GetExt(input_value) == 'png' ||
+                GetExt(input_value) == 'gif'
+            "
+            :src="`${url + location}thumbnail/${input_value}`"
           />
           <img
-            v-if="GetExt(input_value) == 'mp3' || GetExt(input_value) == 'ogg' || GetExt(input_value) == 'acc'"
+            v-if="
+              GetExt(input_value) == 'mp3' ||
+                GetExt(input_value) == 'ogg' ||
+                GetExt(input_value) == 'acc'
+            "
             :src="`${url}assets/images/ext/audio.png`"
           />
           <img
-            v-if="GetExt(input_value) == 'mp4' || GetExt(input_value) == 'avi' || GetExt(input_value) == 'vob' || GetExt(input_value) == 'mov'"
+            v-if="
+              GetExt(input_value) == 'mp4' ||
+                GetExt(input_value) == 'avi' ||
+                GetExt(input_value) == 'vob' ||
+                GetExt(input_value) == 'mov'
+            "
             :src="`${url}assets/images/ext/video.png`"
           />
-          <img v-if="GetExt(input_value) == 'pdf'" :src="`${url}assets/images/ext/pdf.png`" />
+          <img
+            v-if="GetExt(input_value) == 'pdf'"
+            :src="`${url}assets/images/ext/pdf.png`"
+          />
           <img
             v-if="GetExt(input_value) == 'docs' || GetExt(input_value) == 'doc'"
             :src="`${url}assets/images/ext/word.png`"
           />
           <img
-            v-if="GetExt(input_value) == 'xls' || GetExt(input_value) == 'xlsx' || GetExt(input_value) == 'xlsm' || GetExt(input_value) == 'xlt' || GetExt(input_value) == 'xltx' || GetExt(input_value) == 'xltm' || GetExt(input_value) == 'xla' || GetExt(input_value) == 'xlam'"
+            v-if="
+              GetExt(input_value) == 'xls' ||
+                GetExt(input_value) == 'xlsx' ||
+                GetExt(input_value) == 'xlsm' ||
+                GetExt(input_value) == 'xlt' ||
+                GetExt(input_value) == 'xltx' ||
+                GetExt(input_value) == 'xltm' ||
+                GetExt(input_value) == 'xla' ||
+                GetExt(input_value) == 'xlam'
+            "
             :src="`${url}assets/images/ext/excel.png`"
           />
           <a-popconfirm
@@ -104,7 +175,11 @@
     </div>
 
     <transition name="fadeanim">
-      <section class="upload-overlay" v-if="upload_widget" @click.self="upload_widget = false">
+      <section
+        class="upload-overlay"
+        v-if="upload_widget"
+        @click.self="upload_widget = false"
+      >
         <vue-scroll>
           <div class="upload-helper" @click.self="upload_widget = false">
             <!-- Starting of widget -->
@@ -119,16 +194,14 @@
                     @click="upload_widget = false"
                     class="upload-close-btn"
                   >
-                    <span class="mdi mdi-circle"></span>
+                    <span>X</span>
                   </a>
                 </div>
               </div>
 
               <a-tabs defaultActiveKey="2" @change="onTabChange">
                 <a-tab-pane key="1">
-                  <span slot="tab">
-                    <a-icon type="upload" />UPLOAD
-                  </span>
+                  <span slot="tab"> <a-icon type="upload" />UPLOAD </span>
                   <div class="upload-container">
                     <div class="upload-section">
                       <!-- Stating of upload section -->
@@ -136,16 +209,23 @@
                         <ul>
                           <li
                             class="uploading-item"
-                            v-for="(file,index) in files"
+                            v-for="(file, index) in files"
                             :key="index"
-                            :class="{error:file.error,success: file.success}"
+                            :class="{
+                              error: file.error,
+                              success: file.success,
+                            }"
                           >
-                            <span class="file-name">{{file.name}}</span>
+                            <span class="file-name">{{ file.name }}</span>
                             <div class="progress-widget">
                               <a-progress
                                 :percent="parseInteger(file.progress)"
-                                :status="file.progress == 100 && file.success ? 'success' : 'active'"
-                                :format="percent => `${parseInt(percent)}%`"
+                                :status="
+                                  file.progress == 100 && file.success
+                                    ? 'success'
+                                    : 'active'
+                                "
+                                :format="(percent) => `${parseInt(percent)}%`"
                               />
                             </div>
 
@@ -157,18 +237,31 @@
                                 show-icon
                               />
                               <a-alert
-                                v-if="file.progress == 0 && !file.success && !file.error"
+                                v-if="
+                                  file.progress == 0 &&
+                                    !file.success &&
+                                    !file.error
+                                "
                                 message="Pending"
                                 type="info"
                                 show-icon
                               />
                               <a-alert
-                                v-if="file.progress > 0 && !file.success && !file.error"
+                                v-if="
+                                  file.progress > 0 &&
+                                    !file.success &&
+                                    !file.error
+                                "
                                 message="Uploading"
                                 type="warning"
                                 show-icon
                               />
-                              <a-alert v-if="file.error" message="Failed" type="error" show-icon />
+                              <a-alert
+                                v-if="file.error"
+                                message="Failed"
+                                type="error"
+                                show-icon
+                              />
                             </div>
                           </li>
                         </ul>
@@ -186,12 +279,15 @@
                             @input-filter="inputFilter"
                             :chunk-enabled="true"
                             :chunk="{
-                              action: url+'upload/chunk',
+                              action: url + 'upload/chunk/' + token,
                               minSize: 83886080,
                               maxActive: 1,
-                              maxRetries: 2
-                              }"
-                            :headers="{'Authorization': 'Bearer ' + localStorage.getItem('writter_access_token')}"
+                              maxRetries: 2,
+                            }"
+                            :headers="{
+                              Authorization:
+                                'Bearer ' + $store.state.access_token,
+                            }"
                           >
                             <a-icon type="plus" />Add file
                           </file-upload>
@@ -201,22 +297,24 @@
                           @click.prevent="$refs.upload.active = true"
                           type="button"
                           class="btn-start-upload-file"
-                        >Start upload</button>
+                        >
+                          Start upload
+                        </button>
                         <button
                           v-show="$refs.upload && $refs.upload.active"
                           @click.prevent="$refs.upload.active = false"
                           type="button"
                           class="btn-stop-upload-file"
-                        >Stop upload</button>
+                        >
+                          Stop upload
+                        </button>
                       </div>
                       <!-- End of upload section  -->
                     </div>
                   </div>
                 </a-tab-pane>
                 <a-tab-pane key="2">
-                  <span slot="tab">
-                    <a-icon type="hdd" />FILES
-                  </span>
+                  <span slot="tab"> <a-icon type="hdd" />FILES </span>
                   <div class="upload-container">
                     <!-- Uploaded file list -->
                     <div class="uploade-list">
@@ -227,29 +325,54 @@
                         <!-- Start of uploader item -->
                         <a-spin :spinning="loading">
                           <a-tooltip
-                            v-for="(file,index) in  uploaded_files"
-                            :key="index+'uploaded_file'"
+                            v-for="(file, index) in uploaded_files"
+                            :key="index + 'uploaded_file'"
                           >
-                            <template slot="title">{{file.virtual_name}}</template>
-                            <div class="ant-upload-list-item ant-upload-list-item-done">
+                            <template slot="title">{{
+                              file.virtual_name
+                            }}</template>
+                            <div
+                              class="ant-upload-list-item ant-upload-list-item-done"
+                            >
                               <a-checkbox
                                 class="file-checkbox"
                                 v-if="multiple"
-                                @change="onSelectFile($event,file,index)"
+                                @change="onSelectFile($event, file, index)"
                               ></a-checkbox>
-                              <div class="ant-upload-list-item-info" @click="viewFile(file)">
+                              <div
+                                class="ant-upload-list-item-info"
+                                @click="viewFile(file)"
+                              >
                                 <span>
                                   <div class="ant-upload-list-item-thumbnail">
                                     <img
-                                      v-if="file.ext == 'jpeg' || file.ext == 'jpg' || file.ext == 'png' || file.ext == 'gif' "
-                                      :src="`${url+location}thumbnail/${file.file_name}`"
+                                      v-if="
+                                        file.ext == 'jpeg' ||
+                                          file.ext == 'jpg' ||
+                                          file.ext == 'png' ||
+                                          file.ext == 'gif'
+                                      "
+                                      :src="
+                                        `${url + location}thumbnail/${
+                                          file.file_name
+                                        }`
+                                      "
                                     />
                                     <img
-                                      v-if="file.ext == 'mp3' || file.ext == 'ogg' || file.ext == 'acc'"
+                                      v-if="
+                                        file.ext == 'mp3' ||
+                                          file.ext == 'ogg' ||
+                                          file.ext == 'acc'
+                                      "
                                       :src="`${url}assets/images/ext/audio.png`"
                                     />
                                     <img
-                                      v-if="file.ext == 'mp4' || file.ext == 'avi' || file.ext == 'vob' || file.ext == 'mov'"
+                                      v-if="
+                                        file.ext == 'mp4' ||
+                                          file.ext == 'avi' ||
+                                          file.ext == 'vob' ||
+                                          file.ext == 'mov'
+                                      "
                                       :src="`${url}assets/images/ext/video.png`"
                                     />
                                     <img
@@ -257,11 +380,22 @@
                                       :src="`${url}assets/images/ext/pdf.png`"
                                     />
                                     <img
-                                      v-if="file.ext == 'docs' || file.ext == 'doc'"
+                                      v-if="
+                                        file.ext == 'docs' || file.ext == 'doc'
+                                      "
                                       :src="`${url}assets/images/ext/word.png`"
                                     />
                                     <img
-                                      v-if="file.ext == 'xls' || file.ext == 'xlsx' || file.ext == 'xlsm' || file.ext == 'xlt' || file.ext == 'xltx' || file.ext == 'xltm' || file.ext == 'xla' || file.ext == 'xlam'"
+                                      v-if="
+                                        file.ext == 'xls' ||
+                                          file.ext == 'xlsx' ||
+                                          file.ext == 'xlsm' ||
+                                          file.ext == 'xlt' ||
+                                          file.ext == 'xltx' ||
+                                          file.ext == 'xltm' ||
+                                          file.ext == 'xla' ||
+                                          file.ext == 'xlam'
+                                      "
                                       :src="`${url}assets/images/ext/excel.png`"
                                     />
                                   </div>
@@ -269,14 +403,22 @@
                               </div>
 
                               <span class="ant-upload-list-item-actions">
-                                <a-icon style="color:#fff" @click="viewFile(file)" type="eye" />
+                                <a-icon
+                                  style="color:#fff"
+                                  @click="viewFile(file)"
+                                  type="eye"
+                                />
                                 <a-popconfirm
                                   title="Are you sure？"
-                                  @confirm="DeleteFile(file.id,index)"
+                                  @confirm="DeleteFile(file.id, index)"
                                   okText="Yes"
                                   cancelText="No"
                                 >
-                                  <a-icon slot="icon" type="question-circle-o" style="color: red" />
+                                  <a-icon
+                                    slot="icon"
+                                    type="question-circle-o"
+                                    style="color: red"
+                                  />
                                   <a-icon style="color:#fff" type="delete" />
                                 </a-popconfirm>
                               </span>
@@ -285,7 +427,10 @@
                         </a-spin>
                         <!-- End of uploader item -->
                         <!-- When empty -->
-                        <a-empty style="padding-top:50px;" v-if="uploaded_files.length === 0" />
+                        <a-empty
+                          style="padding-top:50px;"
+                          v-if="uploaded_files.length === 0"
+                        />
                       </div>
                       <!-- file list option -->
                       <div class="file-list-option">
@@ -319,8 +464,18 @@
                       <div class="file-info" v-if="selected_file">
                         <div class="file-preview">
                           <img
-                            v-if="selected_file.ext == 'jpeg' || selected_file.ext == 'jpg' || selected_file.ext == 'png' || selected_file.ext == 'JPG' || selected_file.ext == 'gif' "
-                            :src="`${url+location}thumbnail/${selected_file.file_name}`"
+                            v-if="
+                              selected_file.ext == 'jpeg' ||
+                                selected_file.ext == 'jpg' ||
+                                selected_file.ext == 'png' ||
+                                selected_file.ext == 'JPG' ||
+                                selected_file.ext == 'gif'
+                            "
+                            :src="
+                              `${url + location}thumbnail/${
+                                selected_file.file_name
+                              }`
+                            "
                           />
                           <img
                             v-if="selected_file.ext == 'mp3'"
@@ -339,7 +494,16 @@
                             :src="`${url}assets/images/ext/word.png`"
                           />
                           <img
-                            v-if="selected_file.ext == 'xls' || selected_file.ext == 'xlsx' || selected_file.ext == 'xlsm' || selected_file.ext == 'xlt' || selected_file.ext == 'xltx' || selected_file.ext == 'xltm' || selected_file.ext == 'xla' || selected_file.ext == 'xlam'"
+                            v-if="
+                              selected_file.ext == 'xls' ||
+                                selected_file.ext == 'xlsx' ||
+                                selected_file.ext == 'xlsm' ||
+                                selected_file.ext == 'xlt' ||
+                                selected_file.ext == 'xltx' ||
+                                selected_file.ext == 'xltm' ||
+                                selected_file.ext == 'xla' ||
+                                selected_file.ext == 'xlam'
+                            "
                             :src="`${url}assets/images/ext/excel.png`"
                           />
                         </div>
@@ -347,30 +511,37 @@
                         <div class="file-metadata" v-if="!is_editing_info">
                           <div class="file-name">
                             <strong>File name</strong>
-                            <p>{{selected_file.virtual_name}}</p>
+                            <p>{{ selected_file.virtual_name }}</p>
                           </div>
                           <div class="file-size">
                             <strong>File size</strong>
-                            <p>{{ BytesToSize(selected_file.size)}}</p>
+                            <p>{{ BytesToSize(selected_file.size) }}</p>
                           </div>
                           <div class="file-title" v-if="selected_file.title">
                             <strong>File title</strong>
-                            <p>{{ selected_file.title}}</p>
+                            <p>{{ selected_file.title }}</p>
                           </div>
-                          <div class="file-content" v-if="selected_file.content">
+                          <div
+                            class="file-content"
+                            v-if="selected_file.content"
+                          >
                             <strong>File content</strong>
-                            <p>{{ selected_file.content}}</p>
+                            <p>{{ selected_file.content }}</p>
                           </div>
-                          <div class="file-keywords" v-if="selected_file.keyword">
+                          <div
+                            class="file-keywords"
+                            v-if="selected_file.keyword"
+                          >
                             <strong>File keywords</strong>
-                            <p>{{ selected_file.keyword}}</p>
+                            <p>{{ selected_file.keyword }}</p>
                           </div>
                           <div class="file-option">
                             <a-button
                               class="btn"
-                              @click="is_editing_info =  true"
+                              @click="is_editing_info = true"
                               type="primary"
-                            >UPDATE INFO</a-button>
+                              >UPDATE INFO</a-button
+                            >
                           </div>
                         </div>
                         <!-- End of file metadata -->
@@ -415,7 +586,8 @@
                               :loading="update_loading"
                               @click="updateFile()"
                               type="primary"
-                            >UPDATE</a-button>
+                              >UPDATE</a-button
+                            >
                           </div>
                         </div>
                         <!-- End of edit file form -->
@@ -427,7 +599,10 @@
                       </div>
 
                       <!-- Select file widget -->
-                      <div class="select-widget" v-if="selected_files.length !== 0 && multiple">
+                      <div
+                        class="select-widget"
+                        v-if="selected_files.length !== 0 && multiple"
+                      >
                         <a-button
                           class="btn btn-success"
                           :loading="update_loading"
@@ -438,10 +613,13 @@
                           icon="right"
                         >
                           SELECT
-                          <span>({{selected_files.length}})</span>
+                          <span>({{ selected_files.length }})</span>
                         </a-button>
                       </div>
-                      <div class="select-widget" v-if="selected_file && !multiple">
+                      <div
+                        class="select-widget"
+                        v-if="selected_file && !multiple"
+                      >
                         <a-button
                           class="btn btn-success"
                           :loading="update_loading"
@@ -450,7 +628,8 @@
                           size="large"
                           style="background-color:rgb(31, 195, 216)"
                           icon="right"
-                        >SELECT</a-button>
+                          >SELECT</a-button
+                        >
                       </div>
                       <!-- End file widget -->
                     </div>
@@ -478,6 +657,13 @@ export default {
     props: ['open', 'enableinput', 'required', 'location', 'uploadurl', 'url', 'name', 'value', 'multiple', 'classlist'],
     mounted() {
         let vm = this;
+      if (vm.$loggedAdmin()) {
+        vm.token = vm.$localStorage.get("admin_access_token");
+      }else if(vm.$loggedClient()){
+        vm.token = vm.$localStorage.get("client_access_token");
+      }else{
+        vm.token = null
+      }
         vm.upload_widget = vm.open;
         if (vm.value) {
             vm.input_value = vm.value;
@@ -501,7 +687,8 @@ export default {
             is_editing_info: false,
             update_loading: false,
             selected_files: [],
-            input_value: null
+            input_value: null,
+            token: null,
         }
     },
     methods: {
@@ -555,17 +742,19 @@ export default {
         GetExt(file) {
             return /(?:\.([^.]+))?$/.exec(file)[1];
         },
-        GetAllFiles() {
-            let vm = this;
-            vm.loading = true;
-            vm.$store.dispatch('UPLOAD_GET_ALL_FILES').then((response) => {
-                if (response.data.length) {
-                    vm.uploaded_files_backup = response.data;
-                    vm.uploaded_files = response.data.slice(0, 40);
-                    vm.loading = false;
-                }
-            });
-        },
+      GetAllFiles(){
+        this.loading = true;
+        this.axios.get(this.url+"upload/all-files/"+this.token, {
+            headers: { 'Authorization': 'Bearer ' + this.token},
+        })
+                    .then((response)=>{
+                        if(response.data){
+                           this.uploaded_files_backup = response.data;
+                           this.uploaded_files = response.data.slice(0,40);
+                           this.loading = false;
+                        }
+        });
+      },
         DeleteFile(id, key) {
             let vm = this;
             vm.$store.dispatch('UPLOAD_DELETE_FILE', {
@@ -584,7 +773,7 @@ export default {
             vm.selected_file = null;
             if (keyword != '') {
                 vm.loading = true;
-                vm.$store.dispatch('UPLOAD_SEARCH_FILE', {
+                vm.$store.dispatch('UPLOAD_SEARCH_FILE'+this.token, {
                     keyword: keyword
                 }).then((response) => {
                     if (response.data != null) {
@@ -735,6 +924,8 @@ export default {
 </script>
 
 <style lang="scss">
+  $orange: #ef6203;
+  $green: #044914;
 .ant-popover {
   z-index: 9999999999999999 !important;
 }
@@ -826,7 +1017,7 @@ export default {
         .upload-ribbon {
           width: 100%;
           height: 40px;
-          background: #8dc73f;
+          background: $green;
           position: relative;
           top: -2px;
           display: flex;
@@ -840,16 +1031,22 @@ export default {
           }
 
           .upload-close-btn {
-            background: #e03483;
+            background: #b80000;
             cursor: pointer;
             z-index: 9999999999;
-            height: 15px;
-            width: 15px;
+            height: 20px;
+            width: 20px;
             border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: .8rem;
+            font-weight: 600;
           }
 
           .upload-close-btn:hover {
-            color: rgb(250, 9, 109);
+            color: #520000;
+            color: #f8b2b2;
           }
         }
 
@@ -940,8 +1137,8 @@ export default {
                 justify-content: center;
                 align-items: center;
                 background: #fff;
-                color: #8cc73f;
-                border: 1px solid #8cc73f;
+                color: $orange;
+                border: 1px solid $orange;
                 font-weight: 600;
               }
 
@@ -953,10 +1150,11 @@ export default {
                 width: 100px;
                 justify-content: center;
                 align-items: center;
-                background: #8cc73f;
+                background: $orange;
                 color: #fff;
                 border: none;
                 font-weight: 600;
+                cursor: pointer;
               }
 
               .btn-stop-upload-file {
@@ -967,9 +1165,10 @@ export default {
                 width: 100px;
                 justify-content: center;
                 align-items: center;
-                background: #bccd06;
+                background: #8f0000;
                 color: #fff;
                 border: none;
+                cursor: pointer;
               }
             }
           }

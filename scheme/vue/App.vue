@@ -324,4 +324,22 @@ $green: #044914;
     }
   }
 }
+.uploader-btn {
+  background: $orange;
+  color: white;
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+}
+
+.ant-upload-list-item {
+  position: relative !important;
+  display: inline-block !important;
+  float: none !important;
+}
+.disabled{
+  cursor: no-drop !important;
+  // background: #e9e9e9 !important;
+    color: #141414 !important;
+}
 </style>
