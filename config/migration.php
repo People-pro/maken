@@ -17,9 +17,9 @@ $db_up_migration = [
             $table->bigIncrements('id');
             $table->string('names')->nullable();
             $table->string('email')->unique()->nullable();
-            $table->string('user_image')->nullable();
+            $table->string('image')->nullable();
             $table->text('password')->nullable();
-            $table->integer('type')->nullable();
+            $table->string('type')->nullable();
             $table->text('token')->nullable();
             $table->timestamps();
             $table->softDeletes();
@@ -117,7 +117,7 @@ $db_up_migration = [
             $table->string('title')->nullable();
             $table->string('date')->nullable();
             $table->string('image')->nullable();
-            $table->text('images')->nullable();
+            $table->longText('images')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->boolean('is_deleted')->nullable();

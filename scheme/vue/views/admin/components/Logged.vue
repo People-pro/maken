@@ -8,11 +8,8 @@
         @click="showDrop = true"
         v-click-outside="hide"
       >
-        <img
-          :src="'/assets/images/avatar.png'"
-          alt=""
-          srcset=""
-        />
+        <img :src="'/assets/uploaded/' + image" alt="" srcset="" v-if="image" />
+        <img :src="'/assets/images/avatar.png'" alt="" srcset="" v-else />
         <!-- <label for="My Account">{{ $loggedAdmin().prenom }}</label> -->
       </div>
       <div class="logged-links" v-if="showDrop">
@@ -49,6 +46,7 @@ export default {
     return {
       showDrop: false,
       closeOnClickOutside: true,
+      image: null,
     };
   },
   methods: {
@@ -56,8 +54,9 @@ export default {
       this.showDrop = false;
     },
   },
-  nounted() {
+  mounted() {
     this.popupItem = this.$el;
+    this.image = this.$loggedAdmin().image;
   },
 };
 </script>

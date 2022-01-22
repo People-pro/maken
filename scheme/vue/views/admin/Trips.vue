@@ -1,5 +1,5 @@
 <template>
-  <div class="Packages">
+  <div class="Trips">
     <div class="admin-content">
       <loading
         :active.sync="isLoading"
@@ -10,10 +10,10 @@
       ></loading>
       <adminSidebar />
       <div class="admin-body">
-        <AdminLogged :brand="'Packages'" />
+        <AdminLogged :brand="'Trips'" />
         <div class="table">
           <div class="table-title">
-            <label for="Packages">Packages</label>
+            <label for="Trips">Trips</label>
             <button class="add-new" @click="addModal = true">
               <i class="fa fa-plus"></i> Add
             </button>
@@ -22,6 +22,7 @@
             <thead>
               <tr>
                 <th>#</th>
+                <th>Date</th>
                 <th>Attraction</th>
                 <th>duration</th>
                 <th>min&nbsp;age</th>
@@ -38,13 +39,14 @@
                     class="thumbnail"
                   />
                 </td>
+                <td>{{ item.date }}</td>
                 <td>{{ item.attraction.name }}</td>
                 <td>{{ item.duration }}</td>
                 <td>{{ item.min_age }}</td>
                 <td>{{ item.max_people }}</td>
                 <td>
                   <!-- <router-link
-                    :to="'/admin/packages/bookings/' + item.id"
+                    :to="'/admin/Trips/bookings/' + item.id"
                     class="button videos"
                     >Booking</router-link
                   > -->
@@ -59,7 +61,7 @@
         </div>
         <Model v-if="addModal == true">
           <div class="model-header">
-            <h4>Add Package</h4>
+            <h4>Add Trip</h4>
             <button class="close" @click="addModal = false">X</button>
           </div>
           <div class="model-body">
@@ -76,6 +78,15 @@
                     {{ attraction.name }}
                   </option>
                 </select>
+              </div>
+              <div class="form-group">
+                <label for="Date">Date:</label>
+                <input
+                  type="date"
+                  id=""
+                  placeholder="date"
+                  v-model="newItem.date"
+                />
               </div>
               <div class="form-group">
                 <label for="Duration">Duration:</label>
@@ -298,7 +309,7 @@
         </Model>
         <Model v-if="updateModal == true">
           <div class="model-header">
-            <h4>Edit Package</h4>
+            <h4>Edit Trip</h4>
             <button class="close" @click="updateModal = false">X</button>
           </div>
           <div class="model-body">
@@ -315,6 +326,15 @@
                     {{ attraction.name }}
                   </option>
                 </select>
+              </div>
+              <div class="form-group">
+                <label for="Date">Date:</label>
+                <input
+                  type="date"
+                  id=""
+                  placeholder="date"
+                  v-model="selectedItem.date"
+                />
               </div>
               <div class="form-group">
                 <label for="Duration">Duration:</label>
@@ -539,12 +559,12 @@
         </Model>
         <Model v-if="deleteModal == true">
           <div class="model-header">
-            <h4>Delete Package</h4>
+            <h4>Delete Trip</h4>
             <button class="close" @click="deleteModal = false">X</button>
           </div>
           <div class="model-body">
             <h4 class="delete-label">
-              Are you sure you want to delete this package?
+              Are you sure you want to delete this Trip?
             </h4>
           </div>
           <div class="model-footer">
@@ -560,7 +580,7 @@
 <script>
 import Model from "./components/Model.vue";
 export default {
-  name: "Packages",
+  name: "Trips",
   components: {
     Model,
   },
@@ -605,9 +625,9 @@ export default {
     getItems() {
       this.isLoading = true;
       this.$store
-        .dispatch("GET_PACKAGE", { token: this.$loggedAdminToken() })
+        .dispatch("GET_TRIP", { token: this.$loggedAdminToken() })
         .then((response) => {
-          this.items = response.data["packages"];
+          this.items = response.data["trips"];
           this.attractions = response.data["attractions"];
           this.isLoading = false;
         });
@@ -616,6 +636,7 @@ export default {
       this.isLoading = true;
       if (
         this.newItem.attraction_id != "" &&
+        this.newItem.date != "" &&
         this.newItem.duration != "" &&
         this.newItem.min_age != "" &&
         this.newItem.max_people != "" &&
@@ -642,7 +663,7 @@ export default {
           this.newItem.reqs = "[]";
         }
         this.$store
-          .dispatch("ADD_PACKAGE", this.newItem)
+          .dispatch("ADD_TRIP", this.newItem)
           .then((response) => {
             if (response.data.status == "ok") {
               this.$notify({
@@ -723,6 +744,7 @@ export default {
       this.isLoading = true;
       if (
         this.selectedItem.attraction_id != "" &&
+        this.selectedItem.date != "" &&
         this.selectedItem.duration != "" &&
         this.selectedItem.min_age != "" &&
         this.selectedItem.max_people != "" &&
@@ -749,7 +771,7 @@ export default {
           this.selectedItem.reqs = "[]";
         }
         this.$store
-          .dispatch("UPDATE_PACKAGE", this.selectedItem)
+          .dispatch("UPDATE_TRIP", this.selectedItem)
           .then((response) => {
             if (response.data.status == "ok") {
               this.$notify({
@@ -800,7 +822,7 @@ export default {
     deleteItems() {
       this.isLoading = true;
       this.$store
-        .dispatch("DELETE_PACKAGE", this.selectedItem.id)
+        .dispatch("DELETE_TRIP", this.selectedItem.id)
         .then((response) => {
           if (response.data.status == "ok") {
             this.$notify({

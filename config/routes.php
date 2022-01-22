@@ -43,7 +43,7 @@ $routes = [
 
             // attractions
 
-            
+
             [
                 'path' => '/attractions/getAttraction',
                 'method' => 'GET',
@@ -72,7 +72,7 @@ $routes = [
 
             // packages
 
-            
+
             [
                 'path' => '/packages/getPackage',
                 'method' => 'GET',
@@ -96,6 +96,105 @@ $routes = [
                 'method' => 'GET',
                 'folder' => 'admin',
                 'return' => 'AdminPackagesController@deletePackage',
+            ],
+
+
+            // trips
+
+
+            [
+                'path' => '/trip/getTrip',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminTripsController@getTrip',
+            ],
+            [
+                'path' => '/trip/addTrip',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminTripsController@addTrip',
+            ],
+            [
+                'path' => '/trip/updateTrip',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminTripsController@updateTrip',
+            ],
+            [
+                'path' => '/trip/deleteTrip/{id}',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminTripsController@deleteTrip',
+            ],
+
+
+            // Gallery
+
+
+            [
+                'path' => '/gallery/getGallery',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminGalleryController@getGallery',
+            ],
+            [
+                'path' => '/gallery/addGallery',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminGalleryController@addGallery',
+            ],
+            [
+                'path' => '/gallery/updateGallery',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminGalleryController@updateGallery',
+            ],
+            [
+                'path' => '/gallery/deleteGallery/{id}',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminGalleryController@deleteGallery',
+            ],
+
+            // users
+
+
+
+            [
+                'path' => '/getUsers',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'adminUserController@getUsers',
+            ],
+            [
+                'path' => '/addUser',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'adminUserController@addUser',
+            ],
+            [
+                'path' => '/updateUser',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'adminUserController@updateUser',
+            ],
+            [
+                'path' => '/deleteUser/{id}',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'adminUserController@deleteUser',
+            ],
+            [
+                'path' => '/updateAgentAccount',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'adminUserController@updateAgentAccount',
+            ],
+            [
+                'path' => '/updateAgentPassword',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'adminUserController@updateAgentPassword',
             ],
         ],
     ],

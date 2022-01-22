@@ -16,6 +16,7 @@ class Pages extends Models
         $data['packages'] = DB::table('tb_packages')->where('is_deleted', '=', false)->get()->count();
         $data['users'] = DB::table('tb_users')->where('is_deleted', '=', false)->get()->count();
         $data['attractions'] = DB::table('tb_attractions')->where('is_deleted', '=', false)->get()->count();
+        $data['albums'] = DB::table('tb_gallery')->where('is_deleted', '=', false)->get()->count();
         $data['orders'] = DB::table('tb_package_orders')->where('is_deleted', '=', false)->orderBy('id', 'desc')->limit(10)->get();
         $num = 1;
         foreach ($data['orders'] as $key => $value) {

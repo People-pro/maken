@@ -54,6 +54,8 @@ export const GET_USERS_URL = api_base_url + "/admin/getUsers";
 export const ADD_USER_URL = api_base_url + "/admin/addUser";
 export const UPDATE_USER_URL = api_base_url + "/admin/updateUser";
 export const DELETE_USER_URL = api_base_url + "/admin/deleteUser/";
+export const UPDATE_AGENT_ACCOUNT_URL = api_base_url + "/admin/updateAgentAccount";
+export const UPDATE_AGENT_PASSWORD_URL = api_base_url + "/admin/updateAgentPassword";
 
 // Others
 export const DASHBOARDS_URL = api_base_url + "/admin/getDashboards";
@@ -69,3 +71,15 @@ export const GET_PACKAGE_URL = api_base_url + "/admin/packages/getPackage";
 export const ADD_PACKAGE_URL = api_base_url + "/admin/packages/addPackage";
 export const UPDATE_PACKAGE_URL = api_base_url + "/admin/packages/updatePackage";
 export const DELETE_PACKAGE_URL = api_base_url + "/admin/packages/deletePackage/";
+
+// Trips
+export const GET_TRIP_URL = api_base_url + "/admin/trip/getTrip";
+export const ADD_TRIP_URL = api_base_url + "/admin/trip/addTrip";
+export const UPDATE_TRIP_URL = api_base_url + "/admin/trip/updateTrip";
+export const DELETE_TRIP_URL = api_base_url + "/admin/trip/deleteTrip/";
+
+// Gallery
+export const GET_GALLERY_URL = api_base_url + "/admin/gallery/getGallery";
+export const ADD_GALLERY_URL = api_base_url + "/admin/gallery/addGallery";
+export const UPDATE_GALLERY_URL = api_base_url + "/admin/gallery/updateGallery";
+export const DELETE_GALLERY_URL = api_base_url + "/admin/gallery/deleteGallery/";

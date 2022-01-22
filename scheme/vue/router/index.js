@@ -16,9 +16,10 @@ import Dashboard from "../views/admin/Dashboard.vue";
 import AdminLogin from "../views/admin/AdminLogin.vue";
 import Attractions from "../views/admin/Attractions.vue";
 import AdminPackages from "../views/admin/Packages.vue";
-// import AdminTrips from "../views/admin/Trips.vue";
-// import AdminGallery from "../views/admin/Gallery.vue";
-// import Users from "../views/admin/Users.vue";
+import AdminTrips from "../views/admin/Trips.vue";
+import AdminGallery from "../views/admin/Gallery.vue";
+import Users from "../views/admin/Users.vue";
+import adminAccount from "../views/admin/adminAccount.vue";
 
 Vue.use(VueRouter);
 const routes = [
@@ -72,7 +73,7 @@ const routes = [
     name: "Contact",
     component: Contact,
   },
-  
+
   // admin
 
   {
@@ -95,21 +96,26 @@ const routes = [
     name: "AdminPackages",
     component: AdminPackages,
   },
-  // {
-  //   path: "/admin/trips",
-  //   name: "AdminTrips",
-  //   component: AdminTrips,
-  // },
-  // {
-  //   path: "/admin/gallery",
-  //   name: "AdminGallery",
-  //   component: AdminGallery,
-  // },
-  // {
-  //   path: "/admin/users",
-  //   name: "Users",
-  //   component: Users,
-  // },
+  {
+    path: "/admin/trips",
+    name: "AdminTrips",
+    component: AdminTrips,
+  },
+  {
+    path: "/admin/gallery",
+    name: "AdminGallery",
+    component: AdminGallery,
+  },
+  {
+    path: "/admin/users",
+    name: "Users",
+    component: Users,
+  },
+  {
+    path: "/admin/account",
+    name: "adminAccount",
+    component: adminAccount,
+  },
 ];
 
 const router = new VueRouter({

@@ -35,8 +35,8 @@
           <div class="indicator">- Reach Out to Us</div>
           <h2 for="rsl title" class="">Please fill out the contact form</h2>
           <div class="info">
-            <div><b>Email: </b>info@makenafricasafaris.rw</div>
-            <div><b>Phone: </b>(+250) 785 848 669</div>
+            <div><b>Email: </b>info@makenafricasafaris.com</div>
+            <div><b>Phone: </b>(+250) 785 848 669 / (+250) 788 232 465</div>
             <div><b>Address: </b>RN15, Kigali, Rwanda</div>
           </div>
         </div>

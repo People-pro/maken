@@ -13,6 +13,11 @@ class adminUser extends Models
         $data = DB::table('tb_users')->where('is_deleted', '=', false)->orderBy('id', 'desc')->get();
         return $data;
     }
+    public function getSingleUsers($id)
+    {
+        $data = DB::table('tb_users')->where('id', '=', $id)->orderBy('id', 'desc')->get()->first();
+        return $data;
+    }
     public function viewUser($id)
     {
         $data = DB::table('tb_users')->where('id', $id)->get()->first();
@@ -33,16 +38,12 @@ class adminUser extends Models
                 'is_deleted' => false,
             ]
         )) {
-            if (DB::table('tb_files')->where('file_name', $image)->update([
-                'is_deleted' => true,
-            ])) {
-                return true;
-            } else {
-                return true;
-            }
+            return true;
+        } else {
+            return true;
         }
     }
-    public function updateUser($id, $names, $email, $image, $password, $type)
+    public function updateUser($id, $names, $email, $image, $type)
     {
         $today = Carbon::now('+2:00');
         if (DB::table('tb_users')
@@ -53,7 +54,6 @@ class adminUser extends Models
                     'names' => $names,
                     'email' => $email,
                     'image' => $image,
-                    'password' => password_hash($password, PASSWORD_DEFAULT),
                     'updated_at' => $today,
                 ]
             )
@@ -81,7 +81,7 @@ class adminUser extends Models
                 ]
             )
         ) {
-            return true;
+            return $this->getSingleUsers($id);
         } else {
             return true;
         }
@@ -114,7 +114,6 @@ class adminUser extends Models
     }
 
 
-
     public function getUserByToken($token)
     {
         $data = DB::table('tb_users')->where('token', '=', $token)->get()->first();
@@ -127,7 +126,7 @@ class adminUser extends Models
         if ($admin) {
             $data = $admin;
             $data->type = 'admin';
-        }else{
+        } else {
             $data = null;
         }
         return $data;

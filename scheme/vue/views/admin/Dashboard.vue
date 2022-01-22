@@ -16,7 +16,7 @@
             <div class="dash-body">
               <div class="content">
                 <label for="" class="title">Packages</label>
-                <h5 class="number">{{ trips }}</h5>
+                <h5 class="number">{{ packages }}</h5>
               </div>
               <div class="icon">
                 <i class="fas fa-list"></i>
@@ -32,7 +32,7 @@
             <div class="dash-body">
               <div class="content">
                 <label for="" class="title">Trips</label>
-                <h5 class="number">{{ packages }}</h5>
+                <h5 class="number">{{ trips }}</h5>
               </div>
               <div class="icon">
                 <i class="fas fa-bus"></i>
@@ -63,15 +63,15 @@
           <div class="dash-item">
             <div class="dash-body">
               <div class="content">
-                <label for="" class="title">Users</label>
-                <h5 class="number">{{ users }}</h5>
+                <label for="" class="title">Albums</label>
+                <h5 class="number">{{ albums }}</h5>
               </div>
               <div class="icon">
-                <i class="fas fa-users"></i>
+                <i class="fa fa-images"></i>
               </div>
             </div>
             <div class="dash-foot">
-              <router-link to="/admin/users" class="view mybtn-o"
+              <router-link to="/admin/gallery" class="view mybtn-o"
                 >View <i class="mdi mdi-arrow-right"></i
               ></router-link>
             </div>
@@ -136,6 +136,7 @@ export default {
       packages: 0,
       attractions: 0,
       users: 0,
+      albums: 0,
       orders: [],
     };
   },
@@ -152,6 +153,7 @@ export default {
           this.packages = response.data["packages"];
           this.attractions = response.data["attractions"];
           this.users = response.data["users"];
+          this.albums = response.data["albums"];
           this.orders = response.data["orders"];
           this.isLoading = false;
         });

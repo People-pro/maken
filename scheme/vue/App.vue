@@ -284,7 +284,7 @@ $green: #044914;
         }
         button,
         .button {
-          padding: 3px 1rem;
+          padding: 5px 1rem;
           font-size: 0.7rem;
           color: white;
           font-weight: 500;

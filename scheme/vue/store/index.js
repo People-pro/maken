@@ -5,6 +5,8 @@ import Upload from "./modules/upload.js";
 import User from "./modules/users.js";
 import Attractions from "./modules/attraction.js";
 import Package from "./modules/package.js";
+import Trip from "./modules/trip.js";
+import Gallery from "./modules/gallery.js";
 
 Vue.use(Vuex);
 export default new Vuex.Store({
@@ -52,5 +54,7 @@ export default new Vuex.Store({
     User,
     Attractions,
     Package,
+    Trip,
+    Gallery,
   },
 });

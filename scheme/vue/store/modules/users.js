@@ -3,6 +3,8 @@ import {
   ADD_USER,
   UPDATE_USER,
   DELETE_USER,
+  UPDATE_AGENT_ACCOUNT,
+  UPDATE_AGENT_PASSWORD,
   ADMIN_LOGIN,
   DASHBOARDS,
 } from "../actions/users";
@@ -12,6 +14,8 @@ import {
   ADD_USER_URL,
   UPDATE_USER_URL,
   DELETE_USER_URL,
+  UPDATE_AGENT_ACCOUNT_URL,
+  UPDATE_AGENT_PASSWORD_URL,
   ADMIN_LOGIN_URL,
   DASHBOARDS_URL,
 } from "../variables";
@@ -46,6 +50,20 @@ const actions = {
     return axios({
       url: DELETE_USER_URL + payload,
       method: "GET",
+    });
+  },
+  [UPDATE_AGENT_ACCOUNT]: (state, payload) => {
+    return axios({
+      url: UPDATE_AGENT_ACCOUNT_URL,
+      method: "POST",
+      data: payload,
+    });
+  },
+  [UPDATE_AGENT_PASSWORD]: (state, payload) => {
+    return axios({
+      url: UPDATE_AGENT_PASSWORD_URL,
+      method: "POST",
+      data: payload,
     });
   },
   [ADMIN_LOGIN]: (state, payload) => {

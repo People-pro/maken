@@ -18,7 +18,7 @@ $database_seeder = [
             return [
                 'names' => $generate->firstNameMale,
                 'email' => 'omega',
-                'user_image' => $generate->imageUrl($width = 100, $height = 100),
+                'image' => $generate->imageUrl($width = 100, $height = 100),
                 'password' => password_hash('123', PASSWORD_DEFAULT),
                 'created_at' => $generate->dateTime($max = 'now', $timezone = null),
                 'updated_at' => $generate->dateTime($max = 'now', $timezone = null),
