@@ -110,4 +110,19 @@ class AdminTripsController extends Controller
             responce(json_encode($responce), 404);
         }
     }
+
+
+    // package orders
+
+
+    
+    public function getOrders()
+    {
+        $id = input('id');
+        $token = input('token');
+        $AdminTrips = new AdminTrips();
+        $AdminAttractions = new AdminAttractions();
+        $responce = $AdminTrips->getOrders($id);
+        return responce(json_encode($responce), 200);
+    }
 };

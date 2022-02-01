@@ -3,6 +3,8 @@ import {
   ADD_TRIP,
   UPDATE_TRIP,
   DELETE_TRIP,
+
+  GET_TRIP_ORDERS,
 } from "../actions/trip";
 
 import {
@@ -10,6 +12,8 @@ import {
   ADD_TRIP_URL,
   UPDATE_TRIP_URL,
   DELETE_TRIP_URL,
+
+  GET_TRIP_ORDERS_URL,
 } from "../variables";
 
 import axios from "axios";
@@ -42,6 +46,16 @@ const actions = {
     return axios({
       url: DELETE_TRIP_URL + payload,
       method: "GET",
+    });
+  },
+
+
+  
+  [GET_TRIP_ORDERS]: (state, payload) => {
+    return axios({
+      url: GET_TRIP_ORDERS_URL,
+      method: "POST",
+      data: payload,
     });
   },
 };

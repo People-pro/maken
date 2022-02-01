@@ -99,6 +99,25 @@ $routes = [
             ],
 
 
+            // Package orders
+
+
+            
+            [
+                'path' => '/packages/orders/getOrders',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminPackagesController@getOrders',
+            ],
+            [
+                'path' => '/packages/orders/confirmOrders',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminPackagesController@confirmOrders',
+            ],
+
+
+
             // trips
 
 
@@ -125,6 +144,18 @@ $routes = [
                 'method' => 'GET',
                 'folder' => 'admin',
                 'return' => 'AdminTripsController@deleteTrip',
+            ],
+
+
+            // Trip orders
+
+
+            
+            [
+                'path' => '/trip/orders/getOrders',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminTripsController@getOrders',
             ],
 
 

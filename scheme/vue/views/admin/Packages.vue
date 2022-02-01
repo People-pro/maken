@@ -43,11 +43,11 @@
                 <td>{{ item.min_age }}</td>
                 <td>{{ item.max_people }}</td>
                 <td>
-                  <!-- <router-link
-                    :to="'/admin/packages/bookings/' + item.id"
+                  <router-link
+                    :to="'/admin/packages/orders/' + item.id"
                     class="button videos"
-                    >Booking</router-link
-                  > -->
+                    >Orders</router-link
+                  >
                   <button class="edit" @click="startUpdate(item)">Edit</button>
                   <button class="delete" @click="startDelete(item)">
                     Delete

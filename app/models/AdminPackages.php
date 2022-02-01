@@ -87,4 +87,39 @@
                     return false;
                 }
             }
+
+
+            // package orders
+
+
+            
+            public function getOrders($id)
+            {
+                $data = DB::table('tb_package_orders')->where([['is_deleted', '=', false], ['package_id', '=', $id]])->orderBy('id', 'desc')->get();
+                $num = 1;
+                foreach ($data as $key => $value) {
+                    $value->num = $num;
+                    $value->package = DB::table('tb_packages')->where('id', '=', $value->package_id)->get()->first();
+                    $value->attraction = DB::table('tb_attractions')->where('id', '=', $value->package->attraction_id)->get()->first();
+                    $num++;
+                }
+                return $data;
+            }
+            public function confirmOrders($id)
+            {
+                $today = Carbon::now('+2:00');
+                if (DB::table('tb_package_orders')
+                    ->where('id', '=', $id)
+                    ->update(
+                        [
+                            'status' => 'confirmed',
+                            'updated_at' => $today,
+                        ]
+                    )
+                ) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         };

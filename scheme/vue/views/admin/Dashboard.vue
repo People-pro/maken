@@ -93,7 +93,7 @@
                   <th>Email</th>
                   <th>Nationality</th>
                   <th>People</th>
-                  <th>Actions</th>
+                  <!-- <th>Actions</th> -->
                 </tr>
               </thead>
               <tbody>
@@ -106,14 +106,14 @@
                   <td>{{item.email}}</td>
                   <td>{{item.nationality}}</td>
                   <td>{{item.people}}</td>
-                  <td>
+                  <!-- <td>
                     <button class="videos" @click="startUpdate(item)">
                       confirm
                     </button>
                     <button class="delete" @click="startDelete(item)">
                       Cancel
                     </button>
-                  </td>
+                  </td> -->
                 </tr>
               </tbody>
             </table>

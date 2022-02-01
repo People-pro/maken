@@ -72,11 +72,19 @@ export const ADD_PACKAGE_URL = api_base_url + "/admin/packages/addPackage";
 export const UPDATE_PACKAGE_URL = api_base_url + "/admin/packages/updatePackage";
 export const DELETE_PACKAGE_URL = api_base_url + "/admin/packages/deletePackage/";
 
+// Package orders
+export const GET_PACKAGE_ORDERS_URL = api_base_url + "/admin/packages/orders/getOrders";
+export const CONFIRM_PACKAGE_ORDERS_URL = api_base_url + "/admin/packages/orders/confirmOrders";
+
 // Trips
 export const GET_TRIP_URL = api_base_url + "/admin/trip/getTrip";
 export const ADD_TRIP_URL = api_base_url + "/admin/trip/addTrip";
 export const UPDATE_TRIP_URL = api_base_url + "/admin/trip/updateTrip";
 export const DELETE_TRIP_URL = api_base_url + "/admin/trip/deleteTrip/";
+
+// Trip orders
+export const GET_TRIP_ORDERS_URL = api_base_url + "/admin/trip/orders/getOrders";
+
 
 // Gallery
 export const GET_GALLERY_URL = api_base_url + "/admin/gallery/getGallery";

@@ -89,4 +89,22 @@
                     return false;
                 }
             }
+
+            
+
+            // orders
+
+
+            public function getOrders($id)
+            {
+                $data = DB::table('tb_trip_orders')->where([['is_deleted', '=', false], ['trip_id', '=', $id]])->orderBy('id', 'desc')->get();
+                $num = 1;
+                foreach ($data as $key => $value) {
+                    $value->num = $num;
+                    $value->trip = DB::table('tb_trips')->where('id', '=', $value->trip_id)->get()->first();
+                    $value->attraction = DB::table('tb_attractions')->where('id', '=', $value->trip->attraction_id)->get()->first();
+                    $num++;
+                }
+                return $data;
+            }
         };

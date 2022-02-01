@@ -20,6 +20,8 @@ import AdminTrips from "../views/admin/Trips.vue";
 import AdminGallery from "../views/admin/Gallery.vue";
 import Users from "../views/admin/Users.vue";
 import adminAccount from "../views/admin/adminAccount.vue";
+import PackageOrders from "../views/admin/PackageOrders.vue";
+import TripOrders from "../views/admin/TripOrders.vue";
 
 Vue.use(VueRouter);
 const routes = [
@@ -97,9 +99,19 @@ const routes = [
     component: AdminPackages,
   },
   {
+    path: "/admin/packages/orders/:id",
+    name: "PackageOrders",
+    component: PackageOrders,
+  },
+  {
     path: "/admin/trips",
     name: "AdminTrips",
     component: AdminTrips,
+  },
+  {
+    path: "/admin/trips/orders/:id",
+    name: "TripOrders",
+    component: TripOrders,
   },
   {
     path: "/admin/gallery",

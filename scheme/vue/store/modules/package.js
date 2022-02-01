@@ -3,6 +3,9 @@ import {
   ADD_PACKAGE,
   UPDATE_PACKAGE,
   DELETE_PACKAGE,
+
+  GET_PACKAGE_ORDERS,
+  CONFIRM_PACKAGE_ORDERS,
 } from "../actions/package";
 
 import {
@@ -10,6 +13,9 @@ import {
   ADD_PACKAGE_URL,
   UPDATE_PACKAGE_URL,
   DELETE_PACKAGE_URL,
+
+  GET_PACKAGE_ORDERS_URL,
+  CONFIRM_PACKAGE_ORDERS_URL,
 } from "../variables";
 
 import axios from "axios";
@@ -42,6 +48,22 @@ const actions = {
     return axios({
       url: DELETE_PACKAGE_URL + payload,
       method: "GET",
+    });
+  },
+
+  // orders
+  [GET_PACKAGE_ORDERS]: (state, payload) => {
+    return axios({
+      url: GET_PACKAGE_ORDERS_URL,
+      method: "POST",
+      data: payload,
+    });
+  },
+  [CONFIRM_PACKAGE_ORDERS]: (state, payload) => {
+    return axios({
+      url: CONFIRM_PACKAGE_ORDERS_URL,
+      method: "POST",
+      data: payload,
     });
   },
 };

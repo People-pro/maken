@@ -108,4 +108,35 @@ class AdminPackagesController extends Controller
             responce(json_encode($responce), 404);
         }
     }
+
+
+    // package orders
+
+
+    
+    public function getOrders()
+    {
+        $id = input('id');
+        $token = input('token');
+        $AdminPackages = new AdminPackages();
+        $AdminAttractions = new AdminAttractions();
+        $responce = $AdminPackages->getOrders($id);
+        return responce(json_encode($responce), 200);
+    }
+    public function confirmOrders()
+    {
+        $id = input('id');
+        $token = input('token');
+        $AdminPackages = new AdminPackages();
+        $confirmOrders = $AdminPackages->confirmOrders($id);
+        if ($confirmOrders) {
+            $responce['status'] = "ok";
+            $responce['message'] = "Order was confirmed";
+            return responce(json_encode($responce), 202);
+        } else {
+            $responce['status'] = "bad";
+            $responce['message'] = "Order was not confirmed";
+            return responce(json_encode($responce), 404);
+        }
+    }
 };

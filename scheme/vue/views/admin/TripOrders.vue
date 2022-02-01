@@ -1,5 +1,5 @@
 <template>
-  <div class="Trips">
+  <div class="TripOrders">
     <div class="admin-content">
       <loading
         :active.sync="isLoading"
@@ -10,13 +10,10 @@
       ></loading>
       <adminSidebar />
       <div class="admin-body">
-        <AdminLogged :brand="'Trips'" />
+        <AdminLogged :brand="'Trip Orders'" />
         <div class="table">
           <div class="table-title">
-            <label for="Trips">Trips</label>
-            <button class="add-new" @click="addModal = true">
-              <i class="fa fa-plus"></i> Add
-            </button>
+            <label for="Package Orders">Trip Orders</label>
           </div>
           <table class="pads">
             <thead>
@@ -24,35 +21,30 @@
                 <th>#</th>
                 <th>Date</th>
                 <th>Attraction</th>
-                <th>duration</th>
-                <th>min&nbsp;age</th>
-                <th>max&nbsp;people</th>
-                <!-- <th>Actions</th> -->
+                <th>Names</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Nationality</th>
+                <th>People</th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
-              <tr v-for="item in items" :key="item.id">
-                <td>
-                  <img
-                    :src="'/assets/uploaded/' + item.image"
-                    :alt="item.name"
-                    class="thumbnail"
-                  />
-                </td>
+              <tr v-for="item in orders" :key="item.id">
+                <td>{{ item.num }}</td>
                 <td>{{ item.date }}</td>
                 <td>{{ item.attraction.name }}</td>
-                <td>{{ item.duration }}</td>
-                <td>{{ item.min_age }}</td>
-                <td>{{ item.max_people }}</td>
+                <td>{{ item.fullname }}</td>
+                <td>{{ item.phone }}</td>
+                <td>{{ item.email }}</td>
+                <td>{{ item.nationality }}</td>
+                <td>{{ item.people }}</td>
                 <td>
-                  <router-link
-                    :to="'/admin/trips/orders/' + item.id"
-                    class="button videos"
-                    >Orders</router-link
-                  >
-                  <button class="edit" @click="startUpdate(item)">Edit</button>
+                  <button class="videos" @click="startUpdate(item)">
+                    confirm
+                  </button>
                   <button class="delete" @click="startDelete(item)">
-                    Delete
+                    Cancel
                   </button>
                 </td>
               </tr>
@@ -61,7 +53,7 @@
         </div>
         <Model v-if="addModal == true">
           <div class="model-header">
-            <h4>Add Trip</h4>
+            <h4>Add Package</h4>
             <button class="close" @click="addModal = false">X</button>
           </div>
           <div class="model-body">
@@ -78,15 +70,6 @@
                     {{ attraction.name }}
                   </option>
                 </select>
-              </div>
-              <div class="form-group">
-                <label for="Date">Date:</label>
-                <input
-                  type="date"
-                  id=""
-                  placeholder="date"
-                  v-model="newItem.date"
-                />
               </div>
               <div class="form-group">
                 <label for="Duration">Duration:</label>
@@ -309,7 +292,7 @@
         </Model>
         <Model v-if="updateModal == true">
           <div class="model-header">
-            <h4>Edit Trip</h4>
+            <h4>Edit Package</h4>
             <button class="close" @click="updateModal = false">X</button>
           </div>
           <div class="model-body">
@@ -326,15 +309,6 @@
                     {{ attraction.name }}
                   </option>
                 </select>
-              </div>
-              <div class="form-group">
-                <label for="Date">Date:</label>
-                <input
-                  type="date"
-                  id=""
-                  placeholder="date"
-                  v-model="selectedItem.date"
-                />
               </div>
               <div class="form-group">
                 <label for="Duration">Duration:</label>
@@ -559,12 +533,12 @@
         </Model>
         <Model v-if="deleteModal == true">
           <div class="model-header">
-            <h4>Delete Trip</h4>
+            <h4>Delete Package</h4>
             <button class="close" @click="deleteModal = false">X</button>
           </div>
           <div class="model-body">
             <h4 class="delete-label">
-              Are you sure you want to delete this Trip?
+              Are you sure you want to delete this package?
             </h4>
           </div>
           <div class="model-footer">
@@ -580,7 +554,7 @@
 <script>
 import Model from "./components/Model.vue";
 export default {
-  name: "Trips",
+  name: "TripOrders",
   components: {
     Model,
   },
@@ -596,7 +570,7 @@ export default {
         attraction_id: "",
       },
       selectedItem: {},
-      items: [],
+      orders: [],
       attractions: [],
       token: null,
       prices: [],
@@ -625,90 +599,11 @@ export default {
     getItems() {
       this.isLoading = true;
       this.$store
-        .dispatch("GET_TRIP", { token: this.$loggedAdminToken() })
+        .dispatch("GET_TRIP_ORDERS", { token: this.$loggedAdminToken(), id: this.$route.params.id })
         .then((response) => {
-          this.items = response.data["trips"];
-          this.attractions = response.data["attractions"];
+          this.orders = response.data;
           this.isLoading = false;
         });
-    },
-    addItems() {
-      this.isLoading = true;
-      if (
-        this.newItem.attraction_id != "" &&
-        this.newItem.date != "" &&
-        this.newItem.duration != "" &&
-        this.newItem.min_age != "" &&
-        this.newItem.max_people != "" &&
-        this.newItem.image
-      ) {
-        if (this.prices.length > 0) {
-          this.newItem.price = JSON.stringify(this.prices);
-        } else {
-          this.newItem.price = "[]";
-        }
-        if (this.inclusives.length > 0) {
-          this.newItem.inclusives = JSON.stringify(this.inclusives);
-        } else {
-          this.newItem.inclusives = "[]";
-        }
-        if (this.exclusives.length > 0) {
-          this.newItem.exclusives = JSON.stringify(this.exclusives);
-        } else {
-          this.newItem.exclusives = "[]";
-        }
-        if (this.reqs.length > 0) {
-          this.newItem.reqs = JSON.stringify(this.reqs);
-        } else {
-          this.newItem.reqs = "[]";
-        }
-        this.$store
-          .dispatch("ADD_TRIP", this.newItem)
-          .then((response) => {
-            if (response.data.status == "ok") {
-              this.$notify({
-                group: "status",
-                title: "Important message",
-                text: response.data.message,
-                type: "success",
-              });
-              this.addModal = false;
-              this.newItem.name = "";
-              this.newItem.country = "";
-              this.newItem.region = "";
-              this.newItem.images = "";
-              this.pricing = { label: "", value: "" };
-              this.inclu = { label: "" };
-              this.exclu = { label: "" };
-              this.req = { label: "" };
-              this.prices = [];
-              this.inclusives = [];
-              this.exclusives = [];
-              this.reqs = [];
-              this.getItems();
-            } else {
-              this.$notify({
-                group: "status",
-                title: "Important message",
-                text: response.data.message,
-                type: "error",
-              });
-            }
-          })
-          .catch((error) => {
-            console.error({
-              error,
-            });
-          });
-        this.isLoading = false;
-      } else {
-        this.$notify({
-          group: "status",
-          title: "Important message",
-          text: "All Fields are required",
-          type: "error",
-        });
-      }
     },
     startUpdate(item) {
       this.selectedItem = item;
@@ -744,7 +639,6 @@ export default {
       this.isLoading = true;
       if (
         this.selectedItem.attraction_id != "" &&
-        this.selectedItem.date != "" &&
         this.selectedItem.duration != "" &&
         this.selectedItem.min_age != "" &&
         this.selectedItem.max_people != "" &&
@@ -771,7 +665,7 @@ export default {
           this.selectedItem.reqs = "[]";
         }
         this.$store
-          .dispatch("UPDATE_TRIP", this.selectedItem)
+          .dispatch("UPDATE_PACKAGE", this.selectedItem)
           .then((response) => {
             if (response.data.status == "ok") {
               this.$notify({
@@ -822,7 +716,7 @@ export default {
     deleteItems() {
       this.isLoading = true;
       this.$store
-        .dispatch("DELETE_TRIP", this.selectedItem.id)
+        .dispatch("DELETE_PACKAGE", this.selectedItem.id)
         .then((response) => {
           if (response.data.status == "ok") {
             this.$notify({
