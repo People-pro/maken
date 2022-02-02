@@ -34,7 +34,7 @@
       <div class="right">
         <label for="contact us">Reach Us Through</label>
         <ul>
-          <li><i class="fa fa-phone"></i> +250 785 848 669</li>
+          <li><i class="fa fa-phone"></i> +250 788 232 465 / +250 785 848 669</li>
           <li><i class="fa fa-envelope"></i> makenafricasafaris@gmail.com</li>
         </ul>
         <div class="socials">

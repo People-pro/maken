@@ -80,7 +80,7 @@
     </div>
 
     <a
-      href="https://api.whatsapp.com/send/?phone=250785848669"
+      href="https://api.whatsapp.com/send/?phone=250788232465"
       target="_blank"
       class="help"
     >
