@@ -1,6 +1,6 @@
 let api_base_url = "";
 if (process.env.NODE_ENV === "production") {
-  api_base_url = "https://www.makenafricasafaris.com/api/v1";
+  api_base_url = "https://makenafricasafaris.com/api/v1";
 } else {
   api_base_url = "http://127.0.0.1:8000/api/v1";
 }
@@ -8,13 +8,13 @@ export const API_BASE_URL = api_base_url;
 
 let base_url = "";
 if (process.env.NODE_ENV === "production") {
-  base_url = "https://www.makenafricasafaris.com/api/v1";
+  base_url = "https://makenafricasafaris.com/api/v1";
 } else {
   base_url = "http://127.0.0.1:8080/api/v1";
 }
 let upload_base_url = "";
 if (process.env.NODE_ENV === "production") {
-  upload_base_url = "https://www.makenafricasafaris.com/";
+  upload_base_url = "https://makenafricasafaris.com/";
 } else {
   upload_base_url = "http://127.0.0.1:8000/";
 }
