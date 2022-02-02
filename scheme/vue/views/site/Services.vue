@@ -12,8 +12,18 @@
       <div class="intro">
         <div class="intro-content">
           <div class="intro-body">
-            <h2 data-aos="fade-up" data-aos-duration="1000" class="intro-header">Our Services</h2>
-            <p class="txt-shad-sm intro-desc" data-aos="fade-up" data-aos-duration="1000">
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="intro-header"
+            >
+              Our Services
+            </h2>
+            <p
+              class="txt-shad-sm intro-desc"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               What We offer to our clients.
             </p>
           </div>
@@ -29,10 +39,10 @@
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fas fa-plane"></i>
+                <i class="fas fa-bed"></i>
               </div>
-              <label for="Travel - Corporate And Leisure" class="service-title"
-                >Travel - Corporate And Leisure</label
+              <label for="Hotel Reservation" class="service-title"
+                >Hotel Reservation</label
               >
               <div class="desc-content">
                 <p>Domestic and International ticketing.</p>
@@ -45,20 +55,15 @@
                   charges.
                 </p>
                 <p>Hotel bookings, both local and international.</p>
-                <p>
-                  Ground transportation including airport transfers on request.
-                </p>
               </div>
             </div>
           </div>
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fas fa-leaf"></i>
+                <i class="fa fa-users"></i>
               </div>
-              <label for="Safaris And Tours" class="service-title"
-                >Safaris And Tours</label
-              >
+              <label for="Internship" class="service-title">Internship</label>
               <div class="desc-content">
                 <p>
                   Wildlife safaris within East Africa and other African
@@ -69,25 +74,15 @@
                   for Individuals, Groups or Families.
                 </p>
                 <p>Adventure packages / Private camping safaris.</p>
-                <p>
-                  We can tailor make packages to suit your needs and interests;
-                  and to help you explore and experience the best White water
-                  rafting, Students and family packages, hand gliding, Horse
-                  Riding, Helicopter Adventure tours.
-                </p>
               </div>
             </div>
           </div>
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fas fa-handshake"></i>
+                <i class="fas fa-chalkboard-teacher"></i>
               </div>
-              <label
-                for="Safaris And Incentives, Corporate Deals &amp; Airline Negotiations"
-                class="service-title"
-                >Incentives, Corporate Deals &amp; Airline Negotiations</label
-              >
+              <label for="Training" class="service-title">Training</label>
               <div class="desc-content">
                 <p>
                   Having worked with Multinational Companies and several
@@ -103,12 +98,10 @@
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fa fa-users"></i>
+                <i class="fas fa-hiking"></i>
               </div>
-              <label
-                for="Safaris And Incentive / Group Travel - M.I.C.E"
-                class="service-title"
-                >Incentive / Group Travel - M.I.C.E</label
+              <label for="Tour guiding" class="service-title"
+                >Tour Guiding</label
               >
               <div class="desc-content">
                 <p>
@@ -126,10 +119,10 @@
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fa fa-users"></i>
+                <i class="fas fa-list-ul"></i>
               </div>
-              <label for="Holidays / Leisure Division" class="service-title"
-                >Holidays / Leisure Division</label
+              <label for="Tour Package" class="service-title"
+                >Tour Package</label
               >
               <div class="desc-content">
                 <p>
@@ -147,9 +140,9 @@
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fas fa-car"></i>
+                <i class="fas fa-hiking"></i>
               </div>
-              <label for="Car Rental" class="service-title">Car Rental</label>
+              <label for="Planning tour itinerary" class="service-title">Planning Tour Itinerary</label>
               <div class="desc-content">
                 <p>
                   Car rental / hire - Rates are dependent entirely on your

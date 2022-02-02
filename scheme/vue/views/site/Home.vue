@@ -73,10 +73,10 @@
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fas fa-plane"></i>
+                <i class="fas fa-bed"></i>
               </div>
-              <label for="Travel - Corporate And Leisure" class="service-title"
-                >Travel - Corporate And Leisure</label
+              <label for="Hotel Reservation" class="service-title"
+                >Hotel Reservation</label
               >
               <div class="desc-content">
                 <p>Domestic and International ticketing.</p>
@@ -89,20 +89,15 @@
                   charges.
                 </p>
                 <p>Hotel bookings, both local and international.</p>
-                <p>
-                  Ground transportation including airport transfers on request.
-                </p>
               </div>
             </div>
           </div>
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fas fa-leaf"></i>
+                <i class="fa fa-users"></i>
               </div>
-              <label for="Safaris And Tours" class="service-title"
-                >Safaris And Tours</label
-              >
+              <label for="Internship" class="service-title">Internship</label>
               <div class="desc-content">
                 <p>
                   Wildlife safaris within East Africa and other African
@@ -113,25 +108,15 @@
                   for Individuals, Groups or Families.
                 </p>
                 <p>Adventure packages / Private camping safaris.</p>
-                <p>
-                  We can tailor make packages to suit your needs and interests;
-                  and to help you explore and experience the best White water
-                  rafting, Students and family packages, hand gliding, Horse
-                  Riding, Helicopter Adventure tours.
-                </p>
               </div>
             </div>
           </div>
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fas fa-tree"></i>
+                <i class="fas fa-chalkboard-teacher"></i>
               </div>
-              <label
-                for="Safaris And Incentives, Corporate Deals &amp; Airline Negotiations"
-                class="service-title"
-                >Incentives, Corporate Deals &amp; Airline Negotiations</label
-              >
+              <label for="Training" class="service-title">Training</label>
               <div class="desc-content">
                 <p>
                   Having worked with Multinational Companies and several
@@ -486,7 +471,11 @@
           </div>
           <div class="testimonials-body">
             <div class="test-text">
-              <div class="text-item" data-aos="fade-up" data-aos-duration="1000">
+              <div
+                class="text-item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <p>
                   Our tour of Akagera was a wonderful experience, and a large
                   element of that was owing to the arrangements provided by
@@ -497,7 +486,11 @@
                 </p>
                 <label for="John Doe"> - John Doe</label>
               </div>
-              <div class="text-item" data-aos="fade-up" data-aos-duration="1000">
+              <div
+                class="text-item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <p>
                   I would like to thank the
                   <strong>Maken Africa Safaris</strong> for the excelent service
