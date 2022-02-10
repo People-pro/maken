@@ -35,16 +35,17 @@
           <hr class="myhr" />
           <div class="about-body">
             <p>
-              For 2 years <strong>Maken Africa Safaris</strong> has been
-              providing an unrivalled full spectrum of business and leisure
-              travel services that our satisfied customers will certainly attest
-              to.
+              <strong>Maken Africa Safaris</strong> has been providing an
+              unrivalled full spectrum of business and leisure travel services
+              that our satisfied customers will certainly attest to.
             </p>
 
             <p>
-              We pride ourselves in offering world class service in the regions
-              we operate. Our well experienced consultants offer clients with
-              most economical, practical and convenient travel solutions.
+              We pride ourselves in offering world class services such is hotel
+              reservation,internship,training,tour guiding,tour package and
+              planning tour itinerary. Our well experienced consultants offer
+              clients with most economical, practical and convenient travel
+              solutions.
             </p>
             <p>
               <strong>Maken Africa Safaris</strong> was incorporated on May 2018

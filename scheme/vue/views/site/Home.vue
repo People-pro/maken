@@ -79,16 +79,10 @@
                 >Hotel Reservation</label
               >
               <div class="desc-content">
-                <p>Domestic and International ticketing.</p>
                 <p>
-                  planning which encompasses visa processing at a nominal fee
-                  and advice on other Immigration requirements.
+                  we assist tourist in different corn of the world to give them
+                  best accommodation in bound and out bound.
                 </p>
-                <p>
-                  Meet and Assist services provided upon request at reasonable
-                  charges.
-                </p>
-                <p>Hotel bookings, both local and international.</p>
               </div>
             </div>
           </div>
@@ -100,14 +94,9 @@
               <label for="Internship" class="service-title">Internship</label>
               <div class="desc-content">
                 <p>
-                  Wildlife safaris within East Africa and other African
-                  destinations.
+                  We help students with in colleges and universities to give
+                  them professional and college internship.
                 </p>
-                <p>
-                  Tour and Holiday planning for both Inbound and Outbound travel
-                  for Individuals, Groups or Families.
-                </p>
-                <p>Adventure packages / Private camping safaris.</p>
               </div>
             </div>
           </div>
@@ -118,14 +107,7 @@
               </div>
               <label for="Training" class="service-title">Training</label>
               <div class="desc-content">
-                <p>
-                  Having worked with Multinational Companies and several
-                  airlines, Maken Africa Safaris has been able to negotiate with
-                  supplier's incentives, corporate deals and corporate frequent
-                  flyer programs which lead to savings for the organization in
-                  terms of pricing, excess baggage and many other added value
-                  products from the supplier.
-                </p>
+                <p>we give chance to people who what to learn tourism.</p>
               </div>
             </div>
           </div>
