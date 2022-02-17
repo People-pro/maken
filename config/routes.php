@@ -19,6 +19,35 @@ $routes = [
                 'folder' => 'api',
                 'return' => 'UserController@index',
             ],
+
+            // packages
+            [
+                'path' => '/getPopularPackages',
+                'method' => 'GET',
+                'folder' => 'site',
+                'return' => 'SitePackagesController@getPopularPackages',
+            ],
+            [
+                'path' => '/getSitePackages',
+                'method' => 'GET',
+                'folder' => 'site',
+                'return' => 'SitePackagesController@getSitePackages',
+            ],
+            [
+                'path' => '/getSinglePackages/{id}',
+                'method' => 'GET',
+                'folder' => 'site',
+                'return' => 'SitePackagesController@getSinglePackages',
+            ],
+
+            // trips
+            [
+                'path' => '/getSiteTrips',
+                'method' => 'GET',
+                'folder' => 'site',
+                'return' => 'SiteTripsController@getSiteTrips',
+            ],
+            
         ],
     ],
 

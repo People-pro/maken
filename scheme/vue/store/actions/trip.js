@@ -6,3 +6,6 @@ export const DELETE_TRIP = "DELETE_TRIP";
 // orders
 
 export const GET_TRIP_ORDERS = "GET_TRIP_ORDERS";
+
+// site
+export const GET_SITE_TRIPS = "GET_SITE_TRIPS";

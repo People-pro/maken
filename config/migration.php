@@ -165,6 +165,15 @@ $db_up_migration = [
         },
         'reason' => 'Creating package_orders table',
     ],
+    [
+        'key' => 9,
+        'table' => 'packages',
+        "todo" => 'update',
+        'run' => function (Blueprint $table) {
+            $table->integer('sales')->after('image')->nullable();
+        },
+        'reason' => 'adding sales on packages table',
+    ],
 ];
 
 /**

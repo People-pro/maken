@@ -67,221 +67,49 @@
               </div>
             </div>
           </router-link>
-          <div class="package-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/uploaded/canopy.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">2 Days</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Nyungwe National Park" class="package-title"
-                  >Nyungwe National Park</label
-                >
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$2400</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >Explore <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="package-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/uploaded/gor2.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">3 Days</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Volcanoes National Park" class="package-title"
-                  >Volcanoes National Park</label
-                >
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$5100</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >Explore <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="package-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/uploaded/bg2.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">1 Day</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Twin Lakes" class="package-title">Twin Lakes</label>
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$1400</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >Explore <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="package-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/images/pack1.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">5 Days</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Akagera National Park" class="package-title"
-                  >Akagera National Park</label
-                >
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$4300</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >Explore <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="package-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/images/canopy.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">2 Days</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Nyungwe National Park" class="package-title"
-                  >Nyungwe National Park</label
-                >
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$2400</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >Explore <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="package-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/images/gor2.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">3 Days</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Volcanoes National Park" class="package-title"
-                  >Volcanoes National Park</label
-                >
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$5100</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >Explore <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="package-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/images/bg2.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">1 Day</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Twin Lakes" class="package-title">Twin Lakes</label>
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$1400</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >Explore <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="packages-footer jc-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <router-link to="/packages" class="mybtn-o"
-            >View More Packages</router-link
+          <router-link
+            :to="'/viewPackage/' + item.id"
+            class="package-item"
+            v-for="item in items"
+            :key="item.id"
           >
+            <div class="content">
+              <div class="img-section jc-center">
+                <img
+                  :src="'/assets/uploaded/' + item.image"
+                  :alt="item.attraction.name"
+                  srcset=""
+                />
+                <div class="specs">
+                  <div class="region">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <label for="Tourism Region">{{
+                      item.attraction.country
+                    }}</label>
+                  </div>
+                  <div class="days">
+                    <label for="Days">{{ item.duration }}</label>
+                  </div>
+                </div>
+              </div>
+              <div class="text-section">
+                <label :for="item.attraction.name" class="package-title">{{
+                  item.attraction.name
+                }}</label>
+              </div>
+              <hr />
+              <div class="content-footer">
+                <div class="money">
+                  <label for="Amount">{{ item.price[0].value }}</label>
+                </div>
+                <div class="book">
+                  <router-link to="/book/1" class="book-btn"
+                    >Explore <i class="mdi mdi-arrow-right"></i
+                  ></router-link>
+                </div>
+              </div>
+            </div>
+          </router-link>
         </div>
       </div>
       <div class="trips">
@@ -324,103 +152,52 @@
               <label for="trip date">28th, Dec 2021</label>
             </div>
           </div>
-          <div class="trip-item">
+          <router-link
+            :to="'/viewTrip/' + item.id"
+            class="trip-item"
+            v-for="item in trips"
+            :key="item.id"
+          >
             <div class="content">
               <div class="img-section jc-center">
-                <img src="/assets/images/canopy.jpg" alt="" srcset="" />
+                <img
+                  :src="'/assets/uploaded/' + item.image"
+                  :alt="item.attraction.name"
+                  srcset=""
+                />
                 <div class="specs">
                   <div class="region">
                     <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
+                    <label for="Tourism Region">{{
+                      item.attraction.country
+                    }}</label>
                   </div>
-                  <div class="days"><label for="Days">2 Days</label></div>
+                  <div class="days">
+                    <label for="Days">{{ item.duration }}</label>
+                  </div>
                 </div>
               </div>
               <div class="text-section">
-                <label for="Nyungwe National Park" class="trip-title"
-                  >Nyungwe National Park</label
-                >
+                <label :for="item.attraction.name" class="trip-title">{{
+                  item.attraction.name
+                }}</label>
               </div>
               <hr />
               <div class="content-footer">
                 <div class="money">
-                  <label for="Amount">$2400</label>
+                  <label for="Amount">{{ item.price[0].value }}</label>
                 </div>
                 <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >View more <i class="mdi mdi-arrow-right"></i
+                  <router-link :to="'/viewTrip/' + item.id" class="book-btn"
+                    >View More <i class="mdi mdi-arrow-right"></i
                   ></router-link>
                 </div>
               </div>
             </div>
             <div class="date-widget">
-              <label for="trip date">28th, Dec 2021</label>
+              <label for="trip date">{{ item.date }}</label>
             </div>
-          </div>
-          <div class="trip-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/images/gor2.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">3 Days</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Volcanoes National Park" class="trip-title"
-                  >Volcanoes National Park</label
-                >
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$5100</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >View more <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-            <div class="date-widget">
-              <label for="trip date">28th, Dec 2021</label>
-            </div>
-          </div>
-          <div class="trip-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/images/bg2.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">1 Day</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Twin Lakes" class="trip-title">Twin Lakes</label>
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$1400</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >View more <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-            <div class="date-widget">
-              <label for="trip date">28th, Dec 2021</label>
-            </div>
-          </div>
+          </router-link>
         </div>
         <div
           class="trips-footer jc-center"
@@ -468,15 +245,33 @@ export default {
           },
         },
       },
+      items: [],
+      trips: [],
     };
   },
   methods: {
     onCancel() {
       console.log();
     },
+    getItems() {
+      this.isLoading = true;
+      this.$store.dispatch("GET_SITE_PACKAGES").then((response) => {
+        this.items = response.data["packages"];
+        this.items.forEach((item) => {
+          item.price = JSON.parse(item.price);
+        });
+
+        this.trips = response.data["trips"];
+        this.trips.forEach((item) => {
+          item.price = JSON.parse(item.price);
+        });
+        this.isLoading = false;
+      });
+    },
   },
   mounted() {
     let vm = this;
+    this.getItems();
   },
 };
 </script>
