@@ -1,5 +1,12 @@
 <template>
-  <div class="BookForm">
+  <div class="BookForm" v-if="trip">
+    <loading
+      :active.sync="isLoading"
+      :can-cancel="true"
+      :on-cancel="onCancel"
+      :color="color"
+      :is-full-page="fullPage"
+    ></loading>
     <div class="modal-content">
       <div class="modal-dialog">
         <div class="modal-header">
@@ -10,53 +17,49 @@
         <div class="modal-body">
           <form>
             <label for="Booking Form" class="form-title"
-              >Fill the form to book with us.</label
+              >Fill the form to book a trip with us.</label
             >
             <div class="form-body">
               <div class="form-group">
                 <label for="Fullname">Fullname:</label>
-                <input type="text" />
+                <input type="text" v-model="item.fullname" />
               </div>
               <div class="form-group">
                 <label for="Phone Number">Phone Number:</label>
-                <input type="text" />
+                <input type="text" v-model="item.phone" />
               </div>
               <div class="form-group">
                 <label for="Email">Email:</label>
-                <input type="text" />
+                <input type="text" v-model="item.email" />
               </div>
               <div class="form-group">
                 <label for="Number Of People">Number Of People:</label>
-                <input type="number" max="6" min="1" />
+                <input
+                  type="number"
+                  :max="trip.max_people"
+                  min="1"
+                  v-model="item.people"
+                />
               </div>
               <div class="form-group">
-                <label for="Date">Date:</label>
-                <input type="date" />
-              </div>
-              <div class="form-group">
-                <label for="Nationality">Nationality:</label>
-                <div class="Nationalitys">
-                  <div>
-                    <input type="radio" name="Nationality" value="Rwandan" />
-                    Rwandan
-                  </div>
-                  <div>
-                    <input type="radio" name="Nationality" value="Foreigner" />
-                    Foreigner
-                  </div>
-                </div>
+                <label for="Nationality">Residence:</label>
+                <select v-model="item.nationality">
+                  <option value="">Select</option>
+                  <option>Rwandan</option>
+                  <option>Foreigner</option>
+                </select>
               </div>
               <div class="form-group">
                 <label for="Any additional Details"
                   >Any Additional Details:</label
                 >
-                <textarea rows="5"></textarea>
+                <textarea rows="5" v-model="item.details"></textarea>
               </div>
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button class="submit" @click="bookDone = true">Book Now</button>
+          <button class="submit" @click="bookNow()">Book Now</button>
           <button class="close" @click="closeModal()">Close</button>
         </div>
       </div>
@@ -68,15 +71,74 @@
 <script>
 export default {
   name: "BookForm",
+  props: ["action", "trip"],
   data() {
     return {
+      isLoading: false,
+      color: "#072e4d",
+      fullPage: true,
       bookDone: false,
+      item: {
+        fullname: "",
+        phone: "",
+        email: "",
+        people: 1,
+        nationality: "",
+      },
     };
   },
   methods: {
+    onCancel() {
+      console.log();
+    },
     closeModal() {
       this.bookDone = false;
       this.$emit("closeModal");
+    },
+    bookNow() {
+      this.isLoading = true;
+      if (
+        this.item.fullname != "" &&
+        this.item.phone != "" &&
+        this.item.email != "" &&
+        this.item.people != "" &&
+        this.item.nationality != ""
+      ) {
+        this.item.trip_id = this.trip.id;
+        this.$store
+          .dispatch("BOOK_TRIP", this.item)
+          .then((response) => {
+            if (response.data.status == "ok") {
+              this.$notify({
+                group: "status",
+                title: "Important message",
+                text: response.data.message,
+                type: "success",
+              });
+              this.$emit("closeModal");
+            } else {
+              this.$notify({
+                group: "status",
+                title: "Important message",
+                text: response.data.message,
+                type: "error",
+              });
+            }
+          })
+          .catch((error) => {
+            console.error({
+              error,
+            });
+          });
+        this.isLoading = false;
+      } else {
+        this.$notify({
+          group: "status",
+          title: "Important message",
+          text: "Please fill all fields",
+          type: "error",
+        });
+      }
     },
   },
 };
@@ -168,7 +230,8 @@ export default {
                 font-size: 0.8rem;
               }
               input,
-              textarea {
+              textarea,
+              select {
                 font-size: 0.8rem;
                 border: none;
                 outline: none;
@@ -176,7 +239,8 @@ export default {
               input[type="text"],
               input[type="number"],
               input[type="date"],
-              textarea {
+              textarea,
+              select {
                 width: 100%;
                 background: #e6e6e6;
                 border-bottom: 1px #a3a3a3 solid;

@@ -342,4 +342,9 @@ $green: #044914;
   // background: #e9e9e9 !important;
     color: #141414 !important;
 }
+td{
+  &.green{
+    color: green !important;
+  }
+}
 </style>

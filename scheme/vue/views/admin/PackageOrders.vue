@@ -40,7 +40,7 @@
                 <td>{{ item.email }}</td>
                 <td>{{ item.nationality }}</td>
                 <td>{{ item.people }}</td>
-                <td>{{ item.status }}</td>
+                <td :class="item.status == 'confirmed' ? 'green' : ''">{{ item.status }}</td>
                 <td>
                   <button class="videos" @click="confirmItem(item)">
                     confirm
@@ -535,12 +535,12 @@
         </Model>
         <Model v-if="deleteModal == true">
           <div class="model-header">
-            <h4>Delete Package</h4>
+            <h4>Cancel Order</h4>
             <button class="close" @click="deleteModal = false">X</button>
           </div>
           <div class="model-body">
             <h4 class="delete-label">
-              Are you sure you want to delete this package?
+              Are you sure you want to cancel this Order?
             </h4>
           </div>
           <div class="model-footer">
@@ -749,7 +749,7 @@ export default {
     deleteItems() {
       this.isLoading = true;
       this.$store
-        .dispatch("DELETE_PACKAGE", this.selectedItem.id)
+        .dispatch("DELETE_PACKAGE_ORDERS", this.selectedItem.id)
         .then((response) => {
           if (response.data.status == "ok") {
             this.$notify({
@@ -846,4 +846,5 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>

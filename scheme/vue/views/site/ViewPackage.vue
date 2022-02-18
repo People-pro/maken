@@ -217,7 +217,7 @@
         </div>
       </div>
     </div>
-    <BookPackage v-show="startBooking" @closeModal="startBooking = false" />
+    <BookPackage v-show="startBooking" @closeModal="startBooking = false" :action="'bookPackage'" :mypackage="item" />
     <clientFooter />
   </div>
 </template>
@@ -285,6 +285,11 @@ export default {
     let vm = this;
     this.getItems();
   },
+  watch: {
+    "$route.params.id": function() {
+      this.getItems();
+    },
+  }
 };
 </script>
 

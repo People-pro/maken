@@ -39,13 +39,37 @@ $routes = [
                 'folder' => 'site',
                 'return' => 'SitePackagesController@getSinglePackages',
             ],
+            [
+                'path' => '/bookPackage',
+                'method' => 'POST',
+                'folder' => 'site',
+                'return' => 'SitePackagesController@bookPackage',
+            ],
 
             // trips
+            [
+                'path' => '/getPopularTrips',
+                'method' => 'GET',
+                'folder' => 'site',
+                'return' => 'SiteTripsController@getPopularTrips',
+            ],
             [
                 'path' => '/getSiteTrips',
                 'method' => 'GET',
                 'folder' => 'site',
                 'return' => 'SiteTripsController@getSiteTrips',
+            ],
+            [
+                'path' => '/getSingleTrips/{id}',
+                'method' => 'GET',
+                'folder' => 'site',
+                'return' => 'SiteTripsController@getSingleTrips',
+            ],
+            [
+                'path' => '/bookTrip',
+                'method' => 'POST',
+                'folder' => 'site',
+                'return' => 'SiteTripsController@bookTrip',
             ],
             
         ],
@@ -144,6 +168,12 @@ $routes = [
                 'folder' => 'admin',
                 'return' => 'AdminPackagesController@confirmOrders',
             ],
+            [
+                'path' => '/packages/orders/deleteOrders/{id}',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminPackagesController@deleteOrders',
+            ],
 
 
 
@@ -185,6 +215,18 @@ $routes = [
                 'method' => 'POST',
                 'folder' => 'admin',
                 'return' => 'AdminTripsController@getOrders',
+            ],
+            [
+                'path' => '/trip/orders/confirmOrders',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminTripsController@confirmOrders',
+            ],
+            [
+                'path' => '/trip/orders/deleteOrders/{id}',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminTripsController@deleteOrders',
             ],
 
 

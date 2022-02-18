@@ -37,36 +37,6 @@
           </p>
         </div>
         <div class="packages-body" data-aos="fade-up" data-aos-duration="1000">
-          <router-link to="/viewPackage/1" class="package-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/uploaded/pack1.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">5 Days</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Akagera National Park" class="package-title"
-                  >Akagera National Park</label
-                >
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$4300</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >Explore <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-          </router-link>
           <router-link
             :to="'/viewPackage/' + item.id"
             class="package-item"
@@ -119,39 +89,6 @@
           <p class="desc">Come join us and lets explore beyond expectations.</p>
         </div>
         <div class="trips-body" data-aos="fade-up" data-aos-duration="1000">
-          <div class="trip-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/images/pack1.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">5 Days</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Akagera National Park" class="trip-title"
-                  >Akagera National Park</label
-                >
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$4300</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >View more <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-            <div class="date-widget">
-              <label for="trip date">28th, Dec 2021</label>
-            </div>
-          </div>
           <router-link
             :to="'/viewTrip/' + item.id"
             class="trip-item"

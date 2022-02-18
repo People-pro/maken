@@ -76,10 +76,12 @@ export const DELETE_PACKAGE_URL = api_base_url + "/admin/packages/deletePackage/
 export const GET_POPULAR_PACKAGES_URL = api_base_url + "/getPopularPackages";
 export const GET_SITE_PACKAGES_URL = api_base_url + "/getSitePackages";
 export const GET_SINGLE_PACKAGES_URL = api_base_url + "/getSinglePackages/";
+export const BOOK_PACKAGE_URL = api_base_url + "/bookPackage";
 
 // Package orders
 export const GET_PACKAGE_ORDERS_URL = api_base_url + "/admin/packages/orders/getOrders";
 export const CONFIRM_PACKAGE_ORDERS_URL = api_base_url + "/admin/packages/orders/confirmOrders";
+export const DELETE_PACKAGE_ORDERS_URL = api_base_url + "/admin/packages/orders/deleteOrders/";
 
 // Trips
 export const GET_TRIP_URL = api_base_url + "/admin/trip/getTrip";
@@ -87,11 +89,17 @@ export const ADD_TRIP_URL = api_base_url + "/admin/trip/addTrip";
 export const UPDATE_TRIP_URL = api_base_url + "/admin/trip/updateTrip";
 export const DELETE_TRIP_URL = api_base_url + "/admin/trip/deleteTrip/";
 
+
 // site trips
 export const GET_SITE_TRIPS_URL = api_base_url + "/getSiteTrips";
+export const GET_POPULAR_TRIPS_URL = api_base_url + "/getPopularTrips";
+export const GET_SINGLE_TRIPS_URL = api_base_url + "/getSingleTrips/";
+export const BOOK_TRIP_URL = api_base_url + "/bookTrip";
 
 // Trip orders
 export const GET_TRIP_ORDERS_URL = api_base_url + "/admin/trip/orders/getOrders";
+export const CONFIRM_TRIP_ORDERS_URL = api_base_url + "/admin/trip/orders/confirmOrders";
+export const DELETE_TRIP_ORDERS_URL = api_base_url + "/admin/trip/orders/deleteOrders/";
 
 
 // Gallery

@@ -125,4 +125,34 @@ class AdminTripsController extends Controller
         $responce = $AdminTrips->getOrders($id);
         return responce(json_encode($responce), 200);
     }
+    public function confirmOrders()
+    {
+        $id = input('id');
+        $token = input('token');
+        $AdminTrips = new AdminTrips();
+        $confirmOrders = $AdminTrips->confirmOrders($id);
+        if ($confirmOrders) {
+            $responce['status'] = "ok";
+            $responce['message'] = "Order was confirmed";
+            return responce(json_encode($responce), 202);
+        } else {
+            $responce['status'] = "bad";
+            $responce['message'] = "Order was not confirmed";
+            return responce(json_encode($responce), 404);
+        }
+    }
+    public function deleteOrders($id)
+    {
+        $AdminTrips = new AdminTrips();
+        $deleteOrders = $AdminTrips->deleteOrders($id);
+        if ($deleteOrders) {
+            $responce['status'] = "ok";
+            $responce['message'] = "Order was deleted";
+            return responce(json_encode($responce), 202);
+        } else {
+            $responce['status'] = "bad";
+            $responce['message'] = "Order was not deleted";
+            return responce(json_encode($responce), 404);
+        }
+    }
 };

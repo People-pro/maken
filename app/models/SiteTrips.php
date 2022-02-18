@@ -32,5 +32,44 @@
                 }
                 return $data;
             }
+            public function getSingleTrips($id)
+            {
+                $today = Carbon::now('+2:00');
+                $data = DB::table('tb_trips')->where([['is_deleted', '=', false], ['id', '=', $id]])->get()->first();
+                $data->attraction = DB::table('tb_attractions')->where('id', '=', $data->attraction_id)->get()->first();
+                $data->trips = DB::table('tb_trips')->where([['is_deleted', '=', false], ['id', '!=', $id], ['date', '>', $today]])->orderBy('id', 'desc')->limit(4)->get();
+                $num = 1;
+                foreach ($data->trips as $key => $value) {
+                    $value->num = $num;
+                    $value->attraction = DB::table('tb_attractions')->where('id', '=', $value->attraction_id)->get()->first();
+                    $num++;
+                }
+                return $data;
+            }
+            public function bookTrip($trip_id, $fullname, $phone, $email, $people, $nationality, $details)
+            {
+                $today = Carbon::now('+2:00');
+                if (DB::table('tb_trip_orders')
+                    ->insert(
+                        [
+                            'trip_id' => $trip_id,
+                            'fullname' => $fullname,
+                            'phone' => $phone,
+                            'email' => $email,
+                            'people' => $people,
+                            'nationality' => $nationality,
+                            'details' => $details,
+                            'status' => 'pending',
+                            'created_at' => $today,
+                            'updated_at' => $today,
+                            'is_deleted' => false,
+                        ]
+                    )
+                ) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         };
         

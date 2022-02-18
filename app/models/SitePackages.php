@@ -64,4 +64,30 @@ class SitePackages extends Models
         }
         return $data;
     }
+    public function bookPackage($package_id, $fullname, $phone, $email, $people, $nationality, $date, $details)
+    {
+        $today = Carbon::now('+2:00');
+        if (DB::table('tb_package_orders')
+            ->insert(
+                [
+                    'package_id' => $package_id,
+                    'fullname' => $fullname,
+                    'phone' => $phone,
+                    'email' => $email,
+                    'people' => $people,
+                    'nationality' => $nationality,
+                    'date' => $date,
+                    'details' => $details,
+                    'status' => 'pending',
+                    'created_at' => $today,
+                    'updated_at' => $today,
+                    'is_deleted' => false,
+                ]
+            )
+        ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 };

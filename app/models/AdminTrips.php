@@ -107,4 +107,39 @@
                 }
                 return $data;
             }
+            public function confirmOrders($id)
+            {
+                $today = Carbon::now('+2:00');
+                if (DB::table('tb_trip_orders')
+                    ->where('id', '=', $id)
+                    ->update(
+                        [
+                            'status' => 'confirmed',
+                            'updated_at' => $today,
+                        ]
+                    )
+                ) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            public function deleteOrders($id)
+            {
+                $today = Carbon::now('+2:00');
+                if (DB::table('tb_trip_orders')
+                    ->where('id', '=', $id)
+                    ->update(
+                        [
+                            'status' => 'cancelled',
+                            'is_deleted' => true,
+                            'updated_at' => $today,
+                        ]
+                    )
+                ) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         };

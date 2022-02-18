@@ -139,4 +139,18 @@ class AdminPackagesController extends Controller
             return responce(json_encode($responce), 404);
         }
     }
+    public function deleteOrders($id)
+    {
+        $AdminPackages = new AdminPackages();
+        $deleteOrders = $AdminPackages->deleteOrders($id);
+        if ($deleteOrders) {
+            $responce['status'] = "ok";
+            $responce['message'] = "Order was deleted";
+            return responce(json_encode($responce), 202);
+        } else {
+            $responce['status'] = "bad";
+            $responce['message'] = "Order was not deleted";
+            return responce(json_encode($responce), 404);
+        }
+    }
 };

@@ -26,6 +26,7 @@
                 <th>Email</th>
                 <th>Nationality</th>
                 <th>People</th>
+                <th>Status</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -39,8 +40,11 @@
                 <td>{{ item.email }}</td>
                 <td>{{ item.nationality }}</td>
                 <td>{{ item.people }}</td>
+                <td :class="item.status == 'confirmed' ? 'green' : ''">
+                  {{ item.status }}
+                </td>
                 <td>
-                  <button class="videos" @click="startUpdate(item)">
+                  <button class="videos" @click="confirmItem(item)">
                     confirm
                   </button>
                   <button class="delete" @click="startDelete(item)">
@@ -533,12 +537,12 @@
         </Model>
         <Model v-if="deleteModal == true">
           <div class="model-header">
-            <h4>Delete Package</h4>
+            <h4>Cancel Order</h4>
             <button class="close" @click="deleteModal = false">X</button>
           </div>
           <div class="model-body">
             <h4 class="delete-label">
-              Are you sure you want to delete this package?
+              Are you sure you want to cancel this order?
             </h4>
           </div>
           <div class="model-footer">
@@ -599,10 +603,41 @@ export default {
     getItems() {
       this.isLoading = true;
       this.$store
-        .dispatch("GET_TRIP_ORDERS", { token: this.$loggedAdminToken(), id: this.$route.params.id })
+        .dispatch("GET_TRIP_ORDERS", {
+          token: this.$loggedAdminToken(),
+          id: this.$route.params.id,
+        })
         .then((response) => {
           this.orders = response.data;
           this.isLoading = false;
+        });
+    },
+    confirmItem(item) {
+      this.isLoading = true;
+      this.$store
+        .dispatch("CONFIRM_TRIP_ORDERS", {
+          token: this.$loggedAdminToken(),
+          id: item.id,
+        })
+        .then((response) => {
+          if (response.data.status == "ok") {
+            this.$notify({
+              group: "status",
+              title: "Important message",
+              text: response.data.message,
+              type: "success",
+            });
+            this.getItems();
+            this.isLoading = false;
+          } else {
+            this.$notify({
+              group: "status",
+              title: "Important message",
+              text: response.data.message,
+              type: "error",
+            });
+            this.isLoading = false;
+          }
         });
     },
     startUpdate(item) {
@@ -716,7 +751,7 @@ export default {
     deleteItems() {
       this.isLoading = true;
       this.$store
-        .dispatch("DELETE_PACKAGE", this.selectedItem.id)
+        .dispatch("DELETE_TRIP_ORDERS", this.selectedItem.id)
         .then((response) => {
           if (response.data.status == "ok") {
             this.$notify({

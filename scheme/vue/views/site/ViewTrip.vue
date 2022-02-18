@@ -8,7 +8,7 @@
       :is-full-page="fullPage"
     ></loading>
     <clientHeader />
-    <div class="all-content">
+    <div class="all-content" v-if="item">
       <div class="intro">
         <div class="intro-content">
           <div class="intro-body">
@@ -17,7 +17,7 @@
               data-aos-duration="1000"
               class="intro-header"
             >
-              Akagera National Park Trip
+              {{ item.attraction.name }}
             </h2>
             <p
               class="txt-shad-sm intro-desc"
@@ -33,7 +33,7 @@
         <div class="widget-desc">
           <div class="desc-content">
             <div>
-              <img src="/assets/uploaded/trip1.jpg" alt="" />
+              <img :src="'/assets/uploaded/' + item.image" alt="" />
             </div>
             <div>
               <label for="Trip Overview" class="my-title">Overview</label>
@@ -41,48 +41,50 @@
               <div class="desc-body">
                 <div class="desc-item">
                   <label for="Destination" class="title">Destination:</label>
-                  <label for="Akagera National Park" class="item"
-                    >Akagera National Park</label
-                  >
+                  <label :for="item.attraction.name" class="item">{{
+                    item.attraction.name
+                  }}</label>
                 </div>
                 <div class="desc-item">
                   <label for="Destination" class="title">Duration:</label>
-                  <label for="5 Days" class="item">5 Days</label>
+                  <label for="5 Days" class="item">{{ item.duration }}</label>
                 </div>
                 <div class="desc-item">
                   <label for="Destination" class="title">Country:</label>
-                  <label for="Rwanda" class="item">Rwanda</label>
+                  <label :for="item.attraction.name" class="item">{{
+                    item.attraction.country
+                  }}</label>
                 </div>
                 <div class="desc-item">
                   <label for="Destination" class="title"
                     >Region/Province:</label
                   >
-                  <label for="Eastern Province" class="item"
-                    >Eastern Province</label
-                  >
+                  <label :for="item.attraction.region" class="item">{{
+                    item.attraction.region
+                  }}</label>
                 </div>
                 <div class="desc-item">
                   <label for="Min Age" class="title">Min Age:</label>
-                  <label for="16 Years" class="item">16 Years</label>
+                  <label for="16 Years" class="item">{{ item.min_age }}</label>
                 </div>
                 <div class="desc-item">
                   <label for="Max People" class="title">Max People:</label>
-                  <label for="6" class="item">6</label>
+                  <label for="6" class="item">{{ item.max_people }}</label>
+                </div>
+                <div
+                  class="desc-item"
+                  v-for="price in item.price"
+                  :key="price.label"
+                >
+                  <label for="Price" class="title"
+                    >Price({{ price.label }}):</label
+                  >
+                  <label for="price" class="item price">{{
+                    price.value
+                  }}</label>
                 </div>
                 <div class="desc-item">
-                  <label for="Price" class="title">Price(Rwandans):</label>
-                  <label for="price" class="item price">45K</label>
-                </div>
-                <div class="desc-item">
-                  <label for="Price" class="title">Price(Residents):</label>
-                  <label for="price" class="item price">90K</label>
-                </div>
-                <div class="desc-item">
-                  <label for="Price" class="title">Price(Foreigners):</label>
-                  <label for="price" class="item price">130K</label>
-                </div>
-                <div class="desc-item">
-                  <button class="mybtn">Book Now</button>
+                  <button class="mybtn" @click="startBooking = true">Book Now</button>
                 </div>
               </div>
             </div>
@@ -96,22 +98,17 @@
             style="margin-left: 1rem"
           >
             <label for="Akagera National Park Images" class="my-title"
-              >Akagera National Park Images</label
+              >{{ item.attraction.name }} Images</label
             >
             <hr class="myhr" />
           </div>
           <hooper :settings="Settings" class="widget-body">
-            <slide class="widget-item">
-              <img src="/assets/uploaded/pack1.jpg" alt="" />
-            </slide>
-            <slide class="widget-item">
-              <img src="/assets/uploaded/akag2.jpg" alt="" />
-            </slide>
-            <slide class="widget-item">
-              <img src="/assets/uploaded/akag3.jpg" alt="" />
-            </slide>
-            <slide class="widget-item">
-              <img src="/assets/uploaded/akag4.jpg" alt="" />
+            <slide
+              class="widget-item"
+              v-for="image in item.attraction.images"
+              :key="image"
+            >
+              <img :src="'/assets/uploaded/' + image" alt="" />
             </slide>
           </hooper>
         </div>
@@ -121,39 +118,13 @@
               <label for="Trip Overview" class="my-title">Inclusives</label>
               <hr class="myhr" />
               <div class="inclusive-body">
-                <div class="inclusive-item">
+                <div
+                  class="inclusive-item"
+                  v-for="inclusive in item.inclusives"
+                  :key="inclusive"
+                >
                   <i class="fas fa-check"></i>
-                  <label for="Transport">Transport</label>
-                </div>
-                <div class="inclusive-item">
-                  <i class="fas fa-check"></i>
-                  <label for="Accommodations">Accommodations</label>
-                </div>
-                <div class="inclusive-item">
-                  <i class="fas fa-check"></i>
-                  <label for="Entry fees to the park mentioned"
-                    >Entry fees to the park mentioned</label
-                  >
-                </div>
-                <div class="inclusive-item">
-                  <i class="fas fa-check"></i>
-                  <label for="Covid -19 Test Fees">Covid -19 Test Fees</label>
-                </div>
-                <div class="inclusive-item">
-                  <i class="fas fa-check"></i>
-                  <label for="Local Taxes">Local Taxes</label>
-                </div>
-                <div class="inclusive-item">
-                  <i class="fas fa-check"></i>
-                  <label for="Meals &amp; Soft Drinks"
-                    >Meals &amp; Soft Drinks</label
-                  >
-                </div>
-                <div class="inclusive-item">
-                  <i class="fas fa-check"></i>
-                  <label for="Guiding &amp; service fee"
-                    >Guiding &amp; service fee</label
-                  >
+                  <label :for="inclusive.label">{{ inclusive.label }}</label>
                 </div>
               </div>
             </div>
@@ -161,17 +132,13 @@
               <label for="Trip Overview" class="my-title">Exclusives</label>
               <hr class="myhr" />
               <div class="inclusive-body">
-                <div class="inclusive-item">
+                <div
+                  class="inclusive-item"
+                  v-for="exclusive in item.exclusives"
+                  :key="exclusive"
+                >
                   <i class="fas fa-times"></i>
-                  <label for="Airline tickets">Airline tickets</label>
-                </div>
-                <div class="inclusive-item">
-                  <i class="fas fa-times"></i>
-                  <label for="Visa Fees">Visa Fees</label>
-                </div>
-                <div class="inclusive-item">
-                  <i class="fas fa-times"></i>
-                  <label for="Travel insurance">Travel insurance</label>
+                  <label :for="exclusive.label">{{ exclusive.label }}</label>
                 </div>
               </div>
             </div>
@@ -179,13 +146,8 @@
               <label for="Trip Overview" class="my-title">Requirements</label>
               <hr class="myhr" />
               <div class="inclusive-body">
-                <div class="inclusive-item">
-                  <label for="National ID(Rwandans)"
-                    >National ID(Rwandans)</label
-                  >
-                </div>
-                <div class="inclusive-item">
-                  <label for="Passport(Foreigners)">Passport(Foreigners)</label>
+                <div class="inclusive-item" v-for="req in item.reqs" :key="req">
+                  <label :for="req.label">{{ req.label }}</label>
                 </div>
               </div>
             </div>
@@ -195,7 +157,7 @@
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <button class="mybtn">Book Now</button>
+            <button class="mybtn" @click="startBooking = true">Book Now</button>
           </div>
         </div>
       </div>
@@ -208,27 +170,36 @@
           <p class="desc">Come join us and lets explore beyond expectations.</p>
         </div>
         <div class="trips-body" data-aos="fade-up" data-aos-duration="1000">
-          <div class="trip-item">
+          <router-link
+            :to="'/viewTrip/' + trip.id"
+            class="trip-item"
+            v-for="trip in item.trips"
+            :key="trip.id"
+          >
             <div class="content">
               <div class="img-section jc-center">
-                <img src="/assets/images/pack1.jpg" alt="" srcset="" />
+                <img :src="'/assets/uploaded/' + trip.image" alt="" srcset="" />
                 <div class="specs">
                   <div class="region">
                     <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
+                    <label for="Tourism Region">{{
+                      trip.attraction.name
+                    }}</label>
                   </div>
-                  <div class="days"><label for="Days">5 Days</label></div>
+                  <div class="days">
+                    <label for="Days">{{ trip.duration }}</label>
+                  </div>
                 </div>
               </div>
               <div class="text-section">
-                <label for="Akagera National Park" class="trip-title"
-                  >Akagera National Park</label
-                >
+                <label :for="trip.attraction.name" class="trip-title">{{
+                  trip.attraction.name
+                }}</label>
               </div>
               <hr />
               <div class="content-footer">
                 <div class="money">
-                  <label for="Amount">$4300</label>
+                  <label for="Amount">{{ trip.price[0].value }}</label>
                 </div>
                 <div class="book">
                   <router-link to="/book/1" class="book-btn"
@@ -240,104 +211,7 @@
             <div class="date-widget">
               <label for="trip date">28th, Dec 2021</label>
             </div>
-          </div>
-          <div class="trip-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/images/canopy.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">2 Days</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Nyungwe National Park" class="trip-title"
-                  >Nyungwe National Park</label
-                >
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$2400</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >View more <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-            <div class="date-widget">
-              <label for="trip date">28th, Dec 2021</label>
-            </div>
-          </div>
-          <div class="trip-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/images/gor2.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">3 Days</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Volcanoes National Park" class="trip-title"
-                  >Volcanoes National Park</label
-                >
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$5100</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >View more <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-            <div class="date-widget">
-              <label for="trip date">28th, Dec 2021</label>
-            </div>
-          </div>
-          <div class="trip-item">
-            <div class="content">
-              <div class="img-section jc-center">
-                <img src="/assets/images/bg2.jpg" alt="" srcset="" />
-                <div class="specs">
-                  <div class="region">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <label for="Tourism Region">Rwanda</label>
-                  </div>
-                  <div class="days"><label for="Days">1 Day</label></div>
-                </div>
-              </div>
-              <div class="text-section">
-                <label for="Twin Lakes" class="trip-title">Twin Lakes</label>
-              </div>
-              <hr />
-              <div class="content-footer">
-                <div class="money">
-                  <label for="Amount">$1400</label>
-                </div>
-                <div class="book">
-                  <router-link to="/book/1" class="book-btn"
-                    >View more <i class="mdi mdi-arrow-right"></i
-                  ></router-link>
-                </div>
-              </div>
-            </div>
-            <div class="date-widget">
-              <label for="trip date">28th, Dec 2021</label>
-            </div>
-          </div>
+          </router-link>
         </div>
         <div
           class="trips-footer jc-center"
@@ -348,6 +222,12 @@
         </div>
       </div>
     </div>
+    <BookTrip
+      v-show="startBooking"
+      @closeModal="startBooking = false"
+      :action="'bookTrip'"
+      :trip="item"
+    />
     <clientFooter />
   </div>
 </template>
@@ -360,6 +240,7 @@ export default {
       isLoading: false,
       color: "#072e4d",
       fullPage: true,
+      startBooking: false,
       Settings: {
         itemsToShow: 1,
         centerMode: false,
@@ -385,15 +266,39 @@ export default {
           },
         },
       },
+      item: null,
     };
   },
   methods: {
     onCancel() {
       console.log();
     },
+    getItems() {
+      this.isLoading = true;
+      this.$store
+        .dispatch("GET_SINGLE_TRIPS", this.$route.params.id)
+        .then((response) => {
+          this.item = response.data;
+          this.item.price = JSON.parse(this.item.price);
+          this.item.attraction.images = JSON.parse(this.item.attraction.images);
+          this.item.inclusives = JSON.parse(this.item.inclusives);
+          this.item.exclusives = JSON.parse(this.item.exclusives);
+          this.item.reqs = JSON.parse(this.item.reqs);
+          this.item.trips.forEach((item) => {
+            item.price = JSON.parse(item.price);
+          });
+          this.isLoading = false;
+        });
+    },
   },
   mounted() {
     let vm = this;
+    this.getItems();
+  },
+  watch: {
+    "$route.params.id": function () {
+      this.getItems();
+    },
   },
 };
 </script>

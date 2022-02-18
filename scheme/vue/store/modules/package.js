@@ -6,11 +6,13 @@ import {
 
   GET_PACKAGE_ORDERS,
   CONFIRM_PACKAGE_ORDERS,
+  DELETE_PACKAGE_ORDERS,
 
   // site
   GET_POPULAR_PACKAGES,
   GET_SITE_PACKAGES,
   GET_SINGLE_PACKAGES,
+  BOOK_PACKAGE,
 } from "../actions/package";
 
 import {
@@ -21,11 +23,13 @@ import {
 
   GET_PACKAGE_ORDERS_URL,
   CONFIRM_PACKAGE_ORDERS_URL,
+  DELETE_PACKAGE_ORDERS_URL,
   GET_SINGLE_PACKAGES_URL,
 
   // site
   GET_POPULAR_PACKAGES_URL,
   GET_SITE_PACKAGES_URL,
+  BOOK_PACKAGE_URL,
 } from "../variables";
 
 import axios from "axios";
@@ -76,7 +80,13 @@ const actions = {
       data: payload,
     });
   },
-
+  [DELETE_PACKAGE_ORDERS]: (state, payload) => {
+    return axios({
+      url: DELETE_PACKAGE_ORDERS_URL + payload,
+      method: "GET",
+    });
+  },
+  
     // site
     
   [GET_POPULAR_PACKAGES]: (state) => {
@@ -95,6 +105,13 @@ const actions = {
     return axios({
       url: GET_SINGLE_PACKAGES_URL + payload,
       method: "GET",
+    });
+  },
+  [BOOK_PACKAGE]: (state, payload) => {
+    return axios({
+      url: BOOK_PACKAGE_URL,
+      method: "POST",
+      data: payload,
     });
   },
 };
