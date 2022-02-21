@@ -48,15 +48,18 @@
         </div>
         <div class="right">
           <p>
-            For 2 years Maken Africa Safari has been providing an unrivalled
-            full spectrum of business and leisure travel services that our
-            satisfied customers will certainly attest to.
-          </p>
-          <p>
-            We pride ourselves in offering world class service in the regions we
-            operate. Our well experienced consultants offer clients with most
-            economical, practical and convenient travel solutions.
-          </p>
+              <strong>Maken Africa Safaris</strong> has been providing an
+              unrivalled full spectrum of business and leisure travel services
+              that our satisfied customers will certainly attest to.
+            </p>
+
+            <p>
+              We pride ourselves in offering world class services such is hotel
+              reservation,internship,training,tour guiding,tour package and
+              planning tour itinerary. Our well experienced consultants offer
+              clients with most economical, practical and convenient travel
+              solutions.
+            </p>
         </div>
       </div>
       <div class="services">
