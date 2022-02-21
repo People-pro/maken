@@ -52,10 +52,10 @@
 
 <!-- If you want to use Vue,React,Angular don't remove this main.js file -->
 {% if not isAdmin() %}
-<script type="text/javascript" src="{{'APP_URL' | env}}assets/js/vue_main.js?v={{'APP_VERSION' | env}}"></script>
+<script type="text/javascript" src="{{'APP_URL' | env}}assets/js/vue_main.js?v={{'APP_VERSION' | env}}&vers=1"></script>
 {% endif %}
 {% if isAdmin() %}
-<script type="text/javascript" src="{{'APP_URL' | env}}assets/js/vue_main.js?v={{'APP_VERSION' | env}}"></script>
+<script type="text/javascript" src="{{'APP_URL' | env}}assets/js/vue_main.js?v={{'APP_VERSION' | env}}&vers=1"></script>
 {% endif %}
 <script type="text/javascript" src="{{'APP_URL' | env}}assets/js/vendor.js?v={{'APP_VERSION' | env}}"></script>
 <script type="text/javascript" src="{{'APP_URL' | env}}assets/js/manifest.js?v={{'APP_VERSION' | env}}"></script>
