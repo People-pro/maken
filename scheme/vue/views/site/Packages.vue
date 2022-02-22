@@ -73,7 +73,7 @@
                   <label for="Amount">{{ item.price[0].value }}</label>
                 </div>
                 <div class="book">
-                  <router-link to="/book/1" class="book-btn"
+                  <router-link :to="'/viewPackage/' + item.id" class="book-btn"
                     >Explore <i class="mdi mdi-arrow-right"></i
                   ></router-link>
                 </div>
