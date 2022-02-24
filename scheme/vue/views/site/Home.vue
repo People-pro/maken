@@ -48,18 +48,18 @@
         </div>
         <div class="right">
           <p>
-              <strong>Maken Africa Safaris</strong> has been providing an
-              unrivalled full spectrum of business and leisure travel services
-              that our satisfied customers will certainly attest to.
-            </p>
+            <strong>Maken Africa Safaris</strong> has been providing an
+            unrivalled full spectrum of business and leisure travel services
+            that our satisfied customers will certainly attest to.
+          </p>
 
-            <p>
-              We pride ourselves in offering world class services such is hotel
-              reservation,internship,training,tour guiding,tour package and
-              planning tour itinerary. Our well experienced consultants offer
-              clients with most economical, practical and convenient travel
-              solutions.
-            </p>
+          <p>
+            We pride ourselves in offering world class services such is hotel
+            reservation,internship,training,tour guiding,tour package and
+            planning tour itinerary. Our well experienced consultants offer
+            clients with most economical, practical and convenient travel
+            solutions.
+          </p>
         </div>
       </div>
       <div class="services">
@@ -76,6 +76,35 @@
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
+                <i class="fas fa-list-ul"></i>
+              </div>
+              <label for="Tour Package" class="service-title"
+                >Tour Package</label
+              >
+              <div class="desc-content">
+                <p>
+                  we plan and give yo u a full package according to what you
+                  need.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="content">
+              <div class="icon-widget">
+                <i class="fas fa-hiking"></i>
+              </div>
+              <label for="Planning tour itinerary" class="service-title"
+                >Planning Tour Itinerary</label
+              >
+              <div class="desc-content">
+                <p>giving what customers needs on tourism information.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="content">
+              <div class="icon-widget">
                 <i class="fas fa-bed"></i>
               </div>
               <label for="Hotel Reservation" class="service-title"
@@ -86,31 +115,6 @@
                   we assist tourist in different corn of the world to give them
                   best accommodation in bound and out bound.
                 </p>
-              </div>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="content">
-              <div class="icon-widget">
-                <i class="fa fa-users"></i>
-              </div>
-              <label for="Internship" class="service-title">Internship</label>
-              <div class="desc-content">
-                <p>
-                  We help students with in colleges and universities to give
-                  them professional and college internship.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="content">
-              <div class="icon-widget">
-                <i class="fas fa-chalkboard-teacher"></i>
-              </div>
-              <label for="Training" class="service-title">Training</label>
-              <div class="desc-content">
-                <p>we give chance to people who what to learn tourism.</p>
               </div>
             </div>
           </div>
@@ -310,7 +314,7 @@
                   every occasion - and we appreciated the welcoming bowl of
                   fruit in our hotel rooms.
                 </p>
-                <label for="John Doe"> - John Doe</label>
+                <label for="Travel in Rwanda"> - Alexander Arnold</label>
               </div>
               <div
                 class="text-item"
@@ -326,7 +330,7 @@
                   when I arrived. Saïd was an excellent guide and made the tour
                   worthwhile.
                 </p>
-                <label for="Jane Smith"> - Jane Smith</label>
+                <label for="visit Rwanda"> - Katherine Smith</label>
               </div>
             </div>
             <div class="partners" data-aos="fade-up" data-aos-duration="1000">

@@ -39,6 +39,35 @@
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
+                <i class="fas fa-list-ul"></i>
+              </div>
+              <label for="Tour Package" class="service-title"
+                >Tour Package</label
+              >
+              <div class="desc-content">
+                <p>
+                  we plan and give yo u a full package according to what you
+                  need.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="content">
+              <div class="icon-widget">
+                <i class="fas fa-hiking"></i>
+              </div>
+              <label for="Planning tour itinerary" class="service-title"
+                >Planning Tour Itinerary</label
+              >
+              <div class="desc-content">
+                <p>giving what customers needs on tourism information.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="content">
+              <div class="icon-widget">
                 <i class="fas fa-bed"></i>
               </div>
               <label for="Hotel Reservation" class="service-title"
@@ -89,35 +118,6 @@
                 <p>
                   guiding our tourist to different destinations of the world.
                 </p>
-              </div>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="content">
-              <div class="icon-widget">
-                <i class="fas fa-list-ul"></i>
-              </div>
-              <label for="Tour Package" class="service-title"
-                >Tour Package</label
-              >
-              <div class="desc-content">
-                <p>
-                  we plan and give yo u a full package according to what you
-                  need.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="content">
-              <div class="icon-widget">
-                <i class="fas fa-hiking"></i>
-              </div>
-              <label for="Planning tour itinerary" class="service-title"
-                >Planning Tour Itinerary</label
-              >
-              <div class="desc-content">
-                <p>giving what customers needs on tourism information.</p>
               </div>
             </div>
           </div>
