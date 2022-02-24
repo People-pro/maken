@@ -84,13 +84,14 @@
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fa fa-users"></i>
+                <i class="fas fa-hiking"></i>
               </div>
-              <label for="Internship" class="service-title">Internship</label>
+              <label for="Tour guiding" class="service-title"
+                >Tour Guiding</label
+              >
               <div class="desc-content">
                 <p>
-                  We help students with in colleges and universities to give
-                  them professional and college internship.
+                  guiding our tourist to different destinations of the world.
                 </p>
               </div>
             </div>
@@ -109,14 +110,13 @@
           <div class="service-item">
             <div class="content">
               <div class="icon-widget">
-                <i class="fas fa-hiking"></i>
+                <i class="fa fa-users"></i>
               </div>
-              <label for="Tour guiding" class="service-title"
-                >Tour Guiding</label
-              >
+              <label for="Internship" class="service-title">Internship</label>
               <div class="desc-content">
                 <p>
-                  guiding our tourist to different destinations of the world.
+                  We help students with in colleges and universities to give
+                  them professional and college internship.
                 </p>
               </div>
             </div>
