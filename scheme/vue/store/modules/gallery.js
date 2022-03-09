@@ -1,5 +1,6 @@
 import {
   GET_GALLERY,
+  GET_SINGLE_GALLERY,
   ADD_GALLERY,
   UPDATE_GALLERY,
   DELETE_GALLERY,
@@ -7,6 +8,7 @@ import {
 
 import {
   GET_GALLERY_URL,
+  GET_SINGLE_GALLERY_URL,
   ADD_GALLERY_URL,
   UPDATE_GALLERY_URL,
   DELETE_GALLERY_URL,
@@ -21,6 +23,12 @@ const actions = {
   [GET_GALLERY]: (state) => {
     return axios({
       url: GET_GALLERY_URL,
+      method: "GET",
+    });
+  },
+  [GET_SINGLE_GALLERY]: (state, payload) => {
+    return axios({
+      url: GET_SINGLE_GALLERY_URL + payload,
       method: "GET",
     });
   },

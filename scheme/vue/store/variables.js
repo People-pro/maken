@@ -104,6 +104,7 @@ export const DELETE_TRIP_ORDERS_URL = api_base_url + "/admin/trip/orders/deleteO
 
 // Gallery
 export const GET_GALLERY_URL = api_base_url + "/admin/gallery/getGallery";
+export const GET_SINGLE_GALLERY_URL = api_base_url + "/admin/gallery/getSingleGallery/";
 export const ADD_GALLERY_URL = api_base_url + "/admin/gallery/addGallery";
 export const UPDATE_GALLERY_URL = api_base_url + "/admin/gallery/updateGallery";
 export const DELETE_GALLERY_URL = api_base_url + "/admin/gallery/deleteGallery/";

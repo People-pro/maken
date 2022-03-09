@@ -188,6 +188,9 @@ $green: #044914;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 900px) {
+      padding: 0;
+    }
     .intro-body {
       width: 100%;
       padding: 0 15rem;
@@ -198,7 +201,7 @@ $green: #044914;
         padding: 3rem 5rem;
       }
       @media screen and (max-width: 900px) {
-        padding: 2rem;
+        padding: 1rem;
       }
     }
   }
@@ -337,13 +340,13 @@ $green: #044914;
   display: inline-block !important;
   float: none !important;
 }
-.disabled{
+.disabled {
   cursor: no-drop !important;
   // background: #e9e9e9 !important;
-    color: #141414 !important;
+  color: #141414 !important;
 }
-td{
-  &.green{
+td {
+  &.green {
     color: green !important;
   }
 }

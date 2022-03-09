@@ -32,60 +32,23 @@
       <div class="gallery-content">
         <div class="gallery-content-body">
           <router-link
-            to="/viewGallery"
+            :to="'/viewGallery/' + item.id"
             class="gallery-item"
-            style="
-              background: url('/assets/images/pe2.jpg');
-              background-size: cover;
-              background-position: center;
+            :style="
+              'background: url(\'/assets/uploaded/' +
+              item.image +
+              '\');' +
+              ' background-size: cover; background-position: center;'
             "
+            v-for="item in items"
+            :key="item.id"
           >
             <div class="gallery-body">
-              <label
-                for="Our Trip To Nyungwe National Park"
-                class="gallery-title"
-                >Our Trip To Nyungwe National Park.</label
-              >
+              <label :for="item.title" class="gallery-title">{{
+                item.title
+              }}</label>
               <label for="trip date" class="date"
-                >Saturday, 18<sup>th</sup> December 2021</label
-              >
-            </div>
-          </router-link>
-          <router-link
-            to="/viewGallery"
-            class="gallery-item"
-            style="
-              background: url('/assets/images/pe3.jpg');
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <div class="gallery-body">
-              <label
-                for="Our Trip To Akagera National Park"
-                class="gallery-title"
-                >Our Trip To Akagera National Park.</label
-              >
-              <label for="trip date" class="date"
-                >Thursday, 11<sup>th</sup> November 2021</label
-              >
-            </div>
-          </router-link>
-          <router-link
-            to="/viewGallery"
-            class="gallery-item"
-            style="
-              background: url('/assets/images/pe4.jpg');
-              background-size: cover;
-              background-position: center;
-            "
-          >
-            <div class="gallery-body">
-              <label for="Our Trip To Fazenda" class="gallery-title"
-                >Our Trip To Fazenda.</label
-              >
-              <label for="trip date" class="date"
-                >Tuesday, 27<sup>th</sup> Octover 2020</label
+                >{{ item.day }}, {{ item.date }}</label
               >
             </div>
           </router-link>
@@ -129,15 +92,28 @@ export default {
           },
         },
       },
+      items: null,
     };
   },
   methods: {
     onCancel() {
       console.log();
     },
+    getItems() {
+      this.isLoading = true;
+      this.$store.dispatch("GET_GALLERY").then((response) => {
+        this.items = response.data;
+        this.items.forEach((item) => {
+          let newDate = new Date(item.date);
+          item.day = newDate.toLocaleString("default", { weekday: "long" });
+        });
+        this.isLoading = false;
+      });
+    },
   },
   mounted() {
     let vm = this;
+    this.getItems();
   },
 };
 </script>

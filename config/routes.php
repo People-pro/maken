@@ -240,6 +240,12 @@ $routes = [
                 'return' => 'AdminGalleryController@getGallery',
             ],
             [
+                'path' => '/gallery/getSingleGallery/{id}',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminGalleryController@getSingleGallery',
+            ],
+            [
                 'path' => '/gallery/addGallery',
                 'method' => 'POST',
                 'folder' => 'admin',

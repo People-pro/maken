@@ -10,6 +10,7 @@ import About from "../views/site/About.vue";
 import Contact from "../views/site/Contact.vue";
 import ViewPackage from "../views/site/ViewPackage.vue";
 import ViewTrip from "../views/site/ViewTrip.vue";
+import ViewGallery from "../views/site/ViewGallery.vue";
 
 // admin
 import Dashboard from "../views/admin/Dashboard.vue";
@@ -75,6 +76,12 @@ const routes = [
     name: "Contact",
     component: Contact,
   },
+  {
+    path: "/viewGallery/:id",
+    name: "ViewGallery",
+    component: ViewGallery,
+  },
+  
 
   // admin
 
@@ -104,7 +111,7 @@ const routes = [
     component: PackageOrders,
   },
   {
-    path: "/admin/trips",
+    path: "/admin/trips/:id",
     name: "AdminTrips",
     component: AdminTrips,
   },

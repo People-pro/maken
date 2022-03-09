@@ -18,6 +18,11 @@ class AdminGallery extends Models
         }
         return $data;
     }
+    public function getSingleGallery($id)
+    {
+        $data = DB::table('tb_gallery')->where([['is_deleted', '=', false], ['id', '=', $id]])->orderBy('id', 'desc')->get()->first();
+        return $data;
+    }
     public function addGallery($title, $date, $image, $images)
     {
         $today = Carbon::now('+2:00');

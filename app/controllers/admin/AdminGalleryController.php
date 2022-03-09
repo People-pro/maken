@@ -4,6 +4,7 @@ namespace app\controllers\admin;
 
 use system\library\Controller;
 use app\models\AdminGallery;
+use app\models\SiteTrips;
 
 class AdminGalleryController extends Controller
 {
@@ -16,6 +17,15 @@ class AdminGalleryController extends Controller
     {
         $AdminGallery = new AdminGallery();
         $responce = $AdminGallery->getGallery();
+        return responce(json_encode($responce), 200);
+    }
+    public function getSingleGallery($id)
+    {
+        $AdminGallery = new AdminGallery();
+        $SiteTrips = new SiteTrips();
+        $responce = [];
+        $responce['album'] = $AdminGallery->getSingleGallery($id);
+        $responce['trips'] = $SiteTrips->getPopularTrips();
         return responce(json_encode($responce), 200);
     }
     public function addGallery()
