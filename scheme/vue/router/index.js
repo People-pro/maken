@@ -11,6 +11,7 @@ import Contact from "../views/site/Contact.vue";
 import ViewPackage from "../views/site/ViewPackage.vue";
 import ViewTrip from "../views/site/ViewTrip.vue";
 import ViewGallery from "../views/site/ViewGallery.vue";
+import Terms from "../views/site/Terms.vue";
 
 // admin
 import Dashboard from "../views/admin/Dashboard.vue";
@@ -80,6 +81,11 @@ const routes = [
     path: "/viewGallery/:id",
     name: "ViewGallery",
     component: ViewGallery,
+  },
+  {
+    path: "/terms",
+    name: "Terms",
+    component: Terms,
   },
   
 
