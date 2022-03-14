@@ -59,6 +59,13 @@
                 >
                 <textarea rows="5" v-model="item.details"></textarea>
               </div>
+              <div class="terms">
+                <input type="checkbox" v-model="terms" />
+                <p>
+                  I Agree with Maken Africa Safaris
+                  <a href="/terms">Terms and Conditions</a>
+                </p>
+              </div>
             </div>
           </form>
         </div>
@@ -82,6 +89,7 @@ export default {
       color: "#072e4d",
       fullPage: true,
       bookDone: false,
+      terms: false,
       item: {
         fullname: "",
         phone: "",
@@ -101,47 +109,56 @@ export default {
       this.$emit("closeModal");
     },
     bookNow() {
-      this.isLoading = true;
-      if (
-        this.item.fullname != "" &&
-        this.item.phone != "" &&
-        this.item.email != "" &&
-        this.item.people != "" &&
-        this.item.nationality != "" &&
-        this.item.date != ""
-      ) {
-        this.item.package_id = this.mypackage.id;
-        this.$store
-          .dispatch("BOOK_PACKAGE", this.item)
-          .then((response) => {
-            if (response.data.status == "ok") {
-              this.$notify({
-                group: "status",
-                title: "Important message",
-                text: response.data.message,
-                type: "success",
+      if (this.terms) {
+        this.isLoading = true;
+        if (
+          this.item.fullname != "" &&
+          this.item.phone != "" &&
+          this.item.email != "" &&
+          this.item.people != "" &&
+          this.item.nationality != "" &&
+          this.item.date != ""
+        ) {
+          this.item.package_id = this.mypackage.id;
+          this.$store
+            .dispatch("BOOK_PACKAGE", this.item)
+            .then((response) => {
+              if (response.data.status == "ok") {
+                this.$notify({
+                  group: "status",
+                  title: "Important message",
+                  text: response.data.message,
+                  type: "success",
+                });
+                this.$emit("closeModal");
+              } else {
+                this.$notify({
+                  group: "status",
+                  title: "Important message",
+                  text: response.data.message,
+                  type: "error",
+                });
+              }
+            })
+            .catch((error) => {
+              console.error({
+                error,
               });
-              this.$emit("closeModal");
-            } else {
-              this.$notify({
-                group: "status",
-                title: "Important message",
-                text: response.data.message,
-                type: "error",
-              });
-            }
-          })
-          .catch((error) => {
-            console.error({
-              error,
             });
+          this.isLoading = false;
+        } else {
+          this.$notify({
+            group: "status",
+            title: "Important message",
+            text: "Please fill all fields",
+            type: "error",
           });
-        this.isLoading = false;
+        }
       } else {
         this.$notify({
           group: "status",
           title: "Important message",
-          text: "Please fill all fields",
+          text: "You have to first agree with the terms and conditions",
           type: "error",
         });
       }
@@ -282,6 +299,15 @@ export default {
           }
         }
       }
+    }
+  }
+  .terms {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    a {
+      color: $orange;
+      font-weight: 600;
     }
   }
 }

@@ -56,8 +56,11 @@
                 <textarea rows="5" v-model="item.details"></textarea>
               </div>
               <div class="terms">
-                <input type="checkbox" v-model="terms" /> I Agree with Maken
-                Africa Safaris <a href="/terms">Terms and Conditions</a>
+                <input type="checkbox" v-model="terms" />
+                <p>
+                  I Agree with Maken Africa Safaris
+                  <a href="/terms">Terms and Conditions</a>
+                </p>
               </div>
             </div>
           </form>
