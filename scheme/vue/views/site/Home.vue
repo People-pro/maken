@@ -314,7 +314,7 @@
                   every occasion - and we appreciated the welcoming bowl of
                   fruit in our hotel rooms.
                 </p>
-                <label for="Travel in Rwanda"> - Alexander Arnold</label>
+                <label for="Travel in Rwanda"> - Katrina jihad</label>
               </div>
               <div
                 class="text-item"
@@ -330,25 +330,16 @@
                   when I arrived. Saïd was an excellent guide and made the tour
                   worthwhile.
                 </p>
-                <label for="visit Rwanda"> - Katherine Smith</label>
+                <label for="visit Rwanda"> - Alidah Muhammed</label>
               </div>
             </div>
             <div class="partners" data-aos="fade-up" data-aos-duration="1000">
               <hooper :settings="partnersSettings" class="partners-body">
                 <slide class="partners-item">
-                  <img src="/assets/images/logo1.png" alt="" />
+                  <img src="/assets/images/RDB_logo.png" alt="" />
                 </slide>
                 <slide class="partners-item">
-                  <img src="/assets/images/logo2.png" alt="" />
-                </slide>
-                <slide class="partners-item">
-                  <img src="/assets/images/logo3.png" alt="" />
-                </slide>
-                <slide class="partners-item">
-                  <img src="/assets/images/logo4.png" alt="" />
-                </slide>
-                <slide class="partners-item">
-                  <img src="/assets/images/logo5.png" alt="" />
+                  <img src="/assets/images/logo_qdrnqo.png" alt="" />
                 </slide>
               </hooper>
             </div>
@@ -370,11 +361,11 @@ export default {
       fullPage: true,
       partnersSettings: {
         itemsToShow: 3,
-        centerMode: false,
-        autoPlay: true,
+        centerMode: true,
+        autoPlay: false,
         wheelControl: false,
         trimWhiteSpace: true,
-        infiniteScroll: true,
+        infiniteScroll: false,
         playSpeed: 4000,
         transition: 1000,
         hoverPause: false,
