@@ -13,14 +13,14 @@
         <div class="jumbo-section">
           <hooper :settings="jumboSettings" class="jumboimg-body">
             <slide class="jumboimg-item">
-              <img src="/assets/uploaded/slide1.jpg" class="img" alt="" srcset="" />
+              <img src="/assets/uploaded/slide1.jpeg" class="img" alt="" srcset="" />
             </slide>
             <slide class="jumboimg-item">
-              <img src="/assets/uploaded/slide2.jpg" class="img" alt="" srcset="" />
+              <img src="/assets/uploaded/slide2.jpeg" class="img" alt="" srcset="" />
             </slide>
             <slide class="jumboimg-item">
               <img
-                src="/assets/uploaded/slide3.jpg"
+                src="/assets/uploaded/slide3.jpeg"
                 class="img"
                 alt=""
                 srcset=""
