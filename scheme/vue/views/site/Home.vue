@@ -13,27 +13,18 @@
         <div class="jumbo-section">
           <hooper :settings="jumboSettings" class="jumboimg-body">
             <slide class="jumboimg-item">
-              <img src="/assets/images/pe2.jpg" class="img" alt="" srcset="" />
+              <img src="/assets/uploaded/slide1.jpg" class="img" alt="" srcset="" />
             </slide>
             <slide class="jumboimg-item">
-              <img src="/assets/images/pe3.jpg" class="img" alt="" srcset="" />
+              <img src="/assets/uploaded/slide2.jpg" class="img" alt="" srcset="" />
             </slide>
             <slide class="jumboimg-item">
               <img
-                src="/assets/images/pack1.jpg"
+                src="/assets/uploaded/slide3.jpg"
                 class="img"
                 alt=""
                 srcset=""
               />
-            </slide>
-            <slide class="jumboimg-item">
-              <img src="/assets/images/pe4.jpg" class="img" alt="" srcset="" />
-            </slide>
-            <slide class="jumboimg-item">
-              <img src="/assets/images/pe1.jpg" class="img" alt="" srcset="" />
-            </slide>
-            <slide class="jumboimg-item">
-              <img src="/assets/images/gor2.png" class="img" alt="" srcset="" />
             </slide>
           </hooper>
           <div class="jumbo-content">
