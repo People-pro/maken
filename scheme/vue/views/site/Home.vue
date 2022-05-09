@@ -9,7 +9,55 @@
       :is-full-page="fullPage"
     ></loading>
     <div class="all-content">
-      <div class="jumbo">
+      <div class="jumbo2">
+        <div class="jumbo-section">
+          <hooper :settings="jumboSettings" class="jumboimg-body">
+            <slide class="jumboimg-item">
+              <img src="/assets/uploaded/slide1.jpeg" class="img" alt="" srcset="" />
+            </slide>
+            <slide class="jumboimg-item">
+              <img src="/assets/uploaded/slide2.jpeg" class="img" alt="" srcset="" />
+            </slide>
+            <slide class="jumboimg-item">
+              <img
+                src="/assets/uploaded/slide3.jpeg"
+                class="img"
+                alt=""
+                srcset=""
+              />
+            </slide>
+          </hooper>
+          <div class="jumbo-content">
+            <div class="jumbo-body">
+              <h2 data-aos="fade-left" data-aos-duration="1000">
+                Welcome To The Leading Travel Agency In The Heart Of Africa.
+              </h2>
+              <p
+                class="txt-shad-sm"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                We pride ourselves in offering world-class service and
+                convenient travel solutions in the regions we operate.
+              </p>
+              <div
+                class="btns"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+              >
+                <router-link to="/packages" class="mybtn"
+                  >View Packages</router-link
+                >
+                <router-link to="/contact" class="mybtn"
+                  >Contact Us</router-link
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="jumbo">
         <div class="jumbo-content">
           <div class="jumbo-body">
             <h2 data-aos="fade-left" data-aos-duration="1000">
@@ -36,7 +84,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="about" data-aos="fade-up" data-aos-duration="1000">
         <div class="left">
           <label for="Maken Africa Safaris" class="my-title"
@@ -384,6 +432,17 @@ export default {
           },
         },
       },
+      jumboSettings: {
+        itemsToShow: 1,
+        centerMode: true,
+        autoPlay: true,
+        wheelControl: false,
+        trimWhiteSpace: true,
+        infiniteScroll: true,
+        playSpeed: 4000,
+        transition: 1000,
+        hoverPause: false,
+      },
       packages: [],
       trips: [],
     };
@@ -438,6 +497,105 @@ $green: #044914;
       background: linear-gradient(90deg, #000000a4 0%, #13860300 73%);
       display: flex;
       align-items: center;
+      .jumbo-body {
+        width: 60%;
+        padding: 0 15rem;
+        @media screen and (max-width: 1700px) {
+          padding: 0 10rem;
+          width: 70%;
+        }
+        @media screen and (max-width: 1300px) {
+          padding: 0 5rem;
+          width: 80%;
+        }
+        @media screen and (max-width: 900px) {
+          width: 100%;
+          padding: 0 2rem;
+        }
+        h2 {
+          text-shadow: 0 4px 2px #0000007e;
+          color: white;
+          font-size: 3rem;
+          line-height: 1.25em;
+          font-weight: 700;
+          @media screen and (max-width: 900px) {
+            font-size: 2.5rem;
+          }
+          @media screen and (max-width: 800px) {
+            font-size: 2.25rem;
+          }
+          @media screen and (max-width: 700px) {
+            font-size: 2rem;
+          }
+          @media screen and (max-width: 600px) {
+            font-size: 1.5rem;
+          }
+        }
+        p {
+          color: #fff;
+          font-weight: 400;
+          font-size: 1.25rem;
+          text-shadow: 0 4px 2px #0000007e;
+          @media screen and (max-width: 800px) {
+            font-size: 1rem;
+          }
+          @media screen and (max-width: 600px) {
+            font-size: 0.8rem;
+          }
+        }
+        .btns {
+          display: flex;
+          column-gap: 1rem;
+          padding: 2rem 0;
+          @media screen and (max-width: 500px) {
+            width: 100%;
+            padding: 1rem 0;
+            flex-direction: column;
+            row-gap: 1rem;
+            .btn {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .jumbo2 {
+    position: relative;
+    height: calc(100vh - 100px);
+    @media screen and (max-width: 1700px) {
+      height: 80vh;
+    }
+    @media screen and (max-width: 1300px) {
+      height: 70vh;
+    }
+    @media screen and (max-width: 900px) {
+      height: 55vh;
+    }
+    .jumbo-section {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      .jumboimg-body {
+        height: 100%;
+        width: 100%;
+        .img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .jumbo-content {
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      background: linear-gradient(90deg, #000000a4 0%, #13860300 73%);
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
       .jumbo-body {
         width: 60%;
         padding: 0 15rem;
