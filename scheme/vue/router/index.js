@@ -117,7 +117,7 @@ const routes = [
     component: PackageOrders,
   },
   {
-    path: "/admin/trips/:id",
+    path: "/admin/trips",
     name: "AdminTrips",
     component: AdminTrips,
   },

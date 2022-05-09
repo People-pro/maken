@@ -425,7 +425,7 @@ $green: #044914;
     width: 100vw;
   }
   .jumbo {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 30px);
     background: url("/assets/images/pe2.jpg");
     background-size: cover;
     background-position: center;
