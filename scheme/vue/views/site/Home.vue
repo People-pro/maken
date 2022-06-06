@@ -13,10 +13,20 @@
         <div class="jumbo-section">
           <hooper :settings="jumboSettings" class="jumboimg-body">
             <slide class="jumboimg-item">
-              <img src="/assets/uploaded/slide1.jpeg" class="img" alt="" srcset="" />
+              <img
+                src="/assets/uploaded/slide1.jpeg"
+                class="img"
+                alt=""
+                srcset=""
+              />
             </slide>
             <slide class="jumboimg-item">
-              <img src="/assets/uploaded/slide2.jpeg" class="img" alt="" srcset="" />
+              <img
+                src="/assets/uploaded/slide2.jpeg"
+                class="img"
+                alt=""
+                srcset=""
+              />
             </slide>
             <slide class="jumboimg-item">
               <img
@@ -30,15 +40,16 @@
           <div class="jumbo-content">
             <div class="jumbo-body">
               <h2 data-aos="fade-left" data-aos-duration="1000">
-                Welcome To The Leading Travel Agency In The Heart Of Africa.
+                Maken Africa Safaris welcomes all CHOGM 2022 delicates to the
+                warm heart of Africa,Rwanda
               </h2>
               <p
                 class="txt-shad-sm"
                 data-aos="fade-left"
                 data-aos-duration="1000"
               >
-                We pride ourselves in offering world-class service and
-                convenient travel solutions in the regions we operate.
+                Contact us for Exciting City tours, Insightful museums visits,
+                Adventurous National parks excursions, and much more!
               </p>
               <div
                 class="btns"
