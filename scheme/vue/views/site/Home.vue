@@ -582,15 +582,15 @@ $green: #044914;
   .jumbo2 {
     position: relative;
     height: calc(100vh - 100px);
-    @media screen and (max-width: 1700px) {
-      height: 80vh;
-    }
-    @media screen and (max-width: 1300px) {
-      height: 70vh;
-    }
-    @media screen and (max-width: 900px) {
-      height: 55vh;
-    }
+    // @media screen and (max-width: 1700px) {
+    //   height: 80vh;
+    // }
+    // @media screen and (max-width: 1300px) {
+    //   height: 70vh;
+    // }
+    // @media screen and (max-width: 900px) {
+    //   height: 55vh;
+    // }
     .jumbo-section {
       height: 100%;
       width: 100%;
