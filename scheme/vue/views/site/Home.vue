@@ -544,10 +544,10 @@ $green: #044914;
             font-size: 2.25rem;
           }
           @media screen and (max-width: 700px) {
-            font-size: 2rem;
+            font-size: 1.5rem;
           }
           @media screen and (max-width: 600px) {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
           }
         }
         p {
