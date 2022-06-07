@@ -14,7 +14,7 @@
           <hooper :settings="jumboSettings" class="jumboimg-body">
             <slide class="jumboimg-item">
               <img
-                src="/assets/uploaded/slide1.jpeg"
+                src="/assets/uploaded/bg/bg1.jpg"
                 class="img"
                 alt=""
                 srcset=""
@@ -22,7 +22,7 @@
             </slide>
             <slide class="jumboimg-item">
               <img
-                src="/assets/uploaded/slide2.jpeg"
+                src="/assets/uploaded/bg/bg2.jpg"
                 class="img"
                 alt=""
                 srcset=""
@@ -30,7 +30,15 @@
             </slide>
             <slide class="jumboimg-item">
               <img
-                src="/assets/uploaded/slide3.jpeg"
+                src="/assets/uploaded/bg/bg3.jpg"
+                class="img"
+                alt=""
+                srcset=""
+              />
+            </slide>
+            <slide class="jumboimg-item">
+              <img
+                src="/assets/uploaded/bg/bg4.jpg"
                 class="img"
                 alt=""
                 srcset=""
