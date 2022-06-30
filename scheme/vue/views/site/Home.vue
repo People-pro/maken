@@ -48,8 +48,7 @@
           <div class="jumbo-content">
             <div class="jumbo-body">
               <h2 data-aos="fade-left" data-aos-duration="1000">
-                Maken Africa Safaris welcomes all CHOGM 2022 delicates to the
-                warm heart of Africa,Rwanda
+                Welcome to the leading travel agency in the heart of Africa
               </h2>
               <p
                 class="txt-shad-sm"
