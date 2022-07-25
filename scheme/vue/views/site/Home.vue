@@ -373,6 +373,19 @@
                 data-aos-duration="1000"
               >
                 <p>
+                  This Rwandan journey was a big blessing. <strong>Thanks Sumaya and
+                  team</strong> and all the nice jamaicans living in the Moter Land. Plus
+                  a so sweet tour guide. We pray for our next step as well.
+                  Blessings all.
+                </p>
+                <label for="Travel in Rwanda"> - Des and Debbie</label>
+              </div>
+              <div
+                class="text-item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <p>
                   Our tour of Akagera was a wonderful experience, and a large
                   element of that was owing to the arrangements provided by
                   <strong>Maken Africa Safaris</strong>. The logistics went like
