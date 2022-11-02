@@ -103,96 +103,7 @@
           </div>
         </div>
       </div> -->
-      <div class="about" data-aos="fade-up" data-aos-duration="1000">
-        <div class="left">
-          <label for="Maken Africa Safaris" class="my-title"
-            >Maken Africa Safaris</label
-          >
-          <hr class="myhr" />
-          <p class="desc">Awaken To A Different World.</p>
-          <router-link to="/aboutus" class="mybtn-o">About Us</router-link>
-        </div>
-        <div class="right">
-          <p>
-            <strong>Maken Africa Safaris</strong> has been providing an
-            unrivalled full spectrum of business and leisure travel services
-            that our satisfied customers will certainly attest to.
-          </p>
-
-          <p>
-            We pride ourselves in offering world class services such is hotel
-            reservation,internship,training,tour guiding,tour package and
-            planning tour itinerary. Our well experienced consultants offer
-            clients with most economical, practical and convenient travel
-            solutions.
-          </p>
-        </div>
-      </div>
-      <div class="services">
-        <div class="header" data-aos="fade-up" data-aos-duration="1000">
-          <label for="Our Services" class="my-title txt-shad-sm"
-            >Our Services</label
-          >
-          <hr class="myhr" />
-          <p class="desc txt-shad-sm">
-            Pick your destination and we'll handle the rest.
-          </p>
-        </div>
-        <div class="services-body" data-aos="fade-up" data-aos-duration="1000">
-          <div class="service-item">
-            <div class="content">
-              <div class="icon-widget">
-                <i class="fas fa-list-ul"></i>
-              </div>
-              <label for="Tour Package" class="service-title"
-                >Tour Package</label
-              >
-              <div class="desc-content">
-                <p>
-                  we plan and give yo u a full package according to what you
-                  need.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="content">
-              <div class="icon-widget">
-                <i class="fas fa-hiking"></i>
-              </div>
-              <label for="Planning tour itinerary" class="service-title"
-                >Planning Tour Itinerary</label
-              >
-              <div class="desc-content">
-                <p>giving what customers needs on tourism information.</p>
-              </div>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="content">
-              <div class="icon-widget">
-                <i class="fas fa-bed"></i>
-              </div>
-              <label for="Hotel Reservation" class="service-title"
-                >Hotel Reservation</label
-              >
-              <div class="desc-content">
-                <p>
-                  we assist tourist in different corn of the world to give them
-                  best accommodation in bound and out bound.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="services-footer jc-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <router-link to="/services" class="mybtn">View More</router-link>
-        </div>
-      </div>
+      
       <div class="packages">
         <div class="header" data-aos="fade-up" data-aos-duration="1000">
           <label for="Our Popular Packages" class="my-title"
@@ -296,7 +207,7 @@
           </div>
         </div>
       </div>
-      <div class="trips">
+      <div class="trips" v-if="trips.length > 0">
         <div class="header" data-aos="fade-up" data-aos-duration="1000">
           <label for="Upcoming Trips" class="my-title">Upcoming Trips</label>
           <hr class="myhr" />
@@ -471,7 +382,7 @@ export default {
         trimWhiteSpace: true,
         infiniteScroll: true,
         playSpeed: 4000,
-        transition: 1000,
+        transition: 3000,
         hoverPause: false,
       },
       packages: [],
@@ -515,7 +426,7 @@ $green: #044914;
     width: 100vw;
   }
   .jumbo {
-    height: calc(100vh - 30px);
+    height: calc(100vh - 0px);
     background: url("/assets/images/pe2.jpg");
     background-size: cover;
     background-position: center;
@@ -593,7 +504,7 @@ $green: #044914;
   }
   .jumbo2 {
     position: relative;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 0px);
     // @media screen and (max-width: 1700px) {
     //   height: 80vh;
     // }
@@ -688,176 +599,6 @@ $green: #044914;
           }
         }
       }
-    }
-  }
-  .about {
-    padding: 4rem 15rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background: #fff;
-    @media screen and (max-width: 1700px) {
-      padding: 4rem 10rem;
-    }
-    @media screen and (max-width: 1300px) {
-      padding: 3rem 5rem;
-    }
-    @media screen and (max-width: 900px) {
-      padding: 2rem;
-      grid-template-columns: 100%;
-    }
-    .left {
-      @media screen and (max-width: 900px) {
-        padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem;
-        border-bottom: 1px #eee solid;
-      }
-      .myhr {
-        border-top: 3px $orange solid;
-        width: 70px;
-        margin-bottom: 1rem;
-      }
-      .desc {
-        color: #333333;
-        font-weight: 400;
-        font-size: 1.1rem;
-        @media screen and (max-width: 1200px) {
-          font-size: 1rem;
-        }
-        @media screen and (max-width: 900px) {
-          font-size: 0.8rem;
-        }
-      }
-    }
-    .right {
-      p {
-        color: #333333;
-        font-weight: 400;
-        font-size: 1.1rem;
-        @media screen and (max-width: 1200px) {
-          font-size: 1rem;
-        }
-        @media screen and (max-width: 900px) {
-          font-size: 0.8rem;
-        }
-      }
-    }
-  }
-  .services {
-    position: relative;
-    background: url("/assets/images/bg2.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 4rem 15rem;
-    box-shadow: inset 0 0 0 2000px #0000004d;
-    @media screen and (max-width: 1700px) {
-      padding: 4rem 10rem;
-    }
-    @media screen and (max-width: 1300px) {
-      padding: 3rem 5rem;
-    }
-    @media screen and (max-width: 900px) {
-      padding: 2rem;
-    }
-    .header {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      width: 100%;
-      .my-title {
-        color: #fff;
-      }
-      .desc {
-        color: #fff;
-        @media screen and (max-width: 1200px) {
-          font-size: 1rem;
-        }
-        @media screen and (max-width: 900px) {
-          font-size: 0.8rem;
-        }
-      }
-    }
-    .services-body {
-      display: grid;
-      grid-template-columns: 26.6% 26.6% 26.6%;
-      grid-column-gap: 10%;
-      grid-row-gap: 2rem;
-      margin: 2rem 0;
-      @media screen and (max-width: 1500px) {
-        grid-template-columns: 30% 30% 30%;
-        grid-column-gap: 3%;
-        margin: 0;
-      }
-      @media screen and (max-width: 1100px) {
-        grid-template-columns: 47.5% 47.5%;
-        grid-column-gap: 3%;
-      }
-      @media screen and (max-width: 700px) {
-        grid-template-columns: 100%;
-        grid-column-gap: 3%;
-      }
-      .service-item {
-        background: #ffffffd7;
-        padding: 2rem;
-        border-radius: 1rem;
-        // box-shadow: 0px 0px 10px 3px #1d1d1d48;
-        transition: all 0.4s ease-in-out;
-        &:hover,
-        &:focus {
-          transform: scale(1.2, 1.2);
-        }
-        @media screen and (max-width: 1300px) {
-          padding: 1rem;
-        }
-        .content {
-          display: flex;
-          flex-direction: column;
-          row-gap: 2rem;
-          .icon-widget {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-self: center;
-            position: relative;
-            border: 2px $orange solid;
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            @media screen and (max-width: 1300px) {
-              width: 60px;
-              height: 60px;
-            }
-            i {
-              font-size: 2rem;
-              padding: 1rem;
-              display: inline-block;
-              color: $orange;
-              @media screen and (max-width: 1300px) {
-                font-size: 1.5rem;
-                padding: 0.75rem;
-              }
-            }
-          }
-          .service-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            text-transform: capitalize;
-            text-align: center;
-            @media screen and (max-width: 1300px) {
-              font-size: 1.25rem;
-            }
-          }
-          .desc-content {
-            font-size: 0.9rem;
-            color: #1d1d1d;
-            @media screen and (max-width: 1300px) {
-              font-size: 0.8rem;
-            }
-          }
-        }
-      }
-    }
-    .services-footer {
-      padding: 2rem 0;
     }
   }
   .packages {

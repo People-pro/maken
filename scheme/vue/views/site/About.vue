@@ -41,7 +41,7 @@
             </p>
 
             <p>
-              We pride ourselves in offering world class services such is hotel
+              We pride ourselves in offering world class services such as hotel
               reservation,internship,training,tour guiding,tour package and
               planning tour itinerary. Our well experienced consultants offer
               clients with most economical, practical and convenient travel
@@ -55,6 +55,31 @@
               clients
             </p>
           </div>
+        </div>
+      </div>
+      <div class="about" data-aos="fade-up" data-aos-duration="1000">
+        <div class="left">
+          <label for="Maken Africa Safaris" class="my-title"
+            >Maken Africa Safaris</label
+          >
+          <hr class="myhr" />
+          <p class="desc">Awaken To A Different World.</p>
+          <router-link to="/aboutus" class="mybtn-o">About Us</router-link>
+        </div>
+        <div class="right">
+          <p>
+            <strong>Maken Africa Safaris</strong> has been providing an
+            unrivalled full spectrum of business and leisure travel services
+            that our satisfied customers will certainly attest to.
+          </p>
+
+          <p>
+            We pride ourselves in offering world class services such is hotel
+            reservation,internship,training,tour guiding,tour package and
+            planning tour itinerary. Our well experienced consultants offer
+            clients with most economical, practical and convenient travel
+            solutions.
+          </p>
         </div>
       </div>
       <div class="missions-widget">
@@ -270,6 +295,58 @@ $green: #044914;
       @media screen and (max-width: 900px) {
         line-height: 2rem;
         font-size: 1rem;
+      }
+    }
+  }
+  .about {
+    padding: 4rem 15rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #fff;
+    @media screen and (max-width: 1700px) {
+      padding: 4rem 10rem;
+    }
+    @media screen and (max-width: 1300px) {
+      padding: 3rem 5rem;
+    }
+    @media screen and (max-width: 900px) {
+      padding: 2rem;
+      grid-template-columns: 100%;
+    }
+    .left {
+      @media screen and (max-width: 900px) {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px #eee solid;
+      }
+      .myhr {
+        border-top: 3px $orange solid;
+        width: 70px;
+        margin-bottom: 1rem;
+      }
+      .desc {
+        color: #333333;
+        font-weight: 400;
+        font-size: 1.1rem;
+        @media screen and (max-width: 1200px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 900px) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .right {
+      p {
+        color: #333333;
+        font-weight: 400;
+        font-size: 1.1rem;
+        @media screen and (max-width: 1200px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 900px) {
+          font-size: 0.8rem;
+        }
       }
     }
   }

@@ -109,10 +109,21 @@ $green: #044914;
   transition: all 0.4s ease-in;
 }
 .clientHeader {
-  width: 100vw;
+  width: 99.1vw;
   overflow: hidden;
-  background: white;
-  box-shadow: 0px 1px 10px 1px #eee;
+  background: #0000008a;
+  background: linear-gradient(
+    180deg,
+    #0000009f 0%,
+    #0000006b 72%,
+    #0000002c 87%,
+    #00000000 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  // box-shadow: 0px 1px 10px 1px #eee;
   .header-content {
     .topbar {
       display: flex;
@@ -149,7 +160,7 @@ $green: #044914;
             .link-item {
               .link-a {
                 padding: 0.8rem 1rem;
-                color: black;
+                color: white;
                 font-weight: 400;
                 position: relative;
                 @media screen and (max-width: 1000px) {
