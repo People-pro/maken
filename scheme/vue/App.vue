@@ -182,6 +182,7 @@ $green: #044914;
   position: relative;
   .intro-content {
     padding: 3rem 0;
+    padding-top: 10rem;
     width: 100%;
     height: 100%;
     background: #000000a4;
