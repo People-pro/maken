@@ -152,8 +152,22 @@
             <button class="mybtn" @click="startBooking = true">Book Now</button>
           </div>
         </div>
+        
+        <div class="widget-desc" v-if="item.iterinary"">
+          <label for="Trip Overview" class="my-title">Package Iterinary</label>
+          <hr class="myhr" />
+          <div class="desc-content">
+            <iframe :src="'/assets/uploaded/'+item.iterinary" frameborder="0"></iframe>
+          <div
+            class="desc-footer jc-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+          </div>
+        </div>
       </div>
-      <div class="packages">
+      </div>
+      <div class="packages" v-if="item.packages.length > 0">
         <div class="header" data-aos="fade-up" data-aos-duration="1000">
           <label for="Upcoming Trips" class="my-title">Related Packages</label>
           <hr class="myhr" />
@@ -341,6 +355,10 @@ $green: #044914;
       .desc-content {
         display: grid;
         grid-template-columns: 50% 50%;
+        iframe{
+          width: 100%;
+          height: 1000px;
+        }
         @media screen and (max-width: 900px) {
           grid-template-columns: 100%;
           grid-row-gap: 1rem;

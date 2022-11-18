@@ -46,8 +46,9 @@ class AdminPackagesController extends Controller
         // }
 
         $image = input('image');
+        $iterinary = input('iterinary');
         $AdminPackages = new AdminPackages();
-        $addPackage = $AdminPackages->addPackage($attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image);
+        $addPackage = $AdminPackages->addPackage($attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image, $iterinary);
         if ($addPackage) {
             $responce['status'] = "ok";
             $responce['message'] = "Package was saved";
@@ -82,8 +83,9 @@ class AdminPackagesController extends Controller
             $reqs = '[]';
         }
         $image = input('image');
+        $iterinary = input('iterinary');
         $AdminPackages = new AdminPackages();
-        $updatePackage = $AdminPackages->updatePackage($id, $attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image);
+        $updatePackage = $AdminPackages->updatePackage($id, $attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image, $iterinary);
         if ($updatePackage) {
             $responce['status'] = "ok";
             $responce['message'] = "Package was updated";

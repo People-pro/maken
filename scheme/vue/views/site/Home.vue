@@ -12,14 +12,14 @@
       <div class="jumbo2">
         <div class="jumbo-section">
           <hooper :settings="jumboSettings" class="jumboimg-body">
-            <slide class="jumboimg-item">
+            <!-- <slide class="jumboimg-item">
               <img
                 src="/assets/uploaded/bg/bg1.JPG"
                 class="img"
                 alt=""
                 srcset=""
               />
-            </slide>
+            </slide> -->
             <slide class="jumboimg-item">
               <img
                 src="/assets/uploaded/bg/bg2.JPG"
@@ -55,8 +55,8 @@
                 data-aos="fade-left"
                 data-aos-duration="1000"
               >
-                Contact us for Exciting City tours, Insightful museums visits,
-                Adventurous National parks excursions, and much more!
+                Contact us for Exciting City tours, Insightful museum visits,
+                Adventurous National park excursion, and much more!
               </p>
               <div
                 class="btns"
@@ -289,7 +289,7 @@
                   a so sweet tour guide. We pray for our next step as well.
                   Blessings all.
                 </p>
-                <label for="Travel in Rwanda"> - Des and Debbie</label>
+                <label for="Travel in Rwanda"> - Des and Debbie (Jamaican Diaspora)</label>
               </div>
               <div
                 class="text-item"
@@ -300,11 +300,10 @@
                   Our tour of Akagera was a wonderful experience, and a large
                   element of that was owing to the arrangements provided by
                   <strong>Maken Africa Safaris</strong>. The logistics went like
-                  clockwork: we were met on time by your drivers and guides on
-                  every occasion - and we appreciated the welcoming bowl of
+                  clockwork and we appreciated the welcoming bowl of
                   fruit in our hotel rooms.
                 </p>
-                <label for="Travel in Rwanda"> - Katrina jihad</label>
+                <label for="Travel in Rwanda"> - Katrina jihad (US)</label>
               </div>
               <div
                 class="text-item"
@@ -315,12 +314,9 @@
                   I would like to thank the
                   <strong>Maken Africa Safaris</strong> for the excelent service
                   provided. The reservation process was excellent and flexible.
-                  The tour to Nyungwe in Rwanda was perfect. Pick-up occurred at
-                  the right time, the guide was waiting for me across the border
-                  when I arrived. Saïd was an excellent guide and made the tour
-                  worthwhile.
+                  The tour to Nyungwe National Park was perfect.
                 </p>
-                <label for="visit Rwanda"> - Alidah Muhammed</label>
+                <label for="visit Rwanda"> - Alidah Muhammed (US)</label>
               </div>
             </div>
             <div class="partners" data-aos="fade-up" data-aos-duration="1000">
@@ -381,7 +377,7 @@ export default {
         wheelControl: false,
         trimWhiteSpace: true,
         infiniteScroll: true,
-        playSpeed: 4000,
+        playSpeed: 8000,
         transition: 3000,
         hoverPause: false,
       },

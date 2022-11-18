@@ -289,6 +289,28 @@
                   <span class="uploader-btn">Select image</span>
                 </upload-helper>
               </div>
+              <div class="form-group">
+                <label for="email address">Iterinary(PDF)</label>
+                <br />
+                <upload-helper
+                  :open="false"
+                  :enableinput="false"
+                  :required="false"
+                  :multiple="false"
+                  location="assets/uploaded/"
+                  :url="$store.state.UPLOAD_BASE_URL"
+                  :uploadurl="$store.state.UPLOAD_BASE_URL + 'upload/' + token"
+                  name="other-images"
+                  value=""
+                  @onFileSelected="
+                    (data) => {
+                      newItem.iterinary = data;
+                    }
+                  "
+                >
+                  <span class="uploader-btn">Select PDF</span>
+                </upload-helper>
+              </div>
             </form>
           </div>
           <div class="model-footer">
@@ -526,6 +548,28 @@
                   "
                 >
                   <span class="uploader-btn">Select image</span>
+                </upload-helper>
+              </div>
+              <div class="form-group">
+                <label for="email address">Iterinary(PDF)</label>
+                <br />
+                <upload-helper
+                  :open="false"
+                  :enableinput="false"
+                  :required="false"
+                  :multiple="false"
+                  location="assets/uploaded/"
+                  :url="$store.state.UPLOAD_BASE_URL"
+                  :uploadurl="$store.state.UPLOAD_BASE_URL + 'upload/' + token"
+                  name="other-images"
+                  value=""
+                  @onFileSelected="
+                    (data) => {
+                      selectedItem.iterinary = data;
+                    }
+                  "
+                >
+                  <span class="uploader-btn">Select PDF</span>
                 </upload-helper>
               </div>
             </form>

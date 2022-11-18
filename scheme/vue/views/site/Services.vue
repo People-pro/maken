@@ -46,8 +46,8 @@
               >
               <div class="desc-content">
                 <p>
-                  we plan and give yo u a full package according to what you
-                  need.
+                  Leave it to us, we offer thoughtful, well curated tour
+                  packages for enjoyable and memorable experiences.
                 </p>
               </div>
             </div>
@@ -58,10 +58,15 @@
                 <i class="fas fa-hiking"></i>
               </div>
               <label for="Planning tour itinerary" class="service-title"
-                >Planning Tour Itinerary</label
+                >Guest Itinerary</label
               >
               <div class="desc-content">
-                <p>giving what customers needs on tourism information.</p>
+                <p>
+                  From the moment you decide to visit Rwanda, The Land of a
+                  Thousand Hills, Maken Africa Safaris should be your preferred
+                  experience partner. We can handle your entire landed itinerary
+                  - from arrival to departure, we have you covered!
+                </p>
               </div>
             </div>
           </div>
@@ -75,8 +80,9 @@
               >
               <div class="desc-content">
                 <p>
-                  we assist tourist in different corn of the world to give them
-                  best accommodation in bound and out bound.
+                  All levels of stay are accommodated for - from backpackers to
+                  5 star travellers, Maken Africa Safaris can source the right
+                  accommodations for your taste and budget.
                 </p>
               </div>
             </div>
@@ -91,7 +97,10 @@
               >
               <div class="desc-content">
                 <p>
-                  guiding our tourist to different destinations of the world.
+                  Trust our experience, our knowledgeable tour guides will help
+                  you discover the country and specific destinations while
+                  explaining everything so you can understand. We speak English,
+                  French and KinRwandan for your convenience.
                 </p>
               </div>
             </div>
@@ -101,9 +110,17 @@
               <div class="icon-widget">
                 <i class="fas fa-chalkboard-teacher"></i>
               </div>
-              <label for="Training" class="service-title">Training</label>
+              <label for="Training" class="service-title"
+                >Training / Internships</label
+              >
               <div class="desc-content">
-                <p>we give chance to people who what to learn tourism.</p>
+                <p>
+                  Rwanda has a vibrant tourism sector and is known for being a
+                  champion of conservation. We offer tourism career training for
+                  students and freshers to engage them in the industry and equip
+                  them with the skills they need to succeed as tourism
+                  professionals.
+                </p>
               </div>
             </div>
           </div>
@@ -112,11 +129,14 @@
               <div class="icon-widget">
                 <i class="fa fa-users"></i>
               </div>
-              <label for="Internship" class="service-title">Internship</label>
+              <label for="Internship" class="service-title"
+                >Team Building</label
+              >
               <div class="desc-content">
                 <p>
-                  We help students with in colleges and universities to give
-                  them professional and college internship.
+                  We offer fun and effective team-building activities for
+                  personal and corporate groups from 3 to 300 people. Let's plan
+                  the ideal team-building package for your group today.
                 </p>
               </div>
             </div>

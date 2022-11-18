@@ -174,6 +174,15 @@ $db_up_migration = [
         },
         'reason' => 'adding sales on packages table',
     ],
+    [
+        'key' => 10,
+        'table' => 'packages',
+        "todo" => 'update',
+        'run' => function (Blueprint $table) {
+            $table->string('iterinary')->after('image')->nullable();
+        },
+        'reason' => 'adding sales on packages table',
+    ],
 ];
 
 /**
