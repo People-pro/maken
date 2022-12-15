@@ -130,7 +130,7 @@
                 <i class="fa fa-users"></i>
               </div>
               <label for="Internship" class="service-title"
-                >Team Building</label
+                >Team Building / Event Management</label
               >
               <div class="desc-content">
                 <p>
@@ -151,47 +151,55 @@
             <p class="desc">What our clients said about our services.</p>
           </div>
           <div class="testimonials-body">
-            <div class="test-text" data-aos="fade-up" data-aos-duration="1000">
-              <div class="text-item">
+            <div class="test-text">
+              <div
+                class="text-item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <p>
+                  This Rwandan journey was a big blessing. <strong>Thanks Sumaya and
+                  team</strong> and all the nice jamaicans living in the Moter Land. Plus
+                  a so sweet tour guide. We pray for our next step as well.
+                  Blessings all.
+                </p>
+                <label for="Travel in Rwanda"> - Des and Debbie (Jamaican Diaspora)</label>
+              </div>
+              <div
+                class="text-item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <p>
                   Our tour of Akagera was a wonderful experience, and a large
                   element of that was owing to the arrangements provided by
                   <strong>Maken Africa Safaris</strong>. The logistics went like
-                  clockwork: we were met on time by your drivers and guides on
-                  every occasion - and we appreciated the welcoming bowl of
+                  clockwork and we appreciated the welcoming bowl of
                   fruit in our hotel rooms.
                 </p>
-                <label for="John Doe"> - John Doe</label>
+                <label for="Travel in Rwanda"> - Katrina jihad (US)</label>
               </div>
-              <div class="text-item">
+              <div
+                class="text-item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <p>
                   I would like to thank the
                   <strong>Maken Africa Safaris</strong> for the excelent service
                   provided. The reservation process was excellent and flexible.
-                  The tour to Nyungwe in Rwanda was perfect. Pick-up occurred at
-                  the right time, the guide was waiting for me across the border
-                  when I arrived. Saïd was an excellent guide and made the tour
-                  worthwhile.
+                  The tour to Nyungwe National Park was perfect.
                 </p>
-                <label for="Jane Smith"> - Jane Smith</label>
+                <label for="visit Rwanda"> - Alidah Muhammed (US)</label>
               </div>
             </div>
             <div class="partners" data-aos="fade-up" data-aos-duration="1000">
               <hooper :settings="partnersSettings" class="partners-body">
                 <slide class="partners-item">
-                  <img src="/assets/images/logo1.png" alt="" />
+                  <img src="/assets/images/RDB_logo.png" alt="" />
                 </slide>
                 <slide class="partners-item">
-                  <img src="/assets/images/logo2.png" alt="" />
-                </slide>
-                <slide class="partners-item">
-                  <img src="/assets/images/logo3.png" alt="" />
-                </slide>
-                <slide class="partners-item">
-                  <img src="/assets/images/logo4.png" alt="" />
-                </slide>
-                <slide class="partners-item">
-                  <img src="/assets/images/logo5.png" alt="" />
+                  <img src="/assets/images/logo_qdrnqo.png" alt="" />
                 </slide>
               </hooper>
             </div>
