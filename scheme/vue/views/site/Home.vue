@@ -47,22 +47,23 @@
           </hooper>
           <div class="jumbo-content">
             <div class="jumbo-body">
-              <h2 data-aos="fade-left" data-aos-duration="1000">
+              <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1500">
                 Welcome to the leading travel agency in the heart of Africa
               </h2>
               <p
                 class="txt-shad-sm"
-                data-aos="fade-left"
-                data-aos-duration="1000"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-delay="3000"
               >
                 Contact us for Exciting City tours, Insightful museum visits,
                 Adventurous National park excursion, and much more!
               </p>
-              <div
+              <!-- <div
                 class="btns"
                 data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="1000"
+                data-aos-duration="3000"
+                data-aos-delay="3000"
               >
                 <router-link to="/packages" class="mybtn"
                   >View Packages</router-link
@@ -70,7 +71,7 @@
                 <router-link to="/contact" class="mybtn"
                   >Contact Us</router-link
                 >
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -103,7 +104,7 @@
           </div>
         </div>
       </div> -->
-      
+
       <div class="packages">
         <div class="header" data-aos="fade-up" data-aos-duration="1000">
           <label for="Our Popular Packages" class="my-title"
@@ -148,7 +149,8 @@
               <hr />
               <div class="content-footer">
                 <div class="money">
-                  <label for="Amount">{{ item.price[0].value }}</label>
+                  <label for="Amount" v-if="item.price && item.price.length > 0"><span>From </span>{{ item.price[0].value }}</label>
+                  <label for="Amount" v-else>-</label>
                 </div>
                 <div class="book">
                   <router-link :to="'/viewPackage/' + item.id" class="book-btn"
@@ -247,7 +249,8 @@
               <hr />
               <div class="content-footer">
                 <div class="money">
-                  <label for="Amount">{{ item.price[0].value }}</label>
+                  <label for="Amount" v-if="item.price && item.price.length > 0"><span>From </span>{{ item.price[0].value }}</label>
+                  <label for="Amount" v-else>-</label>
                 </div>
                 <div class="book">
                   <router-link :to="'/viewTrip/' + item.id" class="book-btn"
@@ -284,12 +287,14 @@
                 data-aos-duration="1000"
               >
                 <p>
-                  This Rwandan journey was a big blessing. <strong>Thanks Sumaya and
-                  team</strong> and all the nice jamaicans living in the Moter Land. Plus
-                  a so sweet tour guide. We pray for our next step as well.
-                  Blessings all.
+                  This Rwandan journey was a big blessing.
+                  <strong>Thanks Sumaya and team</strong> and all the nice
+                  jamaicans living in the Moter Land. Plus a so sweet tour
+                  guide. We pray for our next step as well. Blessings all.
                 </p>
-                <label for="Travel in Rwanda"> - Des and Debbie (Jamaican Diaspora)</label>
+                <label for="Travel in Rwanda">
+                  - Des and Debbie (Jamaican Diaspora)</label
+                >
               </div>
               <div
                 class="text-item"
@@ -300,8 +305,8 @@
                   Our tour of Akagera was a wonderful experience, and a large
                   element of that was owing to the arrangements provided by
                   <strong>Maken Africa Safaris</strong>. The logistics went like
-                  clockwork and we appreciated the welcoming bowl of
-                  fruit in our hotel rooms.
+                  clockwork and we appreciated the welcoming bowl of fruit in
+                  our hotel rooms.
                 </p>
                 <label for="Travel in Rwanda"> - Katrina jihad (US)</label>
               </div>
@@ -412,7 +417,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $orange: #ef6203;
 $green: #044914;
 .home {
@@ -420,83 +425,6 @@ $green: #044914;
   overflow: hidden;
   @media screen and (max-width: 900px) {
     width: 100vw;
-  }
-  .jumbo {
-    height: calc(100vh - 0px);
-    background: url("/assets/images/pe2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    .jumbo-content {
-      width: 100%;
-      height: 100%;
-      background: #000000;
-      background: linear-gradient(90deg, #000000a4 0%, #13860300 73%);
-      display: flex;
-      align-items: center;
-      .jumbo-body {
-        width: 60%;
-        padding: 0 15rem;
-        @media screen and (max-width: 1700px) {
-          padding: 0 10rem;
-          width: 70%;
-        }
-        @media screen and (max-width: 1300px) {
-          padding: 0 5rem;
-          width: 80%;
-        }
-        @media screen and (max-width: 900px) {
-          width: 100%;
-          padding: 0 2rem;
-        }
-        h2 {
-          text-shadow: 0 4px 2px #0000007e;
-          color: white;
-          font-size: 3rem;
-          line-height: 1.25em;
-          font-weight: 700;
-          @media screen and (max-width: 900px) {
-            font-size: 2.5rem;
-          }
-          @media screen and (max-width: 800px) {
-            font-size: 2.25rem;
-          }
-          @media screen and (max-width: 700px) {
-            font-size: 1.5rem;
-          }
-          @media screen and (max-width: 600px) {
-            font-size: 1.25rem;
-          }
-        }
-        p {
-          color: #fff;
-          font-weight: 400;
-          font-size: 1.25rem;
-          text-shadow: 0 4px 2px #0000007e;
-          @media screen and (max-width: 800px) {
-            font-size: 1rem;
-          }
-          @media screen and (max-width: 600px) {
-            font-size: 0.8rem;
-          }
-        }
-        .btns {
-          display: flex;
-          column-gap: 1rem;
-          padding: 2rem 0;
-          @media screen and (max-width: 500px) {
-            width: 100%;
-            padding: 1rem 0;
-            flex-direction: column;
-            row-gap: 1rem;
-            .btn {
-              display: block;
-            }
-          }
-        }
-      }
-    }
   }
   .jumbo2 {
     position: relative;
@@ -527,23 +455,22 @@ $green: #044914;
     .jumbo-content {
       width: 100%;
       height: 100%;
-      background: #000000;
-      background: linear-gradient(90deg, #000000a4 0%, #13860300 73%);
+      background: #00000094;
       display: flex;
       align-items: center;
       position: absolute;
       top: 0;
       left: 0;
       .jumbo-body {
-        width: 60%;
+        width: 100%;
         padding: 0 15rem;
         @media screen and (max-width: 1700px) {
           padding: 0 10rem;
-          width: 70%;
+          width: 100%;
         }
         @media screen and (max-width: 1300px) {
           padding: 0 5rem;
-          width: 80%;
+          width: 100%;
         }
         @media screen and (max-width: 900px) {
           width: 100%;
@@ -552,9 +479,11 @@ $green: #044914;
         h2 {
           text-shadow: 0 4px 2px #0000007e;
           color: white;
-          font-size: 3rem;
+          font-size: 3.5rem;
           line-height: 1.25em;
           font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
           @media screen and (max-width: 900px) {
             font-size: 2.5rem;
           }
@@ -571,8 +500,9 @@ $green: #044914;
         p {
           color: #fff;
           font-weight: 400;
-          font-size: 1.25rem;
+          font-size: 1rem;
           text-shadow: 0 4px 2px #0000007e;
+          text-align: center;
           @media screen and (max-width: 800px) {
             font-size: 1rem;
           }
@@ -584,6 +514,7 @@ $green: #044914;
           display: flex;
           column-gap: 1rem;
           padding: 2rem 0;
+          justify-content: center;
           @media screen and (max-width: 500px) {
             width: 100%;
             padding: 1rem 0;
@@ -725,10 +656,14 @@ $green: #044914;
             padding-bottom: 1rem;
             .money {
               color: $orange;
-              font-size: 1.5rem;
+              font-size: 1.2rem;
               font-weight: 500;
               @media screen and (max-width: 1300px) {
                 font-size: 1.25rem;
+              }
+              span{
+                color: #2b2b2b93;
+                font-size: 1rem;
               }
             }
             .book {
@@ -968,6 +903,10 @@ $green: #044914;
               font-weight: 500;
               @media screen and (max-width: 1300px) {
                 font-size: 1.25rem;
+              }
+              span{
+                color: #2b2b2b93;
+                font-size: 1rem;
               }
             }
             .book {

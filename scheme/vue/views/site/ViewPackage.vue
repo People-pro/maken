@@ -93,6 +93,11 @@
             <button class="mybtn" @click="startBooking = true">Book Now</button>
           </div>
         </div>
+        <div class="package-description" v-if="item.description">
+          <label for="Trip Overview" class="my-title">Package breakdown</label>
+          <hr class="myhr" />
+          <div v-html="item.description" class="breakdown"></div>
+        </div>
         <div class="widget-header">
           <hooper :settings="Settings" class="widget-body">
             <slide
@@ -300,10 +305,10 @@ export default {
     this.getItems();
   },
   watch: {
-    "$route.params.id": function() {
+    "$route.params.id": function () {
       this.getItems();
     },
-  }
+  },
 };
 </script>
 
@@ -355,7 +360,7 @@ $green: #044914;
       .desc-content {
         display: grid;
         grid-template-columns: 50% 50%;
-        iframe{
+        iframe {
           width: 100%;
           height: 1000px;
         }
@@ -593,5 +598,20 @@ $green: #044914;
       padding: 2rem 0;
     }
   }
+}
+.package-description {
+  margin: 1rem 3rem;
+  .breakdown {
+    background: #edeaea;
+    padding: 2rem;
+  }
+  img {
+    width: 40% !important;
+    object-fit: contain !important;
+    display: flex;
+    justify-content: center;
+  }
+  border-bottom: 1px #eee solid;
+  margin-bottom: 2rem;
 }
 </style>

@@ -311,6 +311,23 @@
                   <span class="uploader-btn">Select PDF</span>
                 </upload-helper>
               </div>
+              <div class="form-group">
+                <label for="email address">Package Type</label>
+                <a-select
+                  v-model="newItem.packageType"
+                  placeholder="Select Package Type"
+                >
+                  <a-select-option value="Single">Single day</a-select-option>
+                  <a-select-option value="Multi">Multi day</a-select-option>
+                </a-select>
+              </div>
+              <div class="form-group" v-show="newItem.packageType == 'Multi'">
+                <label for="email address">Description</label>
+                <vue-editor
+                  placeholder="package description..."
+                  v-model="newItem.description"
+                />
+              </div>
             </form>
           </div>
           <div class="model-footer">
@@ -571,6 +588,26 @@
                 >
                   <span class="uploader-btn">Select PDF</span>
                 </upload-helper>
+              </div>
+              <div class="form-group">
+                <label for="email address">Package Type</label>
+                <a-select
+                  v-model="selectedItem.packageType"
+                  placeholder="Select Package Type"
+                >
+                  <a-select-option value="Single">Single day</a-select-option>
+                  <a-select-option value="Multi">Multi day</a-select-option>
+                </a-select>
+              </div>
+              <div
+                class="form-group"
+                v-show="selectedItem.packageType == 'Multi'"
+              >
+                <label for="email address">Description</label>
+                <vue-editor
+                  placeholder="package description..."
+                  v-model="selectedItem.description"
+                />
               </div>
             </form>
           </div>

@@ -19,7 +19,7 @@
                 }
                 return $data;
             }
-            public function addPackage($attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image, $iterinary)
+            public function addPackage($attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image, $iterinary, $packageType, $description)
             {
                 $today = Carbon::now('+2:00');
                 if (DB::table('tb_packages')
@@ -35,6 +35,8 @@
                             'reqs' => $reqs,
                             'image' => $image,
                             'iterinary' => $iterinary,
+                            'packageType' => $packageType,
+                            'description' => $description,
                             'created_at' => $today,
                             'updated_at' => $today,
                             'is_deleted' => false,
@@ -46,7 +48,7 @@
                     return false;
                 }
             }
-            public function updatePackage($id, $attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image, $iterinary)
+            public function updatePackage($id, $attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image, $iterinary, $packageType, $description)
             {
                 $today = Carbon::now('+2:00');
                 if (DB::table('tb_packages')
@@ -63,6 +65,8 @@
                             'reqs' => $reqs,
                             'image' => $image,
                             'iterinary' => $iterinary,
+                            'packageType' => $packageType,
+                            'description' => $description,
                             'updated_at' => $today,
                         ]
                     )

@@ -32,6 +32,8 @@ class AdminPackagesController extends Controller
         $inclusives = input('inclusives');
         $exclusives = input('exclusives');
         $reqs = input('reqs');
+        $packageType = input('packageType');
+        $description = input('description');
         // if ($price && $price != '') {
         //     $price = '[]';
         // }
@@ -48,7 +50,7 @@ class AdminPackagesController extends Controller
         $image = input('image');
         $iterinary = input('iterinary');
         $AdminPackages = new AdminPackages();
-        $addPackage = $AdminPackages->addPackage($attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image, $iterinary);
+        $addPackage = $AdminPackages->addPackage($attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image, $iterinary, $packageType, $description);
         if ($addPackage) {
             $responce['status'] = "ok";
             $responce['message'] = "Package was saved";
@@ -70,6 +72,8 @@ class AdminPackagesController extends Controller
         $inclusives = input('inclusives');
         $exclusives = input('exclusives');
         $reqs = input('reqs');
+        $packageType = input('packageType');
+        $description = input('description');
         if (!$price && $price == '[]') {
             $price = '[]';
         }
@@ -85,7 +89,7 @@ class AdminPackagesController extends Controller
         $image = input('image');
         $iterinary = input('iterinary');
         $AdminPackages = new AdminPackages();
-        $updatePackage = $AdminPackages->updatePackage($id, $attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image, $iterinary);
+        $updatePackage = $AdminPackages->updatePackage($id, $attraction_id, $duration, $min_age, $max_people, $price, $inclusives, $exclusives, $reqs, $image, $iterinary, $packageType, $description);
         if ($updatePackage) {
             $responce['status'] = "ok";
             $responce['message'] = "Package was updated";

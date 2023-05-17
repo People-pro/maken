@@ -36,11 +36,31 @@
             Book a package with us and let's bring adventure to your table.
           </p>
         </div>
+        <div class="browse-btn">
+          <button
+            :class="activeBtn == 'All' ? 'active' : ''"
+            @click="changePackages('All')"
+          >
+            All
+          </button>
+          <button
+            :class="activeBtn == 'Single' ? 'active' : ''"
+            @click="changePackages('Single')"
+          >
+            Single day
+          </button>
+          <button
+            :class="activeBtn == 'Multi' ? 'active' : ''"
+            @click="changePackages('Multi')"
+          >
+            Multi day
+          </button>
+        </div>
         <div class="packages-body" data-aos="fade-up" data-aos-duration="1000">
           <router-link
             :to="'/viewPackage/' + item.id"
             class="package-item"
-            v-for="item in items"
+            v-for="item in itemsToShow"
             :key="item.id"
           >
             <div class="content">
@@ -70,7 +90,10 @@
               <hr />
               <div class="content-footer">
                 <div class="money">
-                  <label for="Amount">{{ item.price[0].value }}</label>
+                  <label for="Amount" v-if="item.price && item.price.length > 0"
+                    ><span>From </span>{{ item.price[0].value }}</label
+                  >
+                  <label for="Amount" v-else>-</label>
                 </div>
                 <div class="book">
                   <router-link :to="'/viewPackage/' + item.id" class="book-btn"
@@ -82,7 +105,7 @@
           </router-link>
         </div>
       </div>
-      <div class="trips">
+      <div class="trips" v-if="trips.length > 0">
         <div class="header" data-aos="fade-up" data-aos-duration="1000">
           <label for="Upcoming Trips" class="my-title">Upcoming Trips</label>
           <hr class="myhr" />
@@ -122,7 +145,10 @@
               <hr />
               <div class="content-footer">
                 <div class="money">
-                  <label for="Amount">{{ item.price[0].value }}</label>
+                  <label for="Amount" v-if="item.price && item.price.length > 0"
+                    ><span>From </span>{{ item.price[0].value }}</label
+                  >
+                  <label for="Amount" v-else>-</label>
                 </div>
                 <div class="book">
                   <router-link :to="'/viewTrip/' + item.id" class="book-btn"
@@ -183,7 +209,9 @@ export default {
         },
       },
       items: [],
+      itemsToShow: [],
       trips: [],
+      activeBtn: "All",
     };
   },
   methods: {
@@ -198,12 +226,32 @@ export default {
           item.price = JSON.parse(item.price);
         });
 
+
+        this.itemsToShow = [...this.items];
+
         this.trips = response.data["trips"];
         this.trips.forEach((item) => {
           item.price = JSON.parse(item.price);
         });
         this.isLoading = false;
       });
+    },
+    changePackages(activeBtn) {
+      this.activeBtn = activeBtn;
+      let newArray = [...this.items];
+      if (activeBtn == "All") {
+        this.itemsToShow = newArray;
+      }
+      if (activeBtn == "Single") {
+        this.itemsToShow = newArray.filter((item) => {
+          return item.packageType == "Single";
+        });
+      }
+      if (activeBtn == "Multi") {
+        this.itemsToShow = newArray.filter((item) => {
+          return item.packageType == "Multi";
+        });
+      }
     },
   },
   mounted() {
@@ -262,6 +310,7 @@ $green: #044914;
       grid-row-gap: 2rem;
       margin: 2rem 0;
       flex-wrap: wrap;
+      transition: all 0.8s ease-in-out;
       @media screen and (max-width: 1100px) {
         grid-template-columns: 48% 48%;
       }
@@ -269,6 +318,7 @@ $green: #044914;
         grid-template-columns: 100%;
       }
       .package-item {
+      transition: all 0.8s ease-in-out;
         background: #fff;
         border-radius: 1.5rem;
         box-shadow: 0px 0px 10px 3px #4d4d4d2a;
@@ -355,6 +405,10 @@ $green: #044914;
               @media screen and (max-width: 1300px) {
                 font-size: 1.25rem;
               }
+              span {
+                color: #2b2b2b93;
+                font-size: 1rem;
+              }
             }
             .book {
               .book-btn {
@@ -372,6 +426,24 @@ $green: #044914;
     }
     .packages-footer {
       padding: 2rem 0;
+    }
+    .browse-btn {
+      display: flex;
+      button {
+        margin: 0 0.5rem;
+        background: #fff;
+        border: 1px solid #ef6203;
+        color: #ef6203;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        &.active {
+          background: #ef6203;
+          color: #fff;
+        }
+      }
     }
   }
   .trips {

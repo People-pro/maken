@@ -63,6 +63,7 @@ import {
   Navigation as HooperNavigation,
 } from "hooper";
 import "hooper/dist/hooper.css";
+import { VueEditor, Quill } from "vue2-editor";
 
 // pages
 
@@ -94,6 +95,7 @@ Vue.component("HooperNavigation", HooperNavigation);
 Vue.component("vupload", VUpload);
 Vue.component("uploadHelper", uploadHelper);
 Vue.component("veditor", VEditor);
+Vue.component("vue-editor", VueEditor);
 
 Vue.use(VueYoutube);
 library.add(faPlayCircle);

@@ -183,6 +183,38 @@ $db_up_migration = [
         },
         'reason' => 'adding sales on packages table',
     ],
+    [
+        'key' => 11,
+        'table' => 'sliders',
+        "todo" => 'create',
+        'run' => function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('image')->nullable();
+            $table->longText('content')->nullable();
+            $table->timestamps();
+            $table->softDeletes();
+            $table->boolean('is_deleted')->nullable();
+        },
+        'reason' => 'Creating tb_sliders table',
+    ],
+    [
+        'key' => 12,
+        'table' => 'packages',
+        "todo" => 'update',
+        'run' => function (Blueprint $table) {
+            $table->string('packageType')->after('sales')->nullable();
+        },
+        'reason' => 'adding packageType on packages table',
+    ],
+    [
+        'key' => 13,
+        'table' => 'packages',
+        "todo" => 'update',
+        'run' => function (Blueprint $table) {
+            $table->longText('description')->after('packageType')->nullable();
+        },
+        'reason' => 'adding description on packages table',
+    ],
 ];
 
 /**
