@@ -71,7 +71,7 @@ $routes = [
                 'folder' => 'site',
                 'return' => 'SiteTripsController@bookTrip',
             ],
-            
+
         ],
     ],
 
@@ -155,7 +155,7 @@ $routes = [
             // Package orders
 
 
-            
+
             [
                 'path' => '/packages/orders/getOrders',
                 'method' => 'POST',
@@ -209,7 +209,7 @@ $routes = [
             // Trip orders
 
 
-            
+
             [
                 'path' => '/trip/orders/getOrders',
                 'method' => 'POST',
@@ -263,6 +263,63 @@ $routes = [
                 'folder' => 'admin',
                 'return' => 'AdminGalleryController@deleteGallery',
             ],
+
+
+            // Partners
+
+
+            [
+                'path' => '/partners/getPartners',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminPartnersController@getPartners',
+            ],
+            [
+                'path' => '/partners/addPartner',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminPartnersController@addPartner',
+            ],
+            [
+                'path' => '/partners/updatePartner',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminPartnersController@updatePartner',
+            ],
+            [
+                'path' => '/partners/deletePartner/{id}',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminPartnersController@deletePartner',
+            ],
+
+            // slides
+
+            [
+                'path' => '/slides/getSlides',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminSlidesController@getSlides',
+            ],
+            [
+                'path' => '/slides/addSlide',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminSlidesController@addSlide',
+            ],
+            [
+                'path' => '/slides/updateSlide',
+                'method' => 'POST',
+                'folder' => 'admin',
+                'return' => 'AdminSlidesController@updateSlide',
+            ],
+            [
+                'path' => '/slides/deleteSlide/{id}',
+                'method' => 'GET',
+                'folder' => 'admin',
+                'return' => 'AdminSlidesController@deleteSlide',
+            ],
+
 
             // users
 

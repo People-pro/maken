@@ -24,6 +24,8 @@ import Users from "../views/admin/Users.vue";
 import adminAccount from "../views/admin/adminAccount.vue";
 import PackageOrders from "../views/admin/PackageOrders.vue";
 import TripOrders from "../views/admin/TripOrders.vue";
+import Partners from "../views/admin/Partners.vue";
+import Slides from "../views/admin/Slides.vue";
 
 Vue.use(VueRouter);
 const routes = [
@@ -140,6 +142,16 @@ const routes = [
     path: "/admin/account",
     name: "adminAccount",
     component: adminAccount,
+  },
+  {
+    path: "/admin/partners",
+    name: "Partners",
+    component: Partners,
+  },
+  {
+    path: "/admin/slides",
+    name: "Slides",
+    component: Slides,
   },
 ];
 

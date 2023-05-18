@@ -1,0 +1,4 @@
+export const GET_PARTNER = "GET_PARTNER";
+export const ADD_PARTNER = "ADD_PARTNER";
+export const UPDATE_PARTNER = "UPDATE_PARTNER";
+export const DELETE_PARTNER = "DELETE_PARTNER";

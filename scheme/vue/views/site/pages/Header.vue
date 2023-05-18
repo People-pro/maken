@@ -79,13 +79,6 @@
       </section>
     </div>
 
-    <a
-      href="https://api.whatsapp.com/send/?phone=250788232465"
-      target="_blank"
-      class="help"
-    >
-      <i class="fas fa-comment-alt"></i>
-    </a>
   </div>
 </template>
 
