@@ -34,7 +34,9 @@
       <div class="right">
         <label for="contact us">Reach Us Through</label>
         <ul>
-          <li><i class="fa fa-phone"></i> +250 788 232 465 / +250 785 848 669</li>
+          <li>
+            <i class="fa fa-phone"></i> +250 788 232 465 / +250 785 848 669
+          </li>
           <li><i class="fa fa-envelope"></i> info@makenafricasafaris.com</li>
         </ul>
         <div class="socials">
@@ -63,6 +65,16 @@
         <a href="">Omega</a>
       </p>
     </div>
+    <a
+      href="https://api.whatsapp.com/send/?phone=250788232465"
+      target="_blank"
+      class="help"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      data-aos-delay="300"
+    >
+      <i class="fas fa-comment-alt"></i>
+    </a>
   </div>
 </template>
 

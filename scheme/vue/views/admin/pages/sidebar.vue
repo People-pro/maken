@@ -1,13 +1,14 @@
 <template>
   <div class="Sidebar">
     <div class="nav">
-      <!-- <div class="brand">
+      <div class="brand">
         <img src="/assets/images/logo.png" alt="" srcset="" />
-      </div> -->
+      </div>
       <ul class="nav-items">
         <li>
           <router-link to="/admin" class="nav-item"
-            ><i class="fa fa-tachometer-alt"></i>&nbsp;&nbsp;Dashboard</router-link
+            ><i class="fa fa-tachometer-alt"></i
+            >&nbsp;&nbsp;Dashboard</router-link
           >
         </li>
         <li>
@@ -28,6 +29,16 @@
         <li>
           <router-link to="/admin/gallery" class="nav-item"
             ><i class="fa fa-images"></i>&nbsp;&nbsp;Gallery</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/admin/slides" class="nav-item"
+            ><i class="fa fa-images"></i>&nbsp;&nbsp;Slides</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/admin/partners" class="nav-item"
+            ><i class="fa fa-handshake"></i>&nbsp;&nbsp;Partners</router-link
           >
         </li>
         <li>
@@ -72,6 +83,8 @@ $green: #044914;
       background: #fff;
       display: flex;
       justify-content: center;
+      // inner shadow
+      box-shadow: inset 0px 0px 1000px 0px #0000003d;
       img {
         width: 80%;
       }

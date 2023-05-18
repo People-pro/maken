@@ -108,3 +108,16 @@ export const GET_SINGLE_GALLERY_URL = api_base_url + "/admin/gallery/getSingleGa
 export const ADD_GALLERY_URL = api_base_url + "/admin/gallery/addGallery";
 export const UPDATE_GALLERY_URL = api_base_url + "/admin/gallery/updateGallery";
 export const DELETE_GALLERY_URL = api_base_url + "/admin/gallery/deleteGallery/";
+
+// Partners
+export const GET_PARTNER_URL = api_base_url + "/admin/partners/getPartners";
+export const ADD_PARTNER_URL = api_base_url + "/admin/partners/addPartner";
+export const UPDATE_PARTNER_URL = api_base_url + "/admin/partners/updatePartner";
+export const DELETE_PARTNER_URL = api_base_url + "/admin/partners/deletePartner/";
+
+// slides
+export const GET_SLIDE_URL = api_base_url + "/admin/slides/getSlides";
+export const ADD_SLIDE_URL = api_base_url + "/admin/slides/addSlide";
+export const UPDATE_SLIDE_URL = api_base_url + "/admin/slides/updateSlide";
+export const DELETE_SLIDE_URL = api_base_url + "/admin/slides/deleteSlide/";
+

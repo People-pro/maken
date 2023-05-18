@@ -7,6 +7,8 @@ import Attractions from "./modules/attraction.js";
 import Package from "./modules/package.js";
 import Trip from "./modules/trip.js";
 import Gallery from "./modules/gallery.js";
+import partners from "./modules/partners";
+import slides from "./modules/slides";
 
 Vue.use(Vuex);
 export default new Vuex.Store({
@@ -56,5 +58,7 @@ export default new Vuex.Store({
     Package,
     Trip,
     Gallery,
+    partners,
+    slides,
   },
 });

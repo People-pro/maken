@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <clientHeader />
+    <clientHeader
+      data-aos="fade-down"
+      data-aos-duration="3000"
+      data-aos-delay="3000"
+    />
     <loading
       :active.sync="isLoading"
       :can-cancel="true"
@@ -11,7 +15,11 @@
     <div class="all-content">
       <div class="jumbo2">
         <div class="jumbo-section">
-          <hooper :settings="jumboSettings" class="jumboimg-body">
+          <hooper
+            :settings="jumboSettings"
+            class="jumboimg-body"
+            v-if="slides.length > 0"
+          >
             <!-- <slide class="jumboimg-item">
               <img
                 src="/assets/uploaded/bg/bg1.JPG"
@@ -20,25 +28,13 @@
                 srcset=""
               />
             </slide> -->
-            <slide class="jumboimg-item">
+            <slide
+              class="jumboimg-item"
+              v-for="slide in slides"
+              :key="slide.id"
+            >
               <img
-                src="/assets/uploaded/bg/bg2.JPG"
-                class="img"
-                alt=""
-                srcset=""
-              />
-            </slide>
-            <slide class="jumboimg-item">
-              <img
-                src="/assets/uploaded/bg/bg3.jpg"
-                class="img"
-                alt=""
-                srcset=""
-              />
-            </slide>
-            <slide class="jumboimg-item">
-              <img
-                src="/assets/uploaded/bg/bg4.JPG"
+                :src="'/assets/uploaded/' + slide.image"
                 class="img"
                 alt=""
                 srcset=""
@@ -47,14 +43,18 @@
           </hooper>
           <div class="jumbo-content">
             <div class="jumbo-body">
-              <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1500">
+              <h2
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-delay="700"
+              >
                 Welcome to the leading travel agency in the heart of Africa
               </h2>
               <p
                 class="txt-shad-sm"
                 data-aos="fade-up"
                 data-aos-duration="3000"
-                data-aos-delay="3000"
+                data-aos-delay="2000"
               >
                 Contact us for Exciting City tours, Insightful museum visits,
                 Adventurous National park excursion, and much more!
@@ -149,7 +149,9 @@
               <hr />
               <div class="content-footer">
                 <div class="money">
-                  <label for="Amount" v-if="item.price && item.price.length > 0"><span>From </span>{{ item.price[0].value }}</label>
+                  <label for="Amount" v-if="item.price && item.price.length > 0"
+                    ><span>From </span>{{ item.price[0].value }}</label
+                  >
                   <label for="Amount" v-else>-</label>
                 </div>
                 <div class="book">
@@ -249,7 +251,9 @@
               <hr />
               <div class="content-footer">
                 <div class="money">
-                  <label for="Amount" v-if="item.price && item.price.length > 0"><span>From </span>{{ item.price[0].value }}</label>
+                  <label for="Amount" v-if="item.price && item.price.length > 0"
+                    ><span>From </span>{{ item.price[0].value }}</label
+                  >
                   <label for="Amount" v-else>-</label>
                 </div>
                 <div class="book">
@@ -326,11 +330,12 @@
             </div>
             <div class="partners" data-aos="fade-up" data-aos-duration="1000">
               <hooper :settings="partnersSettings" class="partners-body">
-                <slide class="partners-item">
-                  <img src="/assets/images/RDB_logo.png" alt="" />
-                </slide>
-                <slide class="partners-item">
-                  <img src="/assets/images/logo_qdrnqo.png" alt="" />
+                <slide
+                  class="partners-item"
+                  v-for="partner in partners"
+                  :key="partner.id"
+                >
+                  <img :src="'/assets/uploaded/' + partner.image" alt="" />
                 </slide>
               </hooper>
             </div>
@@ -388,6 +393,8 @@ export default {
       },
       packages: [],
       trips: [],
+      partners: [],
+      slides: [],
     };
   },
   methods: {
@@ -409,10 +416,23 @@ export default {
         this.isLoading = false;
       });
     },
+
+    getPartners() {
+      this.$store.dispatch("GET_PARTNER").then((response) => {
+        this.partners = response.data;
+      });
+    },
+    getSlides() {
+      this.$store.dispatch("GET_SLIDE").then((response) => {
+        this.slides = response.data;
+      });
+    },
   },
   mounted() {
     let vm = this;
     this.getPackages();
+    this.getPartners();
+    this.getSlides();
   },
 };
 </script>
@@ -661,7 +681,7 @@ $green: #044914;
               @media screen and (max-width: 1300px) {
                 font-size: 1.25rem;
               }
-              span{
+              span {
                 color: #2b2b2b93;
                 font-size: 1rem;
               }
@@ -904,7 +924,7 @@ $green: #044914;
               @media screen and (max-width: 1300px) {
                 font-size: 1.25rem;
               }
-              span{
+              span {
                 color: #2b2b2b93;
                 font-size: 1rem;
               }

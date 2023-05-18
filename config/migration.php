@@ -215,6 +215,36 @@ $db_up_migration = [
         },
         'reason' => 'adding description on packages table',
     ],
+    [
+        'key' => 14,
+        'table' => 'partners',
+        "todo" => 'create',
+        'run' => function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('image')->nullable();
+            $table->string('name')->nullable();
+            $table->longText('link')->nullable();
+            $table->timestamps();
+            $table->softDeletes();
+            $table->boolean('is_deleted')->nullable();
+        },
+        'reason' => 'Creating tb_partners table',
+    ],
+    // slides
+    [
+        'key' => 15,
+        'table' => 'slides',
+        "todo" => 'create',
+        'run' => function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('image')->nullable();
+            $table->longText('name')->nullable();
+            $table->timestamps();
+            $table->softDeletes();
+            $table->boolean('is_deleted')->nullable();
+        },
+        'reason' => 'Creating tb_slides table',
+    ],
 ];
 
 /**

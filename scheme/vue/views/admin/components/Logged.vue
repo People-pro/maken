@@ -8,6 +8,7 @@
         @click="showDrop = true"
         v-click-outside="hide"
       >
+      <span>{{names}}</span>
         <img :src="'/assets/uploaded/' + image" alt="" srcset="" v-if="image" />
         <img :src="'/assets/images/avatar.png'" alt="" srcset="" v-else />
         <!-- <label for="My Account">{{ $loggedAdmin().prenom }}</label> -->
@@ -47,6 +48,7 @@ export default {
       showDrop: false,
       closeOnClickOutside: true,
       image: null,
+      names: null,
     };
   },
   methods: {
@@ -57,6 +59,7 @@ export default {
   mounted() {
     this.popupItem = this.$el;
     this.image = this.$loggedAdmin().image;
+    this.names = this.$loggedAdmin().names;
   },
 };
 </script>
@@ -74,13 +77,24 @@ export default {
 
   .logged-section {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     row-gap: 5px;
     align-items: center;
+    column-gap: 10px;
+    background: #e8e8e8;
+    padding: 3px 6px;
     cursor: pointer;
+    border-radius: 3px;
+    &:hover{
+      background: #e0e0e0;
+    }
+    span{
+      color: #4a4a4a;
+      font-weight: 600;
+    }
     img {
-      height: 40px;
-      width: 40px;
+      height: 30px;
+      width: 30px;
       border-radius: 50%;
       object-fit: cover;
     }
